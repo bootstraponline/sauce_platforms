@@ -6,7 +6,7 @@ RSpec tests are also automatically generated to ensure the method calls don't er
 
 #### Usage
 
-`require 'sauce_platforms'
+`require 'sauce_platforms'`
 
 - `Platforms.mac_10_6.firefox.v7` - built in version numbers
 - `Platforms.mac_10_6.firefox.v'39'` - custom version number via `v` method
