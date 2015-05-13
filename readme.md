@@ -11,6 +11,22 @@ RSpec tests are also automatically generated to ensure the method calls don't er
 - `Platforms.mac_10_6.firefox.v7` - built in version numbers
 - `Platforms.mac_10_6.firefox.v'39'` - custom version number via `v` method
 
+Example in Pry:
+
+```ruby
+require 'sauce_platforms'
+> Platforms.mac_10_6.chrome.v33
+=> ["Mac 10.6", "chrome", "33"]
+
+> Platforms.mac_10_6.chrome.v'100'
+=> ["Mac 10.6", "chrome", "100"]
+
+# Invalid combinations correctly throw undefined method error
+> Platforms.mac_10_6.chrome.v999
+NoMethodError: undefined method `v999` for Platforms::Mac_10_6_chrome:Module
+```
+
+
 Advantages over magic strings:
 
 - RubyMine auto completes the values
