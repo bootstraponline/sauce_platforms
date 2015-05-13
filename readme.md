@@ -1,8 +1,8 @@
 # Sauce Platforms [![Gem Version](https://badge.fury.io/rb/sauce_platforms.svg)](https://rubygems.org/gems/sauce_platforms)[![Build Status](https://travis-ci.org/bootstraponline/sauce_platforms.svg?branch=master)](https://travis-ci.org/bootstraponline/sauce_platforms)
 
-Automatic platform generation via `sauce_whisk.platforms(true)`
+Dependency free DSL for specifying [Sauce Labs platforms](https://saucelabs.com/platforms/).  The gem is automatically generated before publishing to rubygems via `sauce_whisk.platforms(true)`.
 
-RSpec tests are also automatically generated to ensure the method calls don't error.
+RSpec tests are also automatically generated to ensure the method calls don't error. RSpec tests run on Travis.
 
 #### Usage
 
@@ -32,7 +32,7 @@ Advantages over magic strings:
 - RubyMine auto completes the values
 - A client side error is generated if an invalid combination is specified.
 
-Intended to be used with the sauce_ruby gem.
+Intended to be used with the [sauce_ruby gem.](https://github.com/saucelabs/sauce_ruby)
 
 #### Generate new platforms
 
