@@ -1,4 +1,4 @@
-# Sauce Platforms
+# Sauce Platforms [![Gem Version](https://badge.fury.io/rb/sauce_platforms.svg)](http://badge.fury.io/rb/sauce_platforms)[![Build Status](https://travis-ci.org/bootstraponline/sauce_platforms.svg?branch=master)](https://travis-ci.org/bootstraponline/sauce_platforms)
 
 Automatic platform generation via `sauce_whisk.platforms(true)`
 
