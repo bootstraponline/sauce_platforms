@@ -18,6 +18,10 @@ Advantages over magic strings:
 
 Intended to be used with the sauce_ruby gem.
 
+#### Generate new platforms
+
+- `ruby ./lib/sauce_platforms/generate_sauce_platforms.rb`
+
 #### Test coverage
 
 ```

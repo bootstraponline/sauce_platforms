@@ -17,7 +17,10 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '>= 3.2.0'
   s.add_development_dependency 'appium_thor', '>= 0.0.7'
   s.add_development_dependency 'pry', '>= 0.10.1'
+  s.add_development_dependency 'sauce_whisk', '>= 0.0.18'
 
-  # exclude generate_sauce_platfrms.rb
-  s.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features|generate_)/}) }
+  # exclude generate_sauce_platforms.rb via generate keyword
+  s.files = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^(test|spec|features)/}) || f.include?('generate')
+  end
 end
