@@ -19,7 +19,7 @@ module Platform
       Mac_10_9
     end
 
-    def windows_2003
+    def windows_xp
       Windows_2003
     end
 
@@ -27,7 +27,7 @@ module Platform
       Mac_10_8
     end
 
-    def windows_2012
+    def windows_8
       Windows_2012
     end
 
@@ -35,11 +35,11 @@ module Platform
       Linux
     end
 
-    def windows_2012_r2
+    def windows_8_1
       Windows_2012_r2
     end
 
-    def windows_2008
+    def windows_7
       Windows_2008
     end
 

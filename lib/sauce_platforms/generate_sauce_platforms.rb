@@ -1,3 +1,22 @@
+# Sauce Labs runs Windows Server for licensing reasons. However the windows
+# editions are still referred to by their customer product names. This helper
+# converts the sauce labs windows server editions to the more commonly known
+# customer aliases.
+#
+# ex: windows 2003 => windows xp
+# @param windows_server_name [String|Symbol] windows server name to alias
+#
+# @return [String] alias or original name if an alias isn't found.
+def windows_alias windows_server_name
+  pairs = {
+    windows_2012_r2: :windows_8_1,
+    windows_2012:    :windows_8,
+    windows_2008:    :windows_7,
+    windows_2003:    :windows_xp
+  }
+  pairs[windows_server_name.intern] || windows_server_name
+end
+
 def filecase string
   string.downcase.gsub(/[\s|\.]/, '_')
 end
@@ -29,7 +48,7 @@ File.open(spec_path, 'w') do |file|
   file.puts
 end
 
-platform_files = []
+platform_files            = []
 platform_file_class_pairs = []
 
 module_name = 'Platform'
@@ -72,7 +91,7 @@ operating_systems.each do |os, browser_hash|
 
   # now build version specific files
   browser_hash.each do |browser, version_array|
-    filecase_browser = filecase(browser)
+    filecase_browser    = filecase(browser)
     os_browser_filename = "#{os_file_name}_#{filecase_browser}"
     File.open(File.join(os_dir, "#{os_browser_filename}.rb"), 'w') do |file|
       os_browser_class_name = "#{os_class_name}_#{filecase_browser}"
@@ -101,7 +120,7 @@ operating_systems.each do |os, browser_hash|
         file.puts '      end'
         file.puts
 
-        methods << "#{module_name}.#{os_file_name}.#{filecase_browser}.#{method_name}"
+        methods << "#{module_name}.#{windows_alias(os_file_name)}.#{filecase_browser}.#{method_name}"
       end
 
       file.puts '    end'
@@ -134,9 +153,9 @@ File.open(sauce_platforms_path, 'w') do |file|
   file.puts "module #{module_name}"
   file.puts '  class << self'
 
-  platform_file_class_pairs.each do |file_name,class_name|
+  platform_file_class_pairs.each do |file_name, class_name|
     file.puts
-    file.puts "    def #{file_name}"
+    file.puts "    def #{windows_alias(file_name)}"
     file.puts "      #{class_name}"
     file.puts '    end'
   end
