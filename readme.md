@@ -26,7 +26,6 @@ require 'sauce_platforms'
 NoMethodError: undefined method `v999` for Platform::Mac_10_6_chrome:Module
 ```
 
-
 Advantages over magic strings:
 
 - RubyMine auto completes the values
@@ -99,6 +98,7 @@ mac_10_6
   Platform.mac_10_6.chrome.v40
   Platform.mac_10_6.chrome.v41
   Platform.mac_10_6.chrome.v42
+  Platform.mac_10_6.chrome.v43
   Platform.mac_10_6.chrome.beta
   Platform.mac_10_6.chrome.dev
 
@@ -156,73 +156,75 @@ mac_10_9
   Platform.mac_10_9.chrome.v40
   Platform.mac_10_9.chrome.v41
   Platform.mac_10_9.chrome.v42
+  Platform.mac_10_9.chrome.v43
   Platform.mac_10_9.chrome.beta
   Platform.mac_10_9.chrome.dev
 
 windows_2003
-  Platform.windows_2003.opera.v11
-  Platform.windows_2003.opera.v12
-  Platform.windows_2003.internet_explorer.v8
-  Platform.windows_2003.internet_explorer.v6
-  Platform.windows_2003.internet_explorer.v7
-  Platform.windows_2003.firefox.v3_0
-  Platform.windows_2003.firefox.v3_5
-  Platform.windows_2003.firefox.v3_6
-  Platform.windows_2003.firefox.v4
-  Platform.windows_2003.firefox.v5
-  Platform.windows_2003.firefox.v6
-  Platform.windows_2003.firefox.v7
-  Platform.windows_2003.firefox.v8
-  Platform.windows_2003.firefox.v9
-  Platform.windows_2003.firefox.v10
-  Platform.windows_2003.firefox.v11
-  Platform.windows_2003.firefox.v12
-  Platform.windows_2003.firefox.v13
-  Platform.windows_2003.firefox.v14
-  Platform.windows_2003.firefox.v15
-  Platform.windows_2003.firefox.v16
-  Platform.windows_2003.firefox.v17
-  Platform.windows_2003.firefox.v18
-  Platform.windows_2003.firefox.v19
-  Platform.windows_2003.firefox.v20
-  Platform.windows_2003.firefox.v21
-  Platform.windows_2003.firefox.v22
-  Platform.windows_2003.firefox.v23
-  Platform.windows_2003.firefox.v24
-  Platform.windows_2003.firefox.v25
-  Platform.windows_2003.firefox.v26
-  Platform.windows_2003.firefox.v27
-  Platform.windows_2003.firefox.v28
-  Platform.windows_2003.firefox.v29
-  Platform.windows_2003.firefox.v30
-  Platform.windows_2003.firefox.v31
-  Platform.windows_2003.firefox.v32
-  Platform.windows_2003.firefox.v33
-  Platform.windows_2003.firefox.v34
-  Platform.windows_2003.firefox.v35
-  Platform.windows_2003.firefox.v36
-  Platform.windows_2003.firefox.v37
-  Platform.windows_2003.firefox.beta
-  Platform.windows_2003.firefox.dev
-  Platform.windows_2003.chrome.v26
-  Platform.windows_2003.chrome.v27
-  Platform.windows_2003.chrome.v28
-  Platform.windows_2003.chrome.v29
-  Platform.windows_2003.chrome.v30
-  Platform.windows_2003.chrome.v31
-  Platform.windows_2003.chrome.v32
-  Platform.windows_2003.chrome.v33
-  Platform.windows_2003.chrome.v34
-  Platform.windows_2003.chrome.v35
-  Platform.windows_2003.chrome.v36
-  Platform.windows_2003.chrome.v37
-  Platform.windows_2003.chrome.v38
-  Platform.windows_2003.chrome.v39
-  Platform.windows_2003.chrome.v40
-  Platform.windows_2003.chrome.v41
-  Platform.windows_2003.chrome.v42
-  Platform.windows_2003.chrome.beta
-  Platform.windows_2003.chrome.dev
+  Platform.windows_xp.opera.v11
+  Platform.windows_xp.opera.v12
+  Platform.windows_xp.internet_explorer.v8
+  Platform.windows_xp.internet_explorer.v6
+  Platform.windows_xp.internet_explorer.v7
+  Platform.windows_xp.firefox.v3_0
+  Platform.windows_xp.firefox.v3_5
+  Platform.windows_xp.firefox.v3_6
+  Platform.windows_xp.firefox.v4
+  Platform.windows_xp.firefox.v5
+  Platform.windows_xp.firefox.v6
+  Platform.windows_xp.firefox.v7
+  Platform.windows_xp.firefox.v8
+  Platform.windows_xp.firefox.v9
+  Platform.windows_xp.firefox.v10
+  Platform.windows_xp.firefox.v11
+  Platform.windows_xp.firefox.v12
+  Platform.windows_xp.firefox.v13
+  Platform.windows_xp.firefox.v14
+  Platform.windows_xp.firefox.v15
+  Platform.windows_xp.firefox.v16
+  Platform.windows_xp.firefox.v17
+  Platform.windows_xp.firefox.v18
+  Platform.windows_xp.firefox.v19
+  Platform.windows_xp.firefox.v20
+  Platform.windows_xp.firefox.v21
+  Platform.windows_xp.firefox.v22
+  Platform.windows_xp.firefox.v23
+  Platform.windows_xp.firefox.v24
+  Platform.windows_xp.firefox.v25
+  Platform.windows_xp.firefox.v26
+  Platform.windows_xp.firefox.v27
+  Platform.windows_xp.firefox.v28
+  Platform.windows_xp.firefox.v29
+  Platform.windows_xp.firefox.v30
+  Platform.windows_xp.firefox.v31
+  Platform.windows_xp.firefox.v32
+  Platform.windows_xp.firefox.v33
+  Platform.windows_xp.firefox.v34
+  Platform.windows_xp.firefox.v35
+  Platform.windows_xp.firefox.v36
+  Platform.windows_xp.firefox.v37
+  Platform.windows_xp.firefox.beta
+  Platform.windows_xp.firefox.dev
+  Platform.windows_xp.chrome.v26
+  Platform.windows_xp.chrome.v27
+  Platform.windows_xp.chrome.v28
+  Platform.windows_xp.chrome.v29
+  Platform.windows_xp.chrome.v30
+  Platform.windows_xp.chrome.v31
+  Platform.windows_xp.chrome.v32
+  Platform.windows_xp.chrome.v33
+  Platform.windows_xp.chrome.v34
+  Platform.windows_xp.chrome.v35
+  Platform.windows_xp.chrome.v36
+  Platform.windows_xp.chrome.v37
+  Platform.windows_xp.chrome.v38
+  Platform.windows_xp.chrome.v39
+  Platform.windows_xp.chrome.v40
+  Platform.windows_xp.chrome.v41
+  Platform.windows_xp.chrome.v42
+  Platform.windows_xp.chrome.v43
+  Platform.windows_xp.chrome.beta
+  Platform.windows_xp.chrome.dev
 
 mac_10_8
   Platform.mac_10_8.ipad.v5_1
@@ -246,73 +248,74 @@ mac_10_8
   Platform.mac_10_8.chrome.v40
   Platform.mac_10_8.chrome.v41
   Platform.mac_10_8.chrome.v42
+  Platform.mac_10_8.chrome.v43
   Platform.mac_10_8.chrome.beta
   Platform.mac_10_8.chrome.dev
 
 windows_2012
-  Platform.windows_2012.internet_explorer.v10
-  Platform.windows_2012.firefox.v3_0
-  Platform.windows_2012.firefox.v3_5
-  Platform.windows_2012.firefox.v3_6
-  Platform.windows_2012.firefox.v4
-  Platform.windows_2012.firefox.v5
-  Platform.windows_2012.firefox.v6
-  Platform.windows_2012.firefox.v7
-  Platform.windows_2012.firefox.v8
-  Platform.windows_2012.firefox.v9
-  Platform.windows_2012.firefox.v10
-  Platform.windows_2012.firefox.v11
-  Platform.windows_2012.firefox.v12
-  Platform.windows_2012.firefox.v13
-  Platform.windows_2012.firefox.v14
-  Platform.windows_2012.firefox.v15
-  Platform.windows_2012.firefox.v16
-  Platform.windows_2012.firefox.v17
-  Platform.windows_2012.firefox.v18
-  Platform.windows_2012.firefox.v19
-  Platform.windows_2012.firefox.v20
-  Platform.windows_2012.firefox.v21
-  Platform.windows_2012.firefox.v22
-  Platform.windows_2012.firefox.v23
-  Platform.windows_2012.firefox.v24
-  Platform.windows_2012.firefox.v25
-  Platform.windows_2012.firefox.v26
-  Platform.windows_2012.firefox.v27
-  Platform.windows_2012.firefox.v28
-  Platform.windows_2012.firefox.v29
-  Platform.windows_2012.firefox.v30
-  Platform.windows_2012.firefox.v31
-  Platform.windows_2012.firefox.v32
-  Platform.windows_2012.firefox.v33
-  Platform.windows_2012.firefox.v34
-  Platform.windows_2012.firefox.v35
-  Platform.windows_2012.firefox.v36
-  Platform.windows_2012.firefox.v37
-  Platform.windows_2012.firefox.beta
-  Platform.windows_2012.firefox.dev
-  Platform.windows_2012.chrome.v26
-  Platform.windows_2012.chrome.v27
-  Platform.windows_2012.chrome.v28
-  Platform.windows_2012.chrome.v29
-  Platform.windows_2012.chrome.v30
-  Platform.windows_2012.chrome.v31
-  Platform.windows_2012.chrome.v32
-  Platform.windows_2012.chrome.v33
-  Platform.windows_2012.chrome.v34
-  Platform.windows_2012.chrome.v35
-  Platform.windows_2012.chrome.v36
-  Platform.windows_2012.chrome.v37
-  Platform.windows_2012.chrome.v38
-  Platform.windows_2012.chrome.v39
-  Platform.windows_2012.chrome.v40
-  Platform.windows_2012.chrome.v41
-  Platform.windows_2012.chrome.v42
-  Platform.windows_2012.chrome.beta
-  Platform.windows_2012.chrome.dev
+  Platform.windows_8.internet_explorer.v10
+  Platform.windows_8.firefox.v3_0
+  Platform.windows_8.firefox.v3_5
+  Platform.windows_8.firefox.v3_6
+  Platform.windows_8.firefox.v4
+  Platform.windows_8.firefox.v5
+  Platform.windows_8.firefox.v6
+  Platform.windows_8.firefox.v7
+  Platform.windows_8.firefox.v8
+  Platform.windows_8.firefox.v9
+  Platform.windows_8.firefox.v10
+  Platform.windows_8.firefox.v11
+  Platform.windows_8.firefox.v12
+  Platform.windows_8.firefox.v13
+  Platform.windows_8.firefox.v14
+  Platform.windows_8.firefox.v15
+  Platform.windows_8.firefox.v16
+  Platform.windows_8.firefox.v17
+  Platform.windows_8.firefox.v18
+  Platform.windows_8.firefox.v19
+  Platform.windows_8.firefox.v20
+  Platform.windows_8.firefox.v21
+  Platform.windows_8.firefox.v22
+  Platform.windows_8.firefox.v23
+  Platform.windows_8.firefox.v24
+  Platform.windows_8.firefox.v25
+  Platform.windows_8.firefox.v26
+  Platform.windows_8.firefox.v27
+  Platform.windows_8.firefox.v28
+  Platform.windows_8.firefox.v29
+  Platform.windows_8.firefox.v30
+  Platform.windows_8.firefox.v31
+  Platform.windows_8.firefox.v32
+  Platform.windows_8.firefox.v33
+  Platform.windows_8.firefox.v34
+  Platform.windows_8.firefox.v35
+  Platform.windows_8.firefox.v36
+  Platform.windows_8.firefox.v37
+  Platform.windows_8.firefox.beta
+  Platform.windows_8.firefox.dev
+  Platform.windows_8.chrome.v26
+  Platform.windows_8.chrome.v27
+  Platform.windows_8.chrome.v28
+  Platform.windows_8.chrome.v29
+  Platform.windows_8.chrome.v30
+  Platform.windows_8.chrome.v31
+  Platform.windows_8.chrome.v32
+  Platform.windows_8.chrome.v33
+  Platform.windows_8.chrome.v34
+  Platform.windows_8.chrome.v35
+  Platform.windows_8.chrome.v36
+  Platform.windows_8.chrome.v37
+  Platform.windows_8.chrome.v38
+  Platform.windows_8.chrome.v39
+  Platform.windows_8.chrome.v40
+  Platform.windows_8.chrome.v41
+  Platform.windows_8.chrome.v42
+  Platform.windows_8.chrome.v43
+  Platform.windows_8.chrome.beta
+  Platform.windows_8.chrome.dev
 
 linux
   Platform.linux.opera.v12
-  Platform.linux.lynx.v2_8_7
   Platform.linux.firefox.v3_6
   Platform.linux.firefox.v4
   Platform.linux.firefox.v5
@@ -367,6 +370,7 @@ linux
   Platform.linux.chrome.v40
   Platform.linux.chrome.v41
   Platform.linux.chrome.v42
+  Platform.linux.chrome.v43
   Platform.linux.chrome.beta
   Platform.linux.chrome.dev
   Platform.linux.android.v4_0
@@ -378,132 +382,134 @@ linux
   Platform.linux.android.v5_1
 
 windows_2012_r2
-  Platform.windows_2012_r2.internet_explorer.v11
-  Platform.windows_2012_r2.firefox.v3_0
-  Platform.windows_2012_r2.firefox.v3_5
-  Platform.windows_2012_r2.firefox.v3_6
-  Platform.windows_2012_r2.firefox.v4
-  Platform.windows_2012_r2.firefox.v5
-  Platform.windows_2012_r2.firefox.v6
-  Platform.windows_2012_r2.firefox.v7
-  Platform.windows_2012_r2.firefox.v8
-  Platform.windows_2012_r2.firefox.v9
-  Platform.windows_2012_r2.firefox.v10
-  Platform.windows_2012_r2.firefox.v11
-  Platform.windows_2012_r2.firefox.v12
-  Platform.windows_2012_r2.firefox.v13
-  Platform.windows_2012_r2.firefox.v14
-  Platform.windows_2012_r2.firefox.v15
-  Platform.windows_2012_r2.firefox.v16
-  Platform.windows_2012_r2.firefox.v17
-  Platform.windows_2012_r2.firefox.v18
-  Platform.windows_2012_r2.firefox.v19
-  Platform.windows_2012_r2.firefox.v20
-  Platform.windows_2012_r2.firefox.v21
-  Platform.windows_2012_r2.firefox.v22
-  Platform.windows_2012_r2.firefox.v23
-  Platform.windows_2012_r2.firefox.v24
-  Platform.windows_2012_r2.firefox.v25
-  Platform.windows_2012_r2.firefox.v26
-  Platform.windows_2012_r2.firefox.v27
-  Platform.windows_2012_r2.firefox.v28
-  Platform.windows_2012_r2.firefox.v29
-  Platform.windows_2012_r2.firefox.v30
-  Platform.windows_2012_r2.firefox.v31
-  Platform.windows_2012_r2.firefox.v32
-  Platform.windows_2012_r2.firefox.v33
-  Platform.windows_2012_r2.firefox.v34
-  Platform.windows_2012_r2.firefox.v35
-  Platform.windows_2012_r2.firefox.v36
-  Platform.windows_2012_r2.firefox.v37
-  Platform.windows_2012_r2.firefox.beta
-  Platform.windows_2012_r2.firefox.dev
-  Platform.windows_2012_r2.chrome.v26
-  Platform.windows_2012_r2.chrome.v27
-  Platform.windows_2012_r2.chrome.v28
-  Platform.windows_2012_r2.chrome.v29
-  Platform.windows_2012_r2.chrome.v30
-  Platform.windows_2012_r2.chrome.v31
-  Platform.windows_2012_r2.chrome.v32
-  Platform.windows_2012_r2.chrome.v33
-  Platform.windows_2012_r2.chrome.v34
-  Platform.windows_2012_r2.chrome.v35
-  Platform.windows_2012_r2.chrome.v36
-  Platform.windows_2012_r2.chrome.v37
-  Platform.windows_2012_r2.chrome.v38
-  Platform.windows_2012_r2.chrome.v39
-  Platform.windows_2012_r2.chrome.v40
-  Platform.windows_2012_r2.chrome.v41
-  Platform.windows_2012_r2.chrome.v42
-  Platform.windows_2012_r2.chrome.beta
-  Platform.windows_2012_r2.chrome.dev
+  Platform.windows_8_1.internet_explorer.v11
+  Platform.windows_8_1.firefox.v3_0
+  Platform.windows_8_1.firefox.v3_5
+  Platform.windows_8_1.firefox.v3_6
+  Platform.windows_8_1.firefox.v4
+  Platform.windows_8_1.firefox.v5
+  Platform.windows_8_1.firefox.v6
+  Platform.windows_8_1.firefox.v7
+  Platform.windows_8_1.firefox.v8
+  Platform.windows_8_1.firefox.v9
+  Platform.windows_8_1.firefox.v10
+  Platform.windows_8_1.firefox.v11
+  Platform.windows_8_1.firefox.v12
+  Platform.windows_8_1.firefox.v13
+  Platform.windows_8_1.firefox.v14
+  Platform.windows_8_1.firefox.v15
+  Platform.windows_8_1.firefox.v16
+  Platform.windows_8_1.firefox.v17
+  Platform.windows_8_1.firefox.v18
+  Platform.windows_8_1.firefox.v19
+  Platform.windows_8_1.firefox.v20
+  Platform.windows_8_1.firefox.v21
+  Platform.windows_8_1.firefox.v22
+  Platform.windows_8_1.firefox.v23
+  Platform.windows_8_1.firefox.v24
+  Platform.windows_8_1.firefox.v25
+  Platform.windows_8_1.firefox.v26
+  Platform.windows_8_1.firefox.v27
+  Platform.windows_8_1.firefox.v28
+  Platform.windows_8_1.firefox.v29
+  Platform.windows_8_1.firefox.v30
+  Platform.windows_8_1.firefox.v31
+  Platform.windows_8_1.firefox.v32
+  Platform.windows_8_1.firefox.v33
+  Platform.windows_8_1.firefox.v34
+  Platform.windows_8_1.firefox.v35
+  Platform.windows_8_1.firefox.v36
+  Platform.windows_8_1.firefox.v37
+  Platform.windows_8_1.firefox.beta
+  Platform.windows_8_1.firefox.dev
+  Platform.windows_8_1.chrome.v26
+  Platform.windows_8_1.chrome.v27
+  Platform.windows_8_1.chrome.v28
+  Platform.windows_8_1.chrome.v29
+  Platform.windows_8_1.chrome.v30
+  Platform.windows_8_1.chrome.v31
+  Platform.windows_8_1.chrome.v32
+  Platform.windows_8_1.chrome.v33
+  Platform.windows_8_1.chrome.v34
+  Platform.windows_8_1.chrome.v35
+  Platform.windows_8_1.chrome.v36
+  Platform.windows_8_1.chrome.v37
+  Platform.windows_8_1.chrome.v38
+  Platform.windows_8_1.chrome.v39
+  Platform.windows_8_1.chrome.v40
+  Platform.windows_8_1.chrome.v41
+  Platform.windows_8_1.chrome.v42
+  Platform.windows_8_1.chrome.v43
+  Platform.windows_8_1.chrome.beta
+  Platform.windows_8_1.chrome.dev
 
 windows_2008
-  Platform.windows_2008.internet_explorer.v8
-  Platform.windows_2008.internet_explorer.v9
-  Platform.windows_2008.internet_explorer.v10
-  Platform.windows_2008.internet_explorer.v11
-  Platform.windows_2008.opera.v11
-  Platform.windows_2008.opera.v12
-  Platform.windows_2008.firefox.v3_0
-  Platform.windows_2008.firefox.v3_5
-  Platform.windows_2008.firefox.v3_6
-  Platform.windows_2008.firefox.v4
-  Platform.windows_2008.firefox.v5
-  Platform.windows_2008.firefox.v6
-  Platform.windows_2008.firefox.v7
-  Platform.windows_2008.firefox.v8
-  Platform.windows_2008.firefox.v9
-  Platform.windows_2008.firefox.v10
-  Platform.windows_2008.firefox.v11
-  Platform.windows_2008.firefox.v12
-  Platform.windows_2008.firefox.v13
-  Platform.windows_2008.firefox.v14
-  Platform.windows_2008.firefox.v15
-  Platform.windows_2008.firefox.v16
-  Platform.windows_2008.firefox.v17
-  Platform.windows_2008.firefox.v18
-  Platform.windows_2008.firefox.v19
-  Platform.windows_2008.firefox.v20
-  Platform.windows_2008.firefox.v21
-  Platform.windows_2008.firefox.v22
-  Platform.windows_2008.firefox.v23
-  Platform.windows_2008.firefox.v24
-  Platform.windows_2008.firefox.v25
-  Platform.windows_2008.firefox.v26
-  Platform.windows_2008.firefox.v27
-  Platform.windows_2008.firefox.v28
-  Platform.windows_2008.firefox.v29
-  Platform.windows_2008.firefox.v30
-  Platform.windows_2008.firefox.v31
-  Platform.windows_2008.firefox.v32
-  Platform.windows_2008.firefox.v33
-  Platform.windows_2008.firefox.v34
-  Platform.windows_2008.firefox.v35
-  Platform.windows_2008.firefox.v36
-  Platform.windows_2008.firefox.v37
-  Platform.windows_2008.firefox.beta
-  Platform.windows_2008.firefox.dev
-  Platform.windows_2008.safari.v5
-  Platform.windows_2008.chrome.v26
-  Platform.windows_2008.chrome.v27
-  Platform.windows_2008.chrome.v28
-  Platform.windows_2008.chrome.v29
-  Platform.windows_2008.chrome.v30
-  Platform.windows_2008.chrome.v31
-  Platform.windows_2008.chrome.v32
-  Platform.windows_2008.chrome.v33
-  Platform.windows_2008.chrome.v34
-  Platform.windows_2008.chrome.v35
-  Platform.windows_2008.chrome.v36
-  Platform.windows_2008.chrome.v37
-  Platform.windows_2008.chrome.v38
-  Platform.windows_2008.chrome.v39
-  Platform.windows_2008.chrome.v40
-  Platform.windows_2008.chrome.v41
-  Platform.windows_2008.chrome.v42
-  Platform.windows_2008.chrome.beta
-  Platform.windows_2008.chrome.dev
+  Platform.windows_7.internet_explorer.v8
+  Platform.windows_7.internet_explorer.v9
+  Platform.windows_7.internet_explorer.v10
+  Platform.windows_7.internet_explorer.v11
+  Platform.windows_7.opera.v11
+  Platform.windows_7.opera.v12
+  Platform.windows_7.firefox.v3_0
+  Platform.windows_7.firefox.v3_5
+  Platform.windows_7.firefox.v3_6
+  Platform.windows_7.firefox.v4
+  Platform.windows_7.firefox.v5
+  Platform.windows_7.firefox.v6
+  Platform.windows_7.firefox.v7
+  Platform.windows_7.firefox.v8
+  Platform.windows_7.firefox.v9
+  Platform.windows_7.firefox.v10
+  Platform.windows_7.firefox.v11
+  Platform.windows_7.firefox.v12
+  Platform.windows_7.firefox.v13
+  Platform.windows_7.firefox.v14
+  Platform.windows_7.firefox.v15
+  Platform.windows_7.firefox.v16
+  Platform.windows_7.firefox.v17
+  Platform.windows_7.firefox.v18
+  Platform.windows_7.firefox.v19
+  Platform.windows_7.firefox.v20
+  Platform.windows_7.firefox.v21
+  Platform.windows_7.firefox.v22
+  Platform.windows_7.firefox.v23
+  Platform.windows_7.firefox.v24
+  Platform.windows_7.firefox.v25
+  Platform.windows_7.firefox.v26
+  Platform.windows_7.firefox.v27
+  Platform.windows_7.firefox.v28
+  Platform.windows_7.firefox.v29
+  Platform.windows_7.firefox.v30
+  Platform.windows_7.firefox.v31
+  Platform.windows_7.firefox.v32
+  Platform.windows_7.firefox.v33
+  Platform.windows_7.firefox.v34
+  Platform.windows_7.firefox.v35
+  Platform.windows_7.firefox.v36
+  Platform.windows_7.firefox.v37
+  Platform.windows_7.firefox.beta
+  Platform.windows_7.firefox.dev
+  Platform.windows_7.safari.v5
+  Platform.windows_7.chrome.v26
+  Platform.windows_7.chrome.v27
+  Platform.windows_7.chrome.v28
+  Platform.windows_7.chrome.v29
+  Platform.windows_7.chrome.v30
+  Platform.windows_7.chrome.v31
+  Platform.windows_7.chrome.v32
+  Platform.windows_7.chrome.v33
+  Platform.windows_7.chrome.v34
+  Platform.windows_7.chrome.v35
+  Platform.windows_7.chrome.v36
+  Platform.windows_7.chrome.v37
+  Platform.windows_7.chrome.v38
+  Platform.windows_7.chrome.v39
+  Platform.windows_7.chrome.v40
+  Platform.windows_7.chrome.v41
+  Platform.windows_7.chrome.v42
+  Platform.windows_7.chrome.v43
+  Platform.windows_7.chrome.beta
+  Platform.windows_7.chrome.dev
 
 mac_10_10
   Platform.mac_10_10.ipad.v7_1
@@ -529,9 +535,10 @@ mac_10_10
   Platform.mac_10_10.chrome.v40
   Platform.mac_10_10.chrome.v41
   Platform.mac_10_10.chrome.v42
+  Platform.mac_10_10.chrome.v43
   Platform.mac_10_10.chrome.beta
   Platform.mac_10_10.chrome.dev
 
-Finished in 0.09344 seconds (files took 0.25787 seconds to load)
-471 examples, 0 failures
+Finished in 0.16088 seconds (files took 0.32959 seconds to load)
+479 examples, 0 failures
 ```
