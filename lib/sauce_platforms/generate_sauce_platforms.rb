@@ -32,6 +32,8 @@ end
 platform_files = []
 platform_file_class_pairs = []
 
+module_name = 'Platform'
+
 operating_systems.each do |os, browser_hash|
   os_file_name  = filecase os
   os_class_name = os_file_name.capitalize
@@ -47,7 +49,7 @@ operating_systems.each do |os, browser_hash|
       file.puts "require_relative '#{os_file_name}/#{os_file_name}_#{browser}'"
     end
     file.puts
-    file.puts 'module Platforms'
+    file.puts "module #{module_name}"
     file.puts "  module #{os_class_name}"
     file.puts '    class << self'
     file.puts
@@ -74,7 +76,7 @@ operating_systems.each do |os, browser_hash|
     os_browser_filename = "#{os_file_name}_#{filecase_browser}"
     File.open(File.join(os_dir, "#{os_browser_filename}.rb"), 'w') do |file|
       os_browser_class_name = "#{os_class_name}_#{filecase_browser}"
-      file.puts 'module Platforms'
+      file.puts "module #{module_name}"
       file.puts "  module #{os_browser_class_name}"
       file.puts '    class << self'
       file.puts "      def #{os_browser_filename} version_string"
@@ -99,7 +101,7 @@ operating_systems.each do |os, browser_hash|
         file.puts '      end'
         file.puts
 
-        methods << "Platforms.#{os_file_name}.#{filecase_browser}.#{method_name}"
+        methods << "#{module_name}.#{os_file_name}.#{filecase_browser}.#{method_name}"
       end
 
       file.puts '    end'
@@ -129,7 +131,7 @@ File.open(sauce_platforms_path, 'w') do |file|
     file.puts platform
   end
   file.puts
-  file.puts 'module Platforms'
+  file.puts "module #{module_name}"
   file.puts '  class << self'
 
   platform_file_class_pairs.each do |file_name,class_name|
