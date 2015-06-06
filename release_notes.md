@@ -1,3 +1,11 @@
+#### v1.0.0 2015-06-06
+
+- [c6069b0](https://github.com/bootstraponline/sauce_platforms/commit/c6069b0853cc74fd91bdfe7fb1aa4209419851b2) Release 1.0.0
+- [12f1267](https://github.com/bootstraponline/sauce_platforms/commit/12f1267545efc04a8c409bb4c676b08cf0fcd01e) Update platform spec
+- [44b6968](https://github.com/bootstraponline/sauce_platforms/commit/44b69687c85feb7c5bc941ccedbd0fc09cbdcfe5) Update platforms to use windows alias
+- [548e995](https://github.com/bootstraponline/sauce_platforms/commit/548e995a609be425cd9a73786f4c0d23e256ba25) Update readme
+
+
 #### v0.0.2 2015-06-06
 
 - [0653bd9](https://github.com/bootstraponline/sauce_platforms/commit/0653bd9dfbd53343c50837bdc5d3dd6809f192ce) Release 0.0.2
