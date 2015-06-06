@@ -16,4 +16,9 @@ class ::Default < Thor
   def spec
     exec 'rspec spec'
   end
+
+  desc 'gen', 'Generate platforms code'
+  def gen
+    exec 'ruby ./lib/sauce_platforms/generate_sauce_platforms.rb'
+  end
 end
