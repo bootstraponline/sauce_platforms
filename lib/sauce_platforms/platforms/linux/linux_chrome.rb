@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Linux_chrome
     class << self
       def linux_chrome version_string
@@ -75,6 +75,10 @@ module Platforms
 
       def v42
         linux_chrome '42'
+      end
+
+      def v43
+        linux_chrome '43'
       end
 
       def beta

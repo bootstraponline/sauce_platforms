@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Windows_2012_r2_chrome
     class << self
       def windows_2012_r2_chrome version_string
@@ -75,6 +75,10 @@ module Platforms
 
       def v42
         windows_2012_r2_chrome '42'
+      end
+
+      def v43
+        windows_2012_r2_chrome '43'
       end
 
       def beta

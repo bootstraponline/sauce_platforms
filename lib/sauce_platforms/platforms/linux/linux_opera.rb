@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Linux_opera
     class << self
       def linux_opera version_string

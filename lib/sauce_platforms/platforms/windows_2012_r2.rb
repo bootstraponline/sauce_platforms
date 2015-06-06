@@ -2,7 +2,7 @@ require_relative 'windows_2012_r2/windows_2012_r2_internet_explorer'
 require_relative 'windows_2012_r2/windows_2012_r2_firefox'
 require_relative 'windows_2012_r2/windows_2012_r2_chrome'
 
-module Platforms
+module Platform
   module Windows_2012_r2
     class << self
 

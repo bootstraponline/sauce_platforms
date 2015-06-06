@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Windows_2008_firefox
     class << self
       def windows_2008_firefox version_string

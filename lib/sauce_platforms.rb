@@ -8,7 +8,7 @@ require_relative 'sauce_platforms/platforms/windows_2008'
 require_relative 'sauce_platforms/platforms/windows_2012'
 require_relative 'sauce_platforms/platforms/windows_2012_r2'
 
-module Platforms
+module Platform
   class << self
 
     def mac_10_6

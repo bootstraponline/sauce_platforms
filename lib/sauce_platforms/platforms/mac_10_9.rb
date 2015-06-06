@@ -4,7 +4,7 @@ require_relative 'mac_10_9/mac_10_9_iphone'
 require_relative 'mac_10_9/mac_10_9_safari'
 require_relative 'mac_10_9/mac_10_9_chrome'
 
-module Platforms
+module Platform
   module Mac_10_9
     class << self
 

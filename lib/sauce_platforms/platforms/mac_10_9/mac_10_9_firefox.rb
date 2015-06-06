@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Mac_10_9_firefox
     class << self
       def mac_10_9_firefox version_string

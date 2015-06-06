@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Linux_android
     class << self
       def linux_android version_string

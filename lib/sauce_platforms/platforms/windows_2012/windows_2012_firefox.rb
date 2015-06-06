@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Windows_2012_firefox
     class << self
       def windows_2012_firefox version_string

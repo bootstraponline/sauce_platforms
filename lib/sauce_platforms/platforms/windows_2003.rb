@@ -3,7 +3,7 @@ require_relative 'windows_2003/windows_2003_internet_explorer'
 require_relative 'windows_2003/windows_2003_firefox'
 require_relative 'windows_2003/windows_2003_chrome'
 
-module Platforms
+module Platform
   module Windows_2003
     class << self
 

@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Windows_2003_opera
     class << self
       def windows_2003_opera version_string

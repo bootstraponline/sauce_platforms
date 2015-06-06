@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Windows_2008_opera
     class << self
       def windows_2008_opera version_string

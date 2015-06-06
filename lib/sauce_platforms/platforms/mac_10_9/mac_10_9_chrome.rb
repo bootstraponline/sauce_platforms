@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Mac_10_9_chrome
     class << self
       def mac_10_9_chrome version_string
@@ -55,6 +55,10 @@ module Platforms
 
       def v42
         mac_10_9_chrome '42'
+      end
+
+      def v43
+        mac_10_9_chrome '43'
       end
 
       def beta

@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Windows_2012_r2_internet_explorer
     class << self
       def windows_2012_r2_internet_explorer version_string

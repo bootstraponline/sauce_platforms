@@ -4,7 +4,7 @@ require_relative 'windows_2008/windows_2008_firefox'
 require_relative 'windows_2008/windows_2008_safari'
 require_relative 'windows_2008/windows_2008_chrome'
 
-module Platforms
+module Platform
   module Windows_2008
     class << self
 

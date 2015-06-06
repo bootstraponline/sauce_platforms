@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Mac_10_10_safari
     class << self
       def mac_10_10_safari version_string

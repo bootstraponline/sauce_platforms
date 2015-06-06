@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Linux_firefox
     class << self
       def linux_firefox version_string

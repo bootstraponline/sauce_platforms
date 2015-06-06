@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Mac_10_6_iphone
     class << self
       def mac_10_6_iphone version_string

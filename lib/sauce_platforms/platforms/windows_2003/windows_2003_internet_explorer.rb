@@ -1,4 +1,4 @@
-module Platforms
+module Platform
   module Windows_2003_internet_explorer
     class << self
       def windows_2003_internet_explorer version_string
