@@ -16,8 +16,10 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'rspec', '>= 3.2.0'
   s.add_development_dependency 'appium_thor', '>= 0.0.7'
+  s.add_development_dependency 'thor', '>= 0.19.1'
   s.add_development_dependency 'pry', '>= 0.10.1'
   s.add_development_dependency 'sauce_whisk', '>= 0.0.18'
+  s.add_development_dependency 'coveralls', '~> 0.8.1'
 
   # exclude generate_sauce_platforms.rb via generate keyword
   s.files = `git ls-files -z`.split("\x0").reject do |f|
