@@ -107,6 +107,8 @@ operating_systems.each do |os, browser_hash|
       file.puts '      end'
       file.puts
 
+      methods << "#{module_name}.#{windows_alias(os_file_name)}.#{filecase_browser}.v'123'"
+
       # android has different versions based on deviceName so we must
       # take the unique versions otherwise duplicate methods will be created
       version_array.uniq.each do |version|
@@ -134,11 +136,12 @@ operating_systems.each do |os, browser_hash|
     file.puts
     file.puts "describe '#{os_file_name}' do"
     methods.each do |method|
-      file.puts "  it '#{method}' do"
+      file.puts "  it '#{method.gsub("'", '"')}' do"
       file.puts "    #{method}"
       file.puts '  end'
       file.puts
     end
+
     file.puts 'end'
   end
 end

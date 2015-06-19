@@ -2,12 +2,20 @@ require_relative 'spec_helper'
 
 
 describe 'mac_10_6' do
+  it 'Platform.mac_10_6.ipad.v"123"' do
+    Platform.mac_10_6.ipad.v'123'
+  end
+
   it 'Platform.mac_10_6.ipad.v4_3' do
     Platform.mac_10_6.ipad.v4_3
   end
 
   it 'Platform.mac_10_6.ipad.v5_0' do
     Platform.mac_10_6.ipad.v5_0
+  end
+
+  it 'Platform.mac_10_6.firefox.v"123"' do
+    Platform.mac_10_6.firefox.v'123'
   end
 
   it 'Platform.mac_10_6.firefox.v4' do
@@ -146,12 +154,20 @@ describe 'mac_10_6' do
     Platform.mac_10_6.firefox.v37
   end
 
+  it 'Platform.mac_10_6.firefox.v38' do
+    Platform.mac_10_6.firefox.v38
+  end
+
   it 'Platform.mac_10_6.firefox.beta' do
     Platform.mac_10_6.firefox.beta
   end
 
   it 'Platform.mac_10_6.firefox.dev' do
     Platform.mac_10_6.firefox.dev
+  end
+
+  it 'Platform.mac_10_6.iphone.v"123"' do
+    Platform.mac_10_6.iphone.v'123'
   end
 
   it 'Platform.mac_10_6.iphone.v4_3' do
@@ -162,8 +178,16 @@ describe 'mac_10_6' do
     Platform.mac_10_6.iphone.v5_0
   end
 
+  it 'Platform.mac_10_6.safari.v"123"' do
+    Platform.mac_10_6.safari.v'123'
+  end
+
   it 'Platform.mac_10_6.safari.v5' do
     Platform.mac_10_6.safari.v5
+  end
+
+  it 'Platform.mac_10_6.chrome.v"123"' do
+    Platform.mac_10_6.chrome.v'123'
   end
 
   it 'Platform.mac_10_6.chrome.v27' do
@@ -237,12 +261,20 @@ describe 'mac_10_6' do
 end
 
 describe 'mac_10_9' do
+  it 'Platform.mac_10_9.ipad.v"123"' do
+    Platform.mac_10_9.ipad.v'123'
+  end
+
   it 'Platform.mac_10_9.ipad.v7_0' do
     Platform.mac_10_9.ipad.v7_0
   end
 
   it 'Platform.mac_10_9.ipad.v7_1' do
     Platform.mac_10_9.ipad.v7_1
+  end
+
+  it 'Platform.mac_10_9.firefox.v"123"' do
+    Platform.mac_10_9.firefox.v'123'
   end
 
   it 'Platform.mac_10_9.firefox.v4' do
@@ -381,12 +413,20 @@ describe 'mac_10_9' do
     Platform.mac_10_9.firefox.v37
   end
 
+  it 'Platform.mac_10_9.firefox.v38' do
+    Platform.mac_10_9.firefox.v38
+  end
+
   it 'Platform.mac_10_9.firefox.beta' do
     Platform.mac_10_9.firefox.beta
   end
 
   it 'Platform.mac_10_9.firefox.dev' do
     Platform.mac_10_9.firefox.dev
+  end
+
+  it 'Platform.mac_10_9.iphone.v"123"' do
+    Platform.mac_10_9.iphone.v'123'
   end
 
   it 'Platform.mac_10_9.iphone.v7_0' do
@@ -397,8 +437,16 @@ describe 'mac_10_9' do
     Platform.mac_10_9.iphone.v7_1
   end
 
+  it 'Platform.mac_10_9.safari.v"123"' do
+    Platform.mac_10_9.safari.v'123'
+  end
+
   it 'Platform.mac_10_9.safari.v7' do
     Platform.mac_10_9.safari.v7
+  end
+
+  it 'Platform.mac_10_9.chrome.v"123"' do
+    Platform.mac_10_9.chrome.v'123'
   end
 
   it 'Platform.mac_10_9.chrome.v31' do
@@ -464,12 +512,20 @@ describe 'mac_10_9' do
 end
 
 describe 'windows_2003' do
+  it 'Platform.windows_xp.opera.v"123"' do
+    Platform.windows_xp.opera.v'123'
+  end
+
   it 'Platform.windows_xp.opera.v11' do
     Platform.windows_xp.opera.v11
   end
 
   it 'Platform.windows_xp.opera.v12' do
     Platform.windows_xp.opera.v12
+  end
+
+  it 'Platform.windows_xp.internet_explorer.v"123"' do
+    Platform.windows_xp.internet_explorer.v'123'
   end
 
   it 'Platform.windows_xp.internet_explorer.v8' do
@@ -482,6 +538,10 @@ describe 'windows_2003' do
 
   it 'Platform.windows_xp.internet_explorer.v7' do
     Platform.windows_xp.internet_explorer.v7
+  end
+
+  it 'Platform.windows_xp.firefox.v"123"' do
+    Platform.windows_xp.firefox.v'123'
   end
 
   it 'Platform.windows_xp.firefox.v3_0' do
@@ -632,12 +692,20 @@ describe 'windows_2003' do
     Platform.windows_xp.firefox.v37
   end
 
+  it 'Platform.windows_xp.firefox.v38' do
+    Platform.windows_xp.firefox.v38
+  end
+
   it 'Platform.windows_xp.firefox.beta' do
     Platform.windows_xp.firefox.beta
   end
 
   it 'Platform.windows_xp.firefox.dev' do
     Platform.windows_xp.firefox.dev
+  end
+
+  it 'Platform.windows_xp.chrome.v"123"' do
+    Platform.windows_xp.chrome.v'123'
   end
 
   it 'Platform.windows_xp.chrome.v26' do
@@ -723,6 +791,10 @@ describe 'windows_2003' do
 end
 
 describe 'mac_10_8' do
+  it 'Platform.mac_10_8.ipad.v"123"' do
+    Platform.mac_10_8.ipad.v'123'
+  end
+
   it 'Platform.mac_10_8.ipad.v5_1' do
     Platform.mac_10_8.ipad.v5_1
   end
@@ -733,6 +805,10 @@ describe 'mac_10_8' do
 
   it 'Platform.mac_10_8.ipad.v6_1' do
     Platform.mac_10_8.ipad.v6_1
+  end
+
+  it 'Platform.mac_10_8.iphone.v"123"' do
+    Platform.mac_10_8.iphone.v'123'
   end
 
   it 'Platform.mac_10_8.iphone.v5_1' do
@@ -747,8 +823,16 @@ describe 'mac_10_8' do
     Platform.mac_10_8.iphone.v6_1
   end
 
+  it 'Platform.mac_10_8.safari.v"123"' do
+    Platform.mac_10_8.safari.v'123'
+  end
+
   it 'Platform.mac_10_8.safari.v6' do
     Platform.mac_10_8.safari.v6
+  end
+
+  it 'Platform.mac_10_8.chrome.v"123"' do
+    Platform.mac_10_8.chrome.v'123'
   end
 
   it 'Platform.mac_10_8.chrome.v27' do
@@ -822,8 +906,16 @@ describe 'mac_10_8' do
 end
 
 describe 'windows_2012' do
+  it 'Platform.windows_8.internet_explorer.v"123"' do
+    Platform.windows_8.internet_explorer.v'123'
+  end
+
   it 'Platform.windows_8.internet_explorer.v10' do
     Platform.windows_8.internet_explorer.v10
+  end
+
+  it 'Platform.windows_8.firefox.v"123"' do
+    Platform.windows_8.firefox.v'123'
   end
 
   it 'Platform.windows_8.firefox.v3_0' do
@@ -974,12 +1066,20 @@ describe 'windows_2012' do
     Platform.windows_8.firefox.v37
   end
 
+  it 'Platform.windows_8.firefox.v38' do
+    Platform.windows_8.firefox.v38
+  end
+
   it 'Platform.windows_8.firefox.beta' do
     Platform.windows_8.firefox.beta
   end
 
   it 'Platform.windows_8.firefox.dev' do
     Platform.windows_8.firefox.dev
+  end
+
+  it 'Platform.windows_8.chrome.v"123"' do
+    Platform.windows_8.chrome.v'123'
   end
 
   it 'Platform.windows_8.chrome.v26' do
@@ -1065,8 +1165,16 @@ describe 'windows_2012' do
 end
 
 describe 'linux' do
+  it 'Platform.linux.opera.v"123"' do
+    Platform.linux.opera.v'123'
+  end
+
   it 'Platform.linux.opera.v12' do
     Platform.linux.opera.v12
+  end
+
+  it 'Platform.linux.firefox.v"123"' do
+    Platform.linux.firefox.v'123'
   end
 
   it 'Platform.linux.firefox.v3_6' do
@@ -1209,12 +1317,20 @@ describe 'linux' do
     Platform.linux.firefox.v37
   end
 
+  it 'Platform.linux.firefox.v38' do
+    Platform.linux.firefox.v38
+  end
+
   it 'Platform.linux.firefox.beta' do
     Platform.linux.firefox.beta
   end
 
   it 'Platform.linux.firefox.dev' do
     Platform.linux.firefox.dev
+  end
+
+  it 'Platform.linux.chrome.v"123"' do
+    Platform.linux.chrome.v'123'
   end
 
   it 'Platform.linux.chrome.v26' do
@@ -1297,6 +1413,10 @@ describe 'linux' do
     Platform.linux.chrome.dev
   end
 
+  it 'Platform.linux.android.v"123"' do
+    Platform.linux.android.v'123'
+  end
+
   it 'Platform.linux.android.v4_0' do
     Platform.linux.android.v4_0
   end
@@ -1328,8 +1448,16 @@ describe 'linux' do
 end
 
 describe 'windows_2012_r2' do
+  it 'Platform.windows_8_1.internet_explorer.v"123"' do
+    Platform.windows_8_1.internet_explorer.v'123'
+  end
+
   it 'Platform.windows_8_1.internet_explorer.v11' do
     Platform.windows_8_1.internet_explorer.v11
+  end
+
+  it 'Platform.windows_8_1.firefox.v"123"' do
+    Platform.windows_8_1.firefox.v'123'
   end
 
   it 'Platform.windows_8_1.firefox.v3_0' do
@@ -1480,12 +1608,20 @@ describe 'windows_2012_r2' do
     Platform.windows_8_1.firefox.v37
   end
 
+  it 'Platform.windows_8_1.firefox.v38' do
+    Platform.windows_8_1.firefox.v38
+  end
+
   it 'Platform.windows_8_1.firefox.beta' do
     Platform.windows_8_1.firefox.beta
   end
 
   it 'Platform.windows_8_1.firefox.dev' do
     Platform.windows_8_1.firefox.dev
+  end
+
+  it 'Platform.windows_8_1.chrome.v"123"' do
+    Platform.windows_8_1.chrome.v'123'
   end
 
   it 'Platform.windows_8_1.chrome.v26' do
@@ -1571,6 +1707,10 @@ describe 'windows_2012_r2' do
 end
 
 describe 'windows_2008' do
+  it 'Platform.windows_7.internet_explorer.v"123"' do
+    Platform.windows_7.internet_explorer.v'123'
+  end
+
   it 'Platform.windows_7.internet_explorer.v8' do
     Platform.windows_7.internet_explorer.v8
   end
@@ -1587,12 +1727,20 @@ describe 'windows_2008' do
     Platform.windows_7.internet_explorer.v11
   end
 
+  it 'Platform.windows_7.opera.v"123"' do
+    Platform.windows_7.opera.v'123'
+  end
+
   it 'Platform.windows_7.opera.v11' do
     Platform.windows_7.opera.v11
   end
 
   it 'Platform.windows_7.opera.v12' do
     Platform.windows_7.opera.v12
+  end
+
+  it 'Platform.windows_7.firefox.v"123"' do
+    Platform.windows_7.firefox.v'123'
   end
 
   it 'Platform.windows_7.firefox.v3_0' do
@@ -1743,6 +1891,10 @@ describe 'windows_2008' do
     Platform.windows_7.firefox.v37
   end
 
+  it 'Platform.windows_7.firefox.v38' do
+    Platform.windows_7.firefox.v38
+  end
+
   it 'Platform.windows_7.firefox.beta' do
     Platform.windows_7.firefox.beta
   end
@@ -1751,8 +1903,16 @@ describe 'windows_2008' do
     Platform.windows_7.firefox.dev
   end
 
+  it 'Platform.windows_7.safari.v"123"' do
+    Platform.windows_7.safari.v'123'
+  end
+
   it 'Platform.windows_7.safari.v5' do
     Platform.windows_7.safari.v5
+  end
+
+  it 'Platform.windows_7.chrome.v"123"' do
+    Platform.windows_7.chrome.v'123'
   end
 
   it 'Platform.windows_7.chrome.v26' do
@@ -1838,6 +1998,10 @@ describe 'windows_2008' do
 end
 
 describe 'mac_10_10' do
+  it 'Platform.mac_10_10.ipad.v"123"' do
+    Platform.mac_10_10.ipad.v'123'
+  end
+
   it 'Platform.mac_10_10.ipad.v7_1' do
     Platform.mac_10_10.ipad.v7_1
   end
@@ -1852,6 +2016,10 @@ describe 'mac_10_10' do
 
   it 'Platform.mac_10_10.ipad.v8_2' do
     Platform.mac_10_10.ipad.v8_2
+  end
+
+  it 'Platform.mac_10_10.firefox.v"123"' do
+    Platform.mac_10_10.firefox.v'123'
   end
 
   it 'Platform.mac_10_10.firefox.v32' do
@@ -1878,12 +2046,20 @@ describe 'mac_10_10' do
     Platform.mac_10_10.firefox.v37
   end
 
+  it 'Platform.mac_10_10.firefox.v38' do
+    Platform.mac_10_10.firefox.v38
+  end
+
   it 'Platform.mac_10_10.firefox.beta' do
     Platform.mac_10_10.firefox.beta
   end
 
   it 'Platform.mac_10_10.firefox.dev' do
     Platform.mac_10_10.firefox.dev
+  end
+
+  it 'Platform.mac_10_10.iphone.v"123"' do
+    Platform.mac_10_10.iphone.v'123'
   end
 
   it 'Platform.mac_10_10.iphone.v7_1' do
@@ -1902,8 +2078,16 @@ describe 'mac_10_10' do
     Platform.mac_10_10.iphone.v8_2
   end
 
+  it 'Platform.mac_10_10.safari.v"123"' do
+    Platform.mac_10_10.safari.v'123'
+  end
+
   it 'Platform.mac_10_10.safari.v8' do
     Platform.mac_10_10.safari.v8
+  end
+
+  it 'Platform.mac_10_10.chrome.v"123"' do
+    Platform.mac_10_10.chrome.v'123'
   end
 
   it 'Platform.mac_10_10.chrome.v37' do
