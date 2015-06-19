@@ -157,6 +157,10 @@ module Platform
         windows_2012_r2_firefox '37'
       end
 
+      def v38
+        windows_2012_r2_firefox '38'
+      end
+
       def beta
         windows_2012_r2_firefox 'beta'
       end

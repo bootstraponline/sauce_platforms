@@ -33,6 +33,10 @@ module Platform
         mac_10_10_firefox '37'
       end
 
+      def v38
+        mac_10_10_firefox '38'
+      end
+
       def beta
         mac_10_10_firefox 'beta'
       end

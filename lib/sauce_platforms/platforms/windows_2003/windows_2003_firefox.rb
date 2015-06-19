@@ -157,6 +157,10 @@ module Platform
         windows_2003_firefox '37'
       end
 
+      def v38
+        windows_2003_firefox '38'
+      end
+
       def beta
         windows_2003_firefox 'beta'
       end

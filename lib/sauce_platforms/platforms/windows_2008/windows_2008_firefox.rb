@@ -157,6 +157,10 @@ module Platform
         windows_2008_firefox '37'
       end
 
+      def v38
+        windows_2008_firefox '38'
+      end
+
       def beta
         windows_2008_firefox 'beta'
       end
