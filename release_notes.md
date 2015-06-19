@@ -1,3 +1,11 @@
+#### v1.0.1 2015-06-19
+
+- [85a2cc6](https://github.com/bootstraponline/sauce_platforms/commit/85a2cc64ac1e5d10ac3ccee4b1d42cf5fb06c75f) Release 1.0.1
+- [3a5c9bb](https://github.com/bootstraponline/sauce_platforms/commit/3a5c9bb4d4401d428f753f66b3cc7bef02d7b13d) Update platforms
+- [7ca0b29](https://github.com/bootstraponline/sauce_platforms/commit/7ca0b293419969e0e7621c02cf8d9bc237564d8c) Test custom version methods
+- [3db3403](https://github.com/bootstraponline/sauce_platforms/commit/3db3403f5ab1de521dbf769715e50fe77b781d16) Add coverage and gemnasium badge
+
+
 #### v1.0.0 2015-06-06
 
 - [c6069b0](https://github.com/bootstraponline/sauce_platforms/commit/c6069b0853cc74fd91bdfe7fb1aa4209419851b2) Release 1.0.0
