@@ -153,6 +153,10 @@ module Platform
         linux_firefox '38'
       end
 
+      def v39
+        linux_firefox '39'
+      end
+
       def beta
         linux_firefox 'beta'
       end

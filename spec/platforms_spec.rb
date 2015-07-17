@@ -158,6 +158,10 @@ describe 'mac_10_6' do
     Platform.mac_10_6.firefox.v38
   end
 
+  it 'Platform.mac_10_6.firefox.v39' do
+    Platform.mac_10_6.firefox.v39
+  end
+
   it 'Platform.mac_10_6.firefox.beta' do
     Platform.mac_10_6.firefox.beta
   end
@@ -415,6 +419,10 @@ describe 'mac_10_9' do
 
   it 'Platform.mac_10_9.firefox.v38' do
     Platform.mac_10_9.firefox.v38
+  end
+
+  it 'Platform.mac_10_9.firefox.v39' do
+    Platform.mac_10_9.firefox.v39
   end
 
   it 'Platform.mac_10_9.firefox.beta' do
@@ -694,6 +702,10 @@ describe 'windows_2003' do
 
   it 'Platform.windows_xp.firefox.v38' do
     Platform.windows_xp.firefox.v38
+  end
+
+  it 'Platform.windows_xp.firefox.v39' do
+    Platform.windows_xp.firefox.v39
   end
 
   it 'Platform.windows_xp.firefox.beta' do
@@ -1070,6 +1082,10 @@ describe 'windows_2012' do
     Platform.windows_8.firefox.v38
   end
 
+  it 'Platform.windows_8.firefox.v39' do
+    Platform.windows_8.firefox.v39
+  end
+
   it 'Platform.windows_8.firefox.beta' do
     Platform.windows_8.firefox.beta
   end
@@ -1319,6 +1335,10 @@ describe 'linux' do
 
   it 'Platform.linux.firefox.v38' do
     Platform.linux.firefox.v38
+  end
+
+  it 'Platform.linux.firefox.v39' do
+    Platform.linux.firefox.v39
   end
 
   it 'Platform.linux.firefox.beta' do
@@ -1612,6 +1632,10 @@ describe 'windows_2012_r2' do
     Platform.windows_8_1.firefox.v38
   end
 
+  it 'Platform.windows_8_1.firefox.v39' do
+    Platform.windows_8_1.firefox.v39
+  end
+
   it 'Platform.windows_8_1.firefox.beta' do
     Platform.windows_8_1.firefox.beta
   end
@@ -1895,6 +1919,10 @@ describe 'windows_2008' do
     Platform.windows_7.firefox.v38
   end
 
+  it 'Platform.windows_7.firefox.v39' do
+    Platform.windows_7.firefox.v39
+  end
+
   it 'Platform.windows_7.firefox.beta' do
     Platform.windows_7.firefox.beta
   end
@@ -2048,6 +2076,10 @@ describe 'mac_10_10' do
 
   it 'Platform.mac_10_10.firefox.v38' do
     Platform.mac_10_10.firefox.v38
+  end
+
+  it 'Platform.mac_10_10.firefox.v39' do
+    Platform.mac_10_10.firefox.v39
   end
 
   it 'Platform.mac_10_10.firefox.beta' do

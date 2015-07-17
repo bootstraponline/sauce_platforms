@@ -161,6 +161,10 @@ module Platform
         windows_2012_firefox '38'
       end
 
+      def v39
+        windows_2012_firefox '39'
+      end
+
       def beta
         windows_2012_firefox 'beta'
       end

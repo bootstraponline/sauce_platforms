@@ -149,6 +149,10 @@ module Platform
         mac_10_9_firefox '38'
       end
 
+      def v39
+        mac_10_9_firefox '39'
+      end
+
       def beta
         mac_10_9_firefox 'beta'
       end
