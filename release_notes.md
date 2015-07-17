@@ -1,3 +1,9 @@
+#### v1.0.2 2015-07-17
+
+- [e22d25e](https://github.com/bootstraponline/sauce_platforms/commit/e22d25e77bed65601d020a71f90b71de0c201c82) Release 1.0.2
+- [1b88b82](https://github.com/bootstraponline/sauce_platforms/commit/1b88b824e7366bfa82aa05c11a72df93d9f06e4c) Add firefox v39
+
+
 #### v1.0.1 2015-06-19
 
 - [85a2cc6](https://github.com/bootstraponline/sauce_platforms/commit/85a2cc64ac1e5d10ac3ccee4b1d42cf5fb06c75f) Release 1.0.1
