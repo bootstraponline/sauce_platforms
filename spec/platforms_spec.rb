@@ -2161,224 +2161,224 @@ describe 'android' do
     Platform.android.android.v5_1
   end
 
-  it 'Platform.android.droid4.v"123"' do
-    Platform.android.droid4.v'123'
+  it 'Platform.android.motorola_droid_4_emulator.v"123"' do
+    Platform.android.motorola_droid_4_emulator.v'123'
   end
 
-  it 'Platform.android.droid4.v4_0' do
-    Platform.android.droid4.v4_0
+  it 'Platform.android.motorola_droid_4_emulator.v4_0' do
+    Platform.android.motorola_droid_4_emulator.v4_0
   end
 
-  it 'Platform.android.galaxynote.v"123"' do
-    Platform.android.galaxynote.v'123'
+  it 'Platform.android.samsung_galaxy_note_emulator.v"123"' do
+    Platform.android.samsung_galaxy_note_emulator.v'123'
   end
 
-  it 'Platform.android.galaxynote.v4_0' do
-    Platform.android.galaxynote.v4_0
+  it 'Platform.android.samsung_galaxy_note_emulator.v4_0' do
+    Platform.android.samsung_galaxy_note_emulator.v4_0
   end
 
-  it 'Platform.android.galaxynote.v4_1' do
-    Platform.android.galaxynote.v4_1
+  it 'Platform.android.samsung_galaxy_note_emulator.v4_1' do
+    Platform.android.samsung_galaxy_note_emulator.v4_1
   end
 
-  it 'Platform.android.galaxytab37.v"123"' do
-    Platform.android.galaxytab37.v'123'
+  it 'Platform.android.samsung_galaxy_tab_3_emulator.v"123"' do
+    Platform.android.samsung_galaxy_tab_3_emulator.v'123'
   end
 
-  it 'Platform.android.galaxytab37.v4_2' do
-    Platform.android.galaxytab37.v4_2
+  it 'Platform.android.samsung_galaxy_tab_3_emulator.v4_2' do
+    Platform.android.samsung_galaxy_tab_3_emulator.v4_2
   end
 
-  it 'Platform.android.galaxynote101.v"123"' do
-    Platform.android.galaxynote101.v'123'
+  it 'Platform.android.samsung_galaxy_note_10_1_emulator.v"123"' do
+    Platform.android.samsung_galaxy_note_10_1_emulator.v'123'
   end
 
-  it 'Platform.android.galaxynote101.v4_0' do
-    Platform.android.galaxynote101.v4_0
+  it 'Platform.android.samsung_galaxy_note_10_1_emulator.v4_0' do
+    Platform.android.samsung_galaxy_note_10_1_emulator.v4_0
   end
 
-  it 'Platform.android.galaxynote101.v4_1' do
-    Platform.android.galaxynote101.v4_1
+  it 'Platform.android.samsung_galaxy_note_10_1_emulator.v4_1' do
+    Platform.android.samsung_galaxy_note_10_1_emulator.v4_1
   end
 
-  it 'Platform.android.nexus7fhd.v"123"' do
-    Platform.android.nexus7fhd.v'123'
+  it 'Platform.android.google_nexus_7_hd_emulator.v"123"' do
+    Platform.android.google_nexus_7_hd_emulator.v'123'
   end
 
-  it 'Platform.android.nexus7fhd.v4_3' do
-    Platform.android.nexus7fhd.v4_3
+  it 'Platform.android.google_nexus_7_hd_emulator.v4_3' do
+    Platform.android.google_nexus_7_hd_emulator.v4_3
   end
 
-  it 'Platform.android.nexus7fhd.v4_4' do
-    Platform.android.nexus7fhd.v4_4
+  it 'Platform.android.google_nexus_7_hd_emulator.v4_4' do
+    Platform.android.google_nexus_7_hd_emulator.v4_4
   end
 
-  it 'Platform.android.onex.v"123"' do
-    Platform.android.onex.v'123'
+  it 'Platform.android.htc_one_x_emulator.v"123"' do
+    Platform.android.htc_one_x_emulator.v'123'
   end
 
-  it 'Platform.android.onex.v4_0' do
-    Platform.android.onex.v4_0
+  it 'Platform.android.htc_one_x_emulator.v4_0' do
+    Platform.android.htc_one_x_emulator.v4_0
   end
 
-  it 'Platform.android.onex.v4_1' do
-    Platform.android.onex.v4_1
+  it 'Platform.android.htc_one_x_emulator.v4_1' do
+    Platform.android.htc_one_x_emulator.v4_1
   end
 
-  it 'Platform.android.photonq.v"123"' do
-    Platform.android.photonq.v'123'
+  it 'Platform.android.motorola_photon_q_4g_emulator.v"123"' do
+    Platform.android.motorola_photon_q_4g_emulator.v'123'
   end
 
-  it 'Platform.android.photonq.v4_0' do
-    Platform.android.photonq.v4_0
+  it 'Platform.android.motorola_photon_q_4g_emulator.v4_0' do
+    Platform.android.motorola_photon_q_4g_emulator.v4_0
   end
 
-  it 'Platform.android.nexus4.v"123"' do
-    Platform.android.nexus4.v'123'
+  it 'Platform.android.lg_nexus_4_emulator.v"123"' do
+    Platform.android.lg_nexus_4_emulator.v'123'
   end
 
-  it 'Platform.android.nexus4.v4_2' do
-    Platform.android.nexus4.v4_2
+  it 'Platform.android.lg_nexus_4_emulator.v4_2' do
+    Platform.android.lg_nexus_4_emulator.v4_2
   end
 
-  it 'Platform.android.nexus4.v4_3' do
-    Platform.android.nexus4.v4_3
+  it 'Platform.android.lg_nexus_4_emulator.v4_3' do
+    Platform.android.lg_nexus_4_emulator.v4_3
   end
 
-  it 'Platform.android.nexus4.v4_4' do
-    Platform.android.nexus4.v4_4
+  it 'Platform.android.lg_nexus_4_emulator.v4_4' do
+    Platform.android.lg_nexus_4_emulator.v4_4
   end
 
-  it 'Platform.android.galaxynexus.v"123"' do
-    Platform.android.galaxynexus.v'123'
+  it 'Platform.android.samsung_galaxy_nexus_emulator.v"123"' do
+    Platform.android.samsung_galaxy_nexus_emulator.v'123'
   end
 
-  it 'Platform.android.galaxynexus.v4_0' do
-    Platform.android.galaxynexus.v4_0
+  it 'Platform.android.samsung_galaxy_nexus_emulator.v4_0' do
+    Platform.android.samsung_galaxy_nexus_emulator.v4_0
   end
 
-  it 'Platform.android.galaxynexus.v4_1' do
-    Platform.android.galaxynexus.v4_1
+  it 'Platform.android.samsung_galaxy_nexus_emulator.v4_1' do
+    Platform.android.samsung_galaxy_nexus_emulator.v4_1
   end
 
-  it 'Platform.android.galaxynexus.v4_2' do
-    Platform.android.galaxynexus.v4_2
+  it 'Platform.android.samsung_galaxy_nexus_emulator.v4_2' do
+    Platform.android.samsung_galaxy_nexus_emulator.v4_2
   end
 
-  it 'Platform.android.galaxynexus.v4_3' do
-    Platform.android.galaxynexus.v4_3
+  it 'Platform.android.samsung_galaxy_nexus_emulator.v4_3' do
+    Platform.android.samsung_galaxy_nexus_emulator.v4_3
   end
 
-  it 'Platform.android.galaxynexus.v4_4' do
-    Platform.android.galaxynexus.v4_4
+  it 'Platform.android.samsung_galaxy_nexus_emulator.v4_4' do
+    Platform.android.samsung_galaxy_nexus_emulator.v4_4
   end
 
-  it 'Platform.android.galaxys3.v"123"' do
-    Platform.android.galaxys3.v'123'
+  it 'Platform.android.samsung_galaxy_s3_emulator.v"123"' do
+    Platform.android.samsung_galaxy_s3_emulator.v'123'
   end
 
-  it 'Platform.android.galaxys3.v4_1' do
-    Platform.android.galaxys3.v4_1
+  it 'Platform.android.samsung_galaxy_s3_emulator.v4_1' do
+    Platform.android.samsung_galaxy_s3_emulator.v4_1
   end
 
-  it 'Platform.android.galaxys3.v4_2' do
-    Platform.android.galaxys3.v4_2
+  it 'Platform.android.samsung_galaxy_s3_emulator.v4_2' do
+    Platform.android.samsung_galaxy_s3_emulator.v4_2
   end
 
-  it 'Platform.android.galaxys3.v4_3' do
-    Platform.android.galaxys3.v4_3
+  it 'Platform.android.samsung_galaxy_s3_emulator.v4_3' do
+    Platform.android.samsung_galaxy_s3_emulator.v4_3
   end
 
-  it 'Platform.android.galaxys3.v4_4' do
-    Platform.android.galaxys3.v4_4
+  it 'Platform.android.samsung_galaxy_s3_emulator.v4_4' do
+    Platform.android.samsung_galaxy_s3_emulator.v4_4
   end
 
-  it 'Platform.android.galaxys2.v"123"' do
-    Platform.android.galaxys2.v'123'
+  it 'Platform.android.samsung_galaxy_s2_emulator.v"123"' do
+    Platform.android.samsung_galaxy_s2_emulator.v'123'
   end
 
-  it 'Platform.android.galaxys2.v4_0' do
-    Platform.android.galaxys2.v4_0
+  it 'Platform.android.samsung_galaxy_s2_emulator.v4_0' do
+    Platform.android.samsung_galaxy_s2_emulator.v4_0
   end
 
-  it 'Platform.android.galaxys2.v4_1' do
-    Platform.android.galaxys2.v4_1
+  it 'Platform.android.samsung_galaxy_s2_emulator.v4_1' do
+    Platform.android.samsung_galaxy_s2_emulator.v4_1
   end
 
-  it 'Platform.android.galaxys4.v"123"' do
-    Platform.android.galaxys4.v'123'
+  it 'Platform.android.samsung_galaxy_s4_emulator.v"123"' do
+    Platform.android.samsung_galaxy_s4_emulator.v'123'
   end
 
-  it 'Platform.android.galaxys4.v4_2' do
-    Platform.android.galaxys4.v4_2
+  it 'Platform.android.samsung_galaxy_s4_emulator.v4_2' do
+    Platform.android.samsung_galaxy_s4_emulator.v4_2
   end
 
-  it 'Platform.android.galaxys4.v4_3' do
-    Platform.android.galaxys4.v4_3
+  it 'Platform.android.samsung_galaxy_s4_emulator.v4_3' do
+    Platform.android.samsung_galaxy_s4_emulator.v4_3
   end
 
-  it 'Platform.android.galaxys4.v4_4' do
-    Platform.android.galaxys4.v4_4
+  it 'Platform.android.samsung_galaxy_s4_emulator.v4_4' do
+    Platform.android.samsung_galaxy_s4_emulator.v4_4
   end
 
-  it 'Platform.android.droidrazr.v"123"' do
-    Platform.android.droidrazr.v'123'
+  it 'Platform.android.motorola_droid_razr_emulator.v"123"' do
+    Platform.android.motorola_droid_razr_emulator.v'123'
   end
 
-  it 'Platform.android.droidrazr.v4_0' do
-    Platform.android.droidrazr.v4_0
+  it 'Platform.android.motorola_droid_razr_emulator.v4_0' do
+    Platform.android.motorola_droid_razr_emulator.v4_0
   end
 
-  it 'Platform.android.droidrazr.v4_1' do
-    Platform.android.droidrazr.v4_1
+  it 'Platform.android.motorola_droid_razr_emulator.v4_1' do
+    Platform.android.motorola_droid_razr_emulator.v4_1
   end
 
-  it 'Platform.android.nexus7c.v"123"' do
-    Platform.android.nexus7c.v'123'
+  it 'Platform.android.google_nexus_7c_emulator.v"123"' do
+    Platform.android.google_nexus_7c_emulator.v'123'
   end
 
-  it 'Platform.android.nexus7c.v4_1' do
-    Platform.android.nexus7c.v4_1
+  it 'Platform.android.google_nexus_7c_emulator.v4_1' do
+    Platform.android.google_nexus_7c_emulator.v4_1
   end
 
-  it 'Platform.android.nexus7c.v4_2' do
-    Platform.android.nexus7c.v4_2
+  it 'Platform.android.google_nexus_7c_emulator.v4_2' do
+    Platform.android.google_nexus_7c_emulator.v4_2
   end
 
-  it 'Platform.android.nexus7c.v4_3' do
-    Platform.android.nexus7c.v4_3
+  it 'Platform.android.google_nexus_7c_emulator.v4_3' do
+    Platform.android.google_nexus_7c_emulator.v4_3
   end
 
-  it 'Platform.android.nexus7c.v4_4' do
-    Platform.android.nexus7c.v4_4
+  it 'Platform.android.google_nexus_7c_emulator.v4_4' do
+    Platform.android.google_nexus_7c_emulator.v4_4
   end
 
-  it 'Platform.android.optimus3d.v"123"' do
-    Platform.android.optimus3d.v'123'
+  it 'Platform.android.lg_optimus_3d_emulator.v"123"' do
+    Platform.android.lg_optimus_3d_emulator.v'123'
   end
 
-  it 'Platform.android.optimus3d.v4_0' do
-    Platform.android.optimus3d.v4_0
+  it 'Platform.android.lg_optimus_3d_emulator.v4_0' do
+    Platform.android.lg_optimus_3d_emulator.v4_0
   end
 
-  it 'Platform.android.atrixhd.v"123"' do
-    Platform.android.atrixhd.v'123'
+  it 'Platform.android.motorola_atrix_hd_emulator.v"123"' do
+    Platform.android.motorola_atrix_hd_emulator.v'123'
   end
 
-  it 'Platform.android.atrixhd.v4_0' do
-    Platform.android.atrixhd.v4_0
+  it 'Platform.android.motorola_atrix_hd_emulator.v4_0' do
+    Platform.android.motorola_atrix_hd_emulator.v4_0
   end
 
-  it 'Platform.android.atrixhd.v4_1' do
-    Platform.android.atrixhd.v4_1
+  it 'Platform.android.motorola_atrix_hd_emulator.v4_1' do
+    Platform.android.motorola_atrix_hd_emulator.v4_1
   end
 
-  it 'Platform.android.evo3d.v"123"' do
-    Platform.android.evo3d.v'123'
+  it 'Platform.android.htc_evo_3d_emulator.v"123"' do
+    Platform.android.htc_evo_3d_emulator.v'123'
   end
 
-  it 'Platform.android.evo3d.v4_0' do
-    Platform.android.evo3d.v4_0
+  it 'Platform.android.htc_evo_3d_emulator.v4_0' do
+    Platform.android.htc_evo_3d_emulator.v4_0
   end
 
 end

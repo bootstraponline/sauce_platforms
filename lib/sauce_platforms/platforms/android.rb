@@ -1,21 +1,21 @@
 require_relative 'android/android_android'
-require_relative 'android/android_droid4'
-require_relative 'android/android_galaxynote'
-require_relative 'android/android_galaxytab37'
-require_relative 'android/android_galaxynote101'
-require_relative 'android/android_nexus7fhd'
-require_relative 'android/android_onex'
-require_relative 'android/android_photonq'
-require_relative 'android/android_nexus4'
-require_relative 'android/android_galaxynexus'
-require_relative 'android/android_galaxys3'
-require_relative 'android/android_galaxys2'
-require_relative 'android/android_galaxys4'
-require_relative 'android/android_droidrazr'
-require_relative 'android/android_nexus7c'
-require_relative 'android/android_optimus3d'
-require_relative 'android/android_atrixhd'
-require_relative 'android/android_evo3d'
+require_relative 'android/android_motorola_droid_4_emulator'
+require_relative 'android/android_samsung_galaxy_note_emulator'
+require_relative 'android/android_samsung_galaxy_tab_3_emulator'
+require_relative 'android/android_samsung_galaxy_note_10_1_emulator'
+require_relative 'android/android_google_nexus_7_hd_emulator'
+require_relative 'android/android_htc_one_x_emulator'
+require_relative 'android/android_motorola_photon_q_4g_emulator'
+require_relative 'android/android_lg_nexus_4_emulator'
+require_relative 'android/android_samsung_galaxy_nexus_emulator'
+require_relative 'android/android_samsung_galaxy_s3_emulator'
+require_relative 'android/android_samsung_galaxy_s2_emulator'
+require_relative 'android/android_samsung_galaxy_s4_emulator'
+require_relative 'android/android_motorola_droid_razr_emulator'
+require_relative 'android/android_google_nexus_7c_emulator'
+require_relative 'android/android_lg_optimus_3d_emulator'
+require_relative 'android/android_motorola_atrix_hd_emulator'
+require_relative 'android/android_htc_evo_3d_emulator'
 
 module Platform
   module Android
@@ -25,72 +25,72 @@ module Platform
         Android_android
       end
 
-      def droid4
-        Android_droid4
+      def motorola_droid_4_emulator
+        Android_motorola_droid_4_emulator
       end
 
-      def galaxynote
-        Android_galaxynote
+      def samsung_galaxy_note_emulator
+        Android_samsung_galaxy_note_emulator
       end
 
-      def galaxytab37
-        Android_galaxytab37
+      def samsung_galaxy_tab_3_emulator
+        Android_samsung_galaxy_tab_3_emulator
       end
 
-      def galaxynote101
-        Android_galaxynote101
+      def samsung_galaxy_note_10_1_emulator
+        Android_samsung_galaxy_note_10_1_emulator
       end
 
-      def nexus7fhd
-        Android_nexus7fhd
+      def google_nexus_7_hd_emulator
+        Android_google_nexus_7_hd_emulator
       end
 
-      def onex
-        Android_onex
+      def htc_one_x_emulator
+        Android_htc_one_x_emulator
       end
 
-      def photonq
-        Android_photonq
+      def motorola_photon_q_4g_emulator
+        Android_motorola_photon_q_4g_emulator
       end
 
-      def nexus4
-        Android_nexus4
+      def lg_nexus_4_emulator
+        Android_lg_nexus_4_emulator
       end
 
-      def galaxynexus
-        Android_galaxynexus
+      def samsung_galaxy_nexus_emulator
+        Android_samsung_galaxy_nexus_emulator
       end
 
-      def galaxys3
-        Android_galaxys3
+      def samsung_galaxy_s3_emulator
+        Android_samsung_galaxy_s3_emulator
       end
 
-      def galaxys2
-        Android_galaxys2
+      def samsung_galaxy_s2_emulator
+        Android_samsung_galaxy_s2_emulator
       end
 
-      def galaxys4
-        Android_galaxys4
+      def samsung_galaxy_s4_emulator
+        Android_samsung_galaxy_s4_emulator
       end
 
-      def droidrazr
-        Android_droidrazr
+      def motorola_droid_razr_emulator
+        Android_motorola_droid_razr_emulator
       end
 
-      def nexus7c
-        Android_nexus7c
+      def google_nexus_7c_emulator
+        Android_google_nexus_7c_emulator
       end
 
-      def optimus3d
-        Android_optimus3d
+      def lg_optimus_3d_emulator
+        Android_lg_optimus_3d_emulator
       end
 
-      def atrixhd
-        Android_atrixhd
+      def motorola_atrix_hd_emulator
+        Android_motorola_atrix_hd_emulator
       end
 
-      def evo3d
-        Android_evo3d
+      def htc_evo_3d_emulator
+        Android_htc_evo_3d_emulator
       end
 
     end

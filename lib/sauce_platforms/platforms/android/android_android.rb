@@ -2,7 +2,7 @@ module Platform
   module Android_android
     class << self
       def android_android version_string
-        ['Linux', 'android', version_string.to_s, deviceName: 'android']
+        ['Linux', 'android', version_string.to_s, deviceName: 'Android']
       end
 
       def v version_string
