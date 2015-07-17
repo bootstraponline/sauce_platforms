@@ -35,8 +35,8 @@ platforms.each do |platform|
 
   operating_systems[os] ||= {}
 
-  # android has 'device' value which is sent in deviceName desired cap.
-  device                = platform['device']
+  # android has 'long_name' value which is sent in deviceName desired cap.
+  device                = platform['long_name']
   if os == 'Linux' && browser == 'android'
     os                                     = 'android'
     operating_systems[os]                  ||= {}
@@ -78,6 +78,8 @@ operating_systems.each do |os, browser_hash|
   platform_file_class_pairs << [os_file_name, os_class_name]
 
   # generate platform skeleton files
+  platform_dir = File.join(__dir__, 'platforms')
+  Dir.mkdir platform_dir unless Dir.exist?(platform_dir)
   File.open(File.join(__dir__, 'platforms', os_file_name + '.rb'), 'w') do |file|
     browsers.each do |browser|
       file.puts "require_relative '#{os_file_name}/#{os_file_name}_#{browser}'"
