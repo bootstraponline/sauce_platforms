@@ -69,7 +69,10 @@ operating_systems.each do |os, browser_hash|
   os_file_name  = filecase os
   os_class_name = os_file_name.capitalize
 
-  browsers = browser_hash.keys.map { |e| filecase(e) }
+  browser_hash_keys = os == 'android' ? browser_hash['android'].keys :
+                                        browser_hash.keys
+
+  browsers = browser_hash_keys.map { |e| filecase(e) }
 
   platform_files << "require_relative 'sauce_platforms/platforms/#{os_file_name}'"
   platform_file_class_pairs << [os_file_name, os_class_name]
@@ -119,11 +122,11 @@ operating_systems.each do |os, browser_hash|
         file.puts "      def #{os_browser_filename} version_string"
         if is_android
           # android must specify a device name
-          device_name  = browser
+          device_name = browser
           # os for Android is always linux
           # browser name for Android is always android
-          browser = 'android'
-          os      = 'Linux'
+          browser     = 'android'
+          os          = 'Linux'
           # desktop_os, browser_name, android_version, device_name
           file.puts "        ['#{os}', '#{browser}', version_string.to_s, deviceName: '#{device_name}']"
         else
