@@ -1433,38 +1433,6 @@ describe 'linux' do
     Platform.linux.chrome.dev
   end
 
-  it 'Platform.linux.android.v"123"' do
-    Platform.linux.android.v'123'
-  end
-
-  it 'Platform.linux.android.v4_0' do
-    Platform.linux.android.v4_0
-  end
-
-  it 'Platform.linux.android.v4_1' do
-    Platform.linux.android.v4_1
-  end
-
-  it 'Platform.linux.android.v4_2' do
-    Platform.linux.android.v4_2
-  end
-
-  it 'Platform.linux.android.v4_3' do
-    Platform.linux.android.v4_3
-  end
-
-  it 'Platform.linux.android.v4_4' do
-    Platform.linux.android.v4_4
-  end
-
-  it 'Platform.linux.android.v5_0' do
-    Platform.linux.android.v5_0
-  end
-
-  it 'Platform.linux.android.v5_1' do
-    Platform.linux.android.v5_1
-  end
-
 end
 
 describe 'windows_2012_r2' do
@@ -2156,6 +2124,261 @@ describe 'mac_10_10' do
 
   it 'Platform.mac_10_10.chrome.dev' do
     Platform.mac_10_10.chrome.dev
+  end
+
+end
+
+describe 'android' do
+  it 'Platform.android.android.v"123"' do
+    Platform.android.android.v'123'
+  end
+
+  it 'Platform.android.android.v4_0' do
+    Platform.android.android.v4_0
+  end
+
+  it 'Platform.android.android.v4_1' do
+    Platform.android.android.v4_1
+  end
+
+  it 'Platform.android.android.v4_2' do
+    Platform.android.android.v4_2
+  end
+
+  it 'Platform.android.android.v4_3' do
+    Platform.android.android.v4_3
+  end
+
+  it 'Platform.android.android.v4_4' do
+    Platform.android.android.v4_4
+  end
+
+  it 'Platform.android.android.v5_0' do
+    Platform.android.android.v5_0
+  end
+
+  it 'Platform.android.android.v5_1' do
+    Platform.android.android.v5_1
+  end
+
+  it 'Platform.android.droid4.v"123"' do
+    Platform.android.droid4.v'123'
+  end
+
+  it 'Platform.android.droid4.v4_0' do
+    Platform.android.droid4.v4_0
+  end
+
+  it 'Platform.android.galaxynote.v"123"' do
+    Platform.android.galaxynote.v'123'
+  end
+
+  it 'Platform.android.galaxynote.v4_0' do
+    Platform.android.galaxynote.v4_0
+  end
+
+  it 'Platform.android.galaxynote.v4_1' do
+    Platform.android.galaxynote.v4_1
+  end
+
+  it 'Platform.android.galaxytab37.v"123"' do
+    Platform.android.galaxytab37.v'123'
+  end
+
+  it 'Platform.android.galaxytab37.v4_2' do
+    Platform.android.galaxytab37.v4_2
+  end
+
+  it 'Platform.android.galaxynote101.v"123"' do
+    Platform.android.galaxynote101.v'123'
+  end
+
+  it 'Platform.android.galaxynote101.v4_0' do
+    Platform.android.galaxynote101.v4_0
+  end
+
+  it 'Platform.android.galaxynote101.v4_1' do
+    Platform.android.galaxynote101.v4_1
+  end
+
+  it 'Platform.android.nexus7fhd.v"123"' do
+    Platform.android.nexus7fhd.v'123'
+  end
+
+  it 'Platform.android.nexus7fhd.v4_3' do
+    Platform.android.nexus7fhd.v4_3
+  end
+
+  it 'Platform.android.nexus7fhd.v4_4' do
+    Platform.android.nexus7fhd.v4_4
+  end
+
+  it 'Platform.android.onex.v"123"' do
+    Platform.android.onex.v'123'
+  end
+
+  it 'Platform.android.onex.v4_0' do
+    Platform.android.onex.v4_0
+  end
+
+  it 'Platform.android.onex.v4_1' do
+    Platform.android.onex.v4_1
+  end
+
+  it 'Platform.android.photonq.v"123"' do
+    Platform.android.photonq.v'123'
+  end
+
+  it 'Platform.android.photonq.v4_0' do
+    Platform.android.photonq.v4_0
+  end
+
+  it 'Platform.android.nexus4.v"123"' do
+    Platform.android.nexus4.v'123'
+  end
+
+  it 'Platform.android.nexus4.v4_2' do
+    Platform.android.nexus4.v4_2
+  end
+
+  it 'Platform.android.nexus4.v4_3' do
+    Platform.android.nexus4.v4_3
+  end
+
+  it 'Platform.android.nexus4.v4_4' do
+    Platform.android.nexus4.v4_4
+  end
+
+  it 'Platform.android.galaxynexus.v"123"' do
+    Platform.android.galaxynexus.v'123'
+  end
+
+  it 'Platform.android.galaxynexus.v4_0' do
+    Platform.android.galaxynexus.v4_0
+  end
+
+  it 'Platform.android.galaxynexus.v4_1' do
+    Platform.android.galaxynexus.v4_1
+  end
+
+  it 'Platform.android.galaxynexus.v4_2' do
+    Platform.android.galaxynexus.v4_2
+  end
+
+  it 'Platform.android.galaxynexus.v4_3' do
+    Platform.android.galaxynexus.v4_3
+  end
+
+  it 'Platform.android.galaxynexus.v4_4' do
+    Platform.android.galaxynexus.v4_4
+  end
+
+  it 'Platform.android.galaxys3.v"123"' do
+    Platform.android.galaxys3.v'123'
+  end
+
+  it 'Platform.android.galaxys3.v4_1' do
+    Platform.android.galaxys3.v4_1
+  end
+
+  it 'Platform.android.galaxys3.v4_2' do
+    Platform.android.galaxys3.v4_2
+  end
+
+  it 'Platform.android.galaxys3.v4_3' do
+    Platform.android.galaxys3.v4_3
+  end
+
+  it 'Platform.android.galaxys3.v4_4' do
+    Platform.android.galaxys3.v4_4
+  end
+
+  it 'Platform.android.galaxys2.v"123"' do
+    Platform.android.galaxys2.v'123'
+  end
+
+  it 'Platform.android.galaxys2.v4_0' do
+    Platform.android.galaxys2.v4_0
+  end
+
+  it 'Platform.android.galaxys2.v4_1' do
+    Platform.android.galaxys2.v4_1
+  end
+
+  it 'Platform.android.galaxys4.v"123"' do
+    Platform.android.galaxys4.v'123'
+  end
+
+  it 'Platform.android.galaxys4.v4_2' do
+    Platform.android.galaxys4.v4_2
+  end
+
+  it 'Platform.android.galaxys4.v4_3' do
+    Platform.android.galaxys4.v4_3
+  end
+
+  it 'Platform.android.galaxys4.v4_4' do
+    Platform.android.galaxys4.v4_4
+  end
+
+  it 'Platform.android.droidrazr.v"123"' do
+    Platform.android.droidrazr.v'123'
+  end
+
+  it 'Platform.android.droidrazr.v4_0' do
+    Platform.android.droidrazr.v4_0
+  end
+
+  it 'Platform.android.droidrazr.v4_1' do
+    Platform.android.droidrazr.v4_1
+  end
+
+  it 'Platform.android.nexus7c.v"123"' do
+    Platform.android.nexus7c.v'123'
+  end
+
+  it 'Platform.android.nexus7c.v4_1' do
+    Platform.android.nexus7c.v4_1
+  end
+
+  it 'Platform.android.nexus7c.v4_2' do
+    Platform.android.nexus7c.v4_2
+  end
+
+  it 'Platform.android.nexus7c.v4_3' do
+    Platform.android.nexus7c.v4_3
+  end
+
+  it 'Platform.android.nexus7c.v4_4' do
+    Platform.android.nexus7c.v4_4
+  end
+
+  it 'Platform.android.optimus3d.v"123"' do
+    Platform.android.optimus3d.v'123'
+  end
+
+  it 'Platform.android.optimus3d.v4_0' do
+    Platform.android.optimus3d.v4_0
+  end
+
+  it 'Platform.android.atrixhd.v"123"' do
+    Platform.android.atrixhd.v'123'
+  end
+
+  it 'Platform.android.atrixhd.v4_0' do
+    Platform.android.atrixhd.v4_0
+  end
+
+  it 'Platform.android.atrixhd.v4_1' do
+    Platform.android.atrixhd.v4_1
+  end
+
+  it 'Platform.android.evo3d.v"123"' do
+    Platform.android.evo3d.v'123'
+  end
+
+  it 'Platform.android.evo3d.v4_0' do
+    Platform.android.evo3d.v4_0
   end
 
 end

@@ -1,3 +1,4 @@
+require_relative 'sauce_platforms/platforms/android'
 require_relative 'sauce_platforms/platforms/linux'
 require_relative 'sauce_platforms/platforms/mac_10_10'
 require_relative 'sauce_platforms/platforms/mac_10_6'
@@ -45,6 +46,10 @@ module Platform
 
     def mac_10_10
       Mac_10_10
+    end
+
+    def android
+      Android
     end
   end
 end
