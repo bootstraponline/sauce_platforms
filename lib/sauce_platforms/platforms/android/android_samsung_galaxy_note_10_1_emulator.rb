@@ -2,7 +2,7 @@ module Platform
   module Android_samsung_galaxy_note_10_1_emulator
     class << self
       def android_samsung_galaxy_note_10_1_emulator version_string
-        ['Linux', 'android', version_string.to_s, deviceName: 'Samsung Galaxy Note 10.1 Emulator']
+        ['Linux', 'Android', version_string.to_s, deviceName: 'Samsung Galaxy Note 10.1 Emulator']
       end
 
       def v version_string

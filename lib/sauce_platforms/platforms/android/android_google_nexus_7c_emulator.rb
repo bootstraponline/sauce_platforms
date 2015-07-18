@@ -2,7 +2,7 @@ module Platform
   module Android_google_nexus_7c_emulator
     class << self
       def android_google_nexus_7c_emulator version_string
-        ['Linux', 'android', version_string.to_s, deviceName: 'Google Nexus 7C Emulator']
+        ['Linux', 'Android', version_string.to_s, deviceName: 'Google Nexus 7C Emulator']
       end
 
       def v version_string

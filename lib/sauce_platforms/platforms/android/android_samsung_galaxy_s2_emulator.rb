@@ -2,7 +2,7 @@ module Platform
   module Android_samsung_galaxy_s2_emulator
     class << self
       def android_samsung_galaxy_s2_emulator version_string
-        ['Linux', 'android', version_string.to_s, deviceName: 'Samsung Galaxy S2 Emulator']
+        ['Linux', 'Android', version_string.to_s, deviceName: 'Samsung Galaxy S2 Emulator']
       end
 
       def v version_string

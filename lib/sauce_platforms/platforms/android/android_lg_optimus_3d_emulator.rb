@@ -2,7 +2,7 @@ module Platform
   module Android_lg_optimus_3d_emulator
     class << self
       def android_lg_optimus_3d_emulator version_string
-        ['Linux', 'android', version_string.to_s, deviceName: 'LG Optimus 3D Emulator']
+        ['Linux', 'Android', version_string.to_s, deviceName: 'LG Optimus 3D Emulator']
       end
 
       def v version_string

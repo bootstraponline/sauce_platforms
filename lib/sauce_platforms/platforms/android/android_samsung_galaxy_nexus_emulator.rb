@@ -2,7 +2,7 @@ module Platform
   module Android_samsung_galaxy_nexus_emulator
     class << self
       def android_samsung_galaxy_nexus_emulator version_string
-        ['Linux', 'android', version_string.to_s, deviceName: 'Samsung Galaxy Nexus Emulator']
+        ['Linux', 'Android', version_string.to_s, deviceName: 'Samsung Galaxy Nexus Emulator']
       end
 
       def v version_string

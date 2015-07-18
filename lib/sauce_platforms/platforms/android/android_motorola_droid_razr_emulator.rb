@@ -2,7 +2,7 @@ module Platform
   module Android_motorola_droid_razr_emulator
     class << self
       def android_motorola_droid_razr_emulator version_string
-        ['Linux', 'android', version_string.to_s, deviceName: 'Motorola Droid Razr Emulator']
+        ['Linux', 'Android', version_string.to_s, deviceName: 'Motorola Droid Razr Emulator']
       end
 
       def v version_string

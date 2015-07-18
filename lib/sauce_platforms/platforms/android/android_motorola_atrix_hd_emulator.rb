@@ -2,7 +2,7 @@ module Platform
   module Android_motorola_atrix_hd_emulator
     class << self
       def android_motorola_atrix_hd_emulator version_string
-        ['Linux', 'android', version_string.to_s, deviceName: 'Motorola Atrix HD Emulator']
+        ['Linux', 'Android', version_string.to_s, deviceName: 'Motorola Atrix HD Emulator']
       end
 
       def v version_string

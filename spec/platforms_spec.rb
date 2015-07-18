@@ -2,18 +2,6 @@ require_relative 'spec_helper'
 
 
 describe 'mac_10_6' do
-  it 'Platform.mac_10_6.ipad.v"123"' do
-    Platform.mac_10_6.ipad.v'123'
-  end
-
-  it 'Platform.mac_10_6.ipad.v4_3' do
-    Platform.mac_10_6.ipad.v4_3
-  end
-
-  it 'Platform.mac_10_6.ipad.v5_0' do
-    Platform.mac_10_6.ipad.v5_0
-  end
-
   it 'Platform.mac_10_6.firefox.v"123"' do
     Platform.mac_10_6.firefox.v'123'
   end
@@ -170,18 +158,6 @@ describe 'mac_10_6' do
     Platform.mac_10_6.firefox.dev
   end
 
-  it 'Platform.mac_10_6.iphone.v"123"' do
-    Platform.mac_10_6.iphone.v'123'
-  end
-
-  it 'Platform.mac_10_6.iphone.v4_3' do
-    Platform.mac_10_6.iphone.v4_3
-  end
-
-  it 'Platform.mac_10_6.iphone.v5_0' do
-    Platform.mac_10_6.iphone.v5_0
-  end
-
   it 'Platform.mac_10_6.safari.v"123"' do
     Platform.mac_10_6.safari.v'123'
   end
@@ -264,19 +240,98 @@ describe 'mac_10_6' do
 
 end
 
+describe 'ios' do
+  it 'Platform.ios.ipad.v"123"' do
+    Platform.ios.ipad.v'123'
+  end
+
+  it 'Platform.ios.ipad.v4_3' do
+    Platform.ios.ipad.v4_3
+  end
+
+  it 'Platform.ios.ipad.v5_0' do
+    Platform.ios.ipad.v5_0
+  end
+
+  it 'Platform.ios.ipad.v7_0' do
+    Platform.ios.ipad.v7_0
+  end
+
+  it 'Platform.ios.ipad.v7_1' do
+    Platform.ios.ipad.v7_1
+  end
+
+  it 'Platform.ios.ipad.v5_1' do
+    Platform.ios.ipad.v5_1
+  end
+
+  it 'Platform.ios.ipad.v6_0' do
+    Platform.ios.ipad.v6_0
+  end
+
+  it 'Platform.ios.ipad.v6_1' do
+    Platform.ios.ipad.v6_1
+  end
+
+  it 'Platform.ios.ipad.v8_0' do
+    Platform.ios.ipad.v8_0
+  end
+
+  it 'Platform.ios.ipad.v8_1' do
+    Platform.ios.ipad.v8_1
+  end
+
+  it 'Platform.ios.ipad.v8_2' do
+    Platform.ios.ipad.v8_2
+  end
+
+  it 'Platform.ios.iphone.v"123"' do
+    Platform.ios.iphone.v'123'
+  end
+
+  it 'Platform.ios.iphone.v4_3' do
+    Platform.ios.iphone.v4_3
+  end
+
+  it 'Platform.ios.iphone.v5_0' do
+    Platform.ios.iphone.v5_0
+  end
+
+  it 'Platform.ios.iphone.v7_0' do
+    Platform.ios.iphone.v7_0
+  end
+
+  it 'Platform.ios.iphone.v7_1' do
+    Platform.ios.iphone.v7_1
+  end
+
+  it 'Platform.ios.iphone.v5_1' do
+    Platform.ios.iphone.v5_1
+  end
+
+  it 'Platform.ios.iphone.v6_0' do
+    Platform.ios.iphone.v6_0
+  end
+
+  it 'Platform.ios.iphone.v6_1' do
+    Platform.ios.iphone.v6_1
+  end
+
+  it 'Platform.ios.iphone.v8_0' do
+    Platform.ios.iphone.v8_0
+  end
+
+  it 'Platform.ios.iphone.v8_1' do
+    Platform.ios.iphone.v8_1
+  end
+
+  it 'Platform.ios.iphone.v8_2' do
+    Platform.ios.iphone.v8_2
+  end
+
+end
+
 describe 'mac_10_9' do
-  it 'Platform.mac_10_9.ipad.v"123"' do
-    Platform.mac_10_9.ipad.v'123'
-  end
-
-  it 'Platform.mac_10_9.ipad.v7_0' do
-    Platform.mac_10_9.ipad.v7_0
-  end
-
-  it 'Platform.mac_10_9.ipad.v7_1' do
-    Platform.mac_10_9.ipad.v7_1
-  end
-
   it 'Platform.mac_10_9.firefox.v"123"' do
     Platform.mac_10_9.firefox.v'123'
   end
@@ -431,18 +486,6 @@ describe 'mac_10_9' do
 
   it 'Platform.mac_10_9.firefox.dev' do
     Platform.mac_10_9.firefox.dev
-  end
-
-  it 'Platform.mac_10_9.iphone.v"123"' do
-    Platform.mac_10_9.iphone.v'123'
-  end
-
-  it 'Platform.mac_10_9.iphone.v7_0' do
-    Platform.mac_10_9.iphone.v7_0
-  end
-
-  it 'Platform.mac_10_9.iphone.v7_1' do
-    Platform.mac_10_9.iphone.v7_1
   end
 
   it 'Platform.mac_10_9.safari.v"123"' do
@@ -803,38 +846,6 @@ describe 'windows_2003' do
 end
 
 describe 'mac_10_8' do
-  it 'Platform.mac_10_8.ipad.v"123"' do
-    Platform.mac_10_8.ipad.v'123'
-  end
-
-  it 'Platform.mac_10_8.ipad.v5_1' do
-    Platform.mac_10_8.ipad.v5_1
-  end
-
-  it 'Platform.mac_10_8.ipad.v6_0' do
-    Platform.mac_10_8.ipad.v6_0
-  end
-
-  it 'Platform.mac_10_8.ipad.v6_1' do
-    Platform.mac_10_8.ipad.v6_1
-  end
-
-  it 'Platform.mac_10_8.iphone.v"123"' do
-    Platform.mac_10_8.iphone.v'123'
-  end
-
-  it 'Platform.mac_10_8.iphone.v5_1' do
-    Platform.mac_10_8.iphone.v5_1
-  end
-
-  it 'Platform.mac_10_8.iphone.v6_0' do
-    Platform.mac_10_8.iphone.v6_0
-  end
-
-  it 'Platform.mac_10_8.iphone.v6_1' do
-    Platform.mac_10_8.iphone.v6_1
-  end
-
   it 'Platform.mac_10_8.safari.v"123"' do
     Platform.mac_10_8.safari.v'123'
   end
@@ -1994,26 +2005,6 @@ describe 'windows_2008' do
 end
 
 describe 'mac_10_10' do
-  it 'Platform.mac_10_10.ipad.v"123"' do
-    Platform.mac_10_10.ipad.v'123'
-  end
-
-  it 'Platform.mac_10_10.ipad.v7_1' do
-    Platform.mac_10_10.ipad.v7_1
-  end
-
-  it 'Platform.mac_10_10.ipad.v8_0' do
-    Platform.mac_10_10.ipad.v8_0
-  end
-
-  it 'Platform.mac_10_10.ipad.v8_1' do
-    Platform.mac_10_10.ipad.v8_1
-  end
-
-  it 'Platform.mac_10_10.ipad.v8_2' do
-    Platform.mac_10_10.ipad.v8_2
-  end
-
   it 'Platform.mac_10_10.firefox.v"123"' do
     Platform.mac_10_10.firefox.v'123'
   end
@@ -2056,26 +2047,6 @@ describe 'mac_10_10' do
 
   it 'Platform.mac_10_10.firefox.dev' do
     Platform.mac_10_10.firefox.dev
-  end
-
-  it 'Platform.mac_10_10.iphone.v"123"' do
-    Platform.mac_10_10.iphone.v'123'
-  end
-
-  it 'Platform.mac_10_10.iphone.v7_1' do
-    Platform.mac_10_10.iphone.v7_1
-  end
-
-  it 'Platform.mac_10_10.iphone.v8_0' do
-    Platform.mac_10_10.iphone.v8_0
-  end
-
-  it 'Platform.mac_10_10.iphone.v8_1' do
-    Platform.mac_10_10.iphone.v8_1
-  end
-
-  it 'Platform.mac_10_10.iphone.v8_2' do
-    Platform.mac_10_10.iphone.v8_2
   end
 
   it 'Platform.mac_10_10.safari.v"123"' do
