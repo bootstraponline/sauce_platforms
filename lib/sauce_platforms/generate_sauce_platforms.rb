@@ -24,8 +24,52 @@ end
 require 'rubygems'
 require 'pry'
 require 'sauce_whisk'
+require 'fileutils'
+
+=begin
+iOS example:
+{"short_version"=>"6.1",
+ "long_name"=>"iPad",
+ "api_name"=>"ipad",
+ "long_version"=>"6.1.",
+ "device"=>"ipad",
+ "latest_stable_version"=>"",
+ "automation_backend"=>"webdriver",
+ "os"=>"Mac 10.8"},
+
+Android examples:
+{"short_version"=>"4.1",
+  "long_name"=>"Android",
+  "api_name"=>"android",
+  "long_version"=>"4.1.",
+  "device"=>"android",
+  "latest_stable_version"=>"",
+  "automation_backend"=>"webdriver",
+  "os"=>"Linux"}
+
+{"short_version"=>"4.0",
+  "long_name"=>"HTC Evo 3D Emulator",
+  "api_name"=>"android",
+  "long_version"=>"4.0.4.",
+  "device"=>"Evo3D",
+  "latest_stable_version"=>"",
+  "automation_backend"=>"webdriver",
+  "os"=>"Linux"}
+
+Desktop example:
+{"short_version"=>"dev",
+ "long_name"=>"Google Chrome",
+ "api_name"=>"chrome",
+ "long_version"=>"dev.",
+ "latest_stable_version"=>"dev",
+ "automation_backend"=>"webdriver",
+ "os"=>"Mac 10.9"},
+
+=end
 
 operating_systems = {}
+
+ios_browsers = %w[ipad iphone].freeze
 
 platforms = SauceWhisk::Sauce.platforms(true)
 platforms.each do |platform|
@@ -35,10 +79,15 @@ platforms.each do |platform|
 
   operating_systems[os] ||= {}
 
-  # android has 'long_name' value which is sent in deviceName desired cap.
-  device                = platform['long_name']
-  if os == 'Linux' && browser == 'android'
-    os                                     = 'android'
+  is_android = os == 'Linux' && browser == 'android'
+
+  is_ios = os.include?('Mac') && ios_browsers.include?(browser)
+
+  if is_android || is_ios
+    os     = is_android ? 'android' : 'ios'
+    # android/ios have a 'long_name' value which is sent in deviceName desired cap.
+    device = platform['long_name']
+
     operating_systems[os]                  ||= {}
     operating_systems[os][browser]         ||= {}
     operating_systems[os][browser][device] ||= []
@@ -63,23 +112,30 @@ end
 platform_files            = []
 platform_file_class_pairs = []
 
-module_name = 'Platform'
+module_name  = 'Platform'
 
+# Clean out entire platform folder before generating code
+platform_dir = File.expand_path(File.join(__dir__, 'platforms'))
+FileUtils.rm_rf platform_dir
+Dir.mkdir platform_dir
+
+# generate platform skeleton files
 operating_systems.each do |os, browser_hash|
   os_file_name  = filecase os
   os_class_name = os_file_name.capitalize
 
-  browser_hash_keys = os == 'android' ? browser_hash['android'].keys :
-                                        browser_hash.keys
+  browser_hash_keys = case os
+                        when 'android'
+                          browser_hash['android'].keys
+                        else
+                          browser_hash.keys
+                      end
 
   browsers = browser_hash_keys.map { |e| filecase(e) }
 
   platform_files << "require_relative 'sauce_platforms/platforms/#{os_file_name}'"
   platform_file_class_pairs << [os_file_name, os_class_name]
 
-  # generate platform skeleton files
-  platform_dir = File.join(__dir__, 'platforms')
-  Dir.mkdir platform_dir unless Dir.exist?(platform_dir)
   File.open(File.join(__dir__, 'platforms', os_file_name + '.rb'), 'w') do |file|
     browsers.each do |browser|
       file.puts "require_relative '#{os_file_name}/#{os_file_name}_#{browser}'"
@@ -111,7 +167,8 @@ operating_systems.each do |os, browser_hash|
     browser_version_pairs = [[browser, version_array]]
 
     is_android            = browser == 'android'
-    browser_version_pairs = version_array if is_android
+    is_ios                = ios_browsers.include?(browser)
+    browser_version_pairs = version_array if is_android || is_ios
 
     browser_version_pairs.each do |browser, version_array|
       filecase_browser    = filecase(browser)
@@ -122,14 +179,14 @@ operating_systems.each do |os, browser_hash|
         file.puts "  module #{os_browser_class_name}"
         file.puts '    class << self'
         file.puts "      def #{os_browser_filename} version_string"
-        if is_android
-          # android must specify a device name
+        if is_android || is_ios
+          # android/ios must specify a device name
           device_name = browser
-          # os for Android is always linux
-          # browser name for Android is always android
-          browser     = 'android'
-          os          = 'Linux'
-          # desktop_os, browser_name, android_version, device_name
+          # browser name.
+          browser     = is_android ? 'Android' : 'Safari'
+          # platform / platformName
+          os          = is_android ? 'Linux' : 'iOS'
+          # operating_system, browser_name, device_os_version, device_name
           file.puts "        ['#{os}', '#{browser}', version_string.to_s, deviceName: '#{device_name}']"
         else
 
