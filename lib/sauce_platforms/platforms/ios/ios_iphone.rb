@@ -2,7 +2,7 @@ module Platform
   module Ios_iphone
     class << self
       def ios_iphone version_string
-        ['iOS', 'Safari', version_string.to_s, deviceName: 'iPhone']
+        ['iOS', 'Safari', version_string.to_s, deviceName: 'iPhone Simulator']
       end
 
       def v version_string

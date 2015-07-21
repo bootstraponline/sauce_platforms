@@ -182,10 +182,22 @@ operating_systems.each do |os, browser_hash|
         if is_android || is_ios
           # android/ios must specify a device name
           device_name = browser
+          if is_ios
+            # set deviceName cap properly for iOS
+            device_name = case browser.downcase.strip
+                            when 'ipad'
+                              'iPad Simulator'
+                            when 'iphone'
+                              'iPhone Simulator'
+                          end
+          end
+
+
           # browser name.
-          browser     = is_android ? 'Android' : 'Safari'
+          browser = is_android ? 'Android' : 'Safari'
           # platform / platformName
-          os          = is_android ? 'Linux' : 'iOS'
+          os      = is_android ? 'Linux' : 'iOS'
+          # ruby gem reads this as: os, browser, version, {desired caps hash}
           # operating_system, browser_name, device_os_version, device_name
           file.puts "        ['#{os}', '#{browser}', version_string.to_s, deviceName: '#{device_name}']"
         else
