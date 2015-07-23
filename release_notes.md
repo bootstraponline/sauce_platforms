@@ -1,3 +1,19 @@
+#### v1.0.3 2015-07-23
+
+- [d2c9e12](https://github.com/bootstraponline/sauce_platforms/commit/d2c9e12375ff23e93da68d5eb9538ed83045e999) Release 1.0.3
+- [1038ece](https://github.com/bootstraponline/sauce_platforms/commit/1038ece658db214031f26db119cc803b553da4bc) Add platforms.txt for reference
+- [6d75f69](https://github.com/bootstraponline/sauce_platforms/commit/6d75f6966ffed39a6aaa62cc7d661ea788c67ef3) Fix iOS deviceName value
+- [c2d3e78](https://github.com/bootstraponline/sauce_platforms/commit/c2d3e78818b2f1bad2a919c528d8c41e59081a45) Update readme with new test output
+- [6dfa407](https://github.com/bootstraponline/sauce_platforms/commit/6dfa407ab424edf93f45bc7c7970f5de4873ed4a) Update platforms
+- [245bfe8](https://github.com/bootstraponline/sauce_platforms/commit/245bfe899bd75788c4909cd365abad88b49498f7) Fix iOS platform support
+- [fbdc7f4](https://github.com/bootstraponline/sauce_platforms/commit/fbdc7f420f2428971dcb7a56b03c368391457a6e) Update platforms
+- [c7ccd60](https://github.com/bootstraponline/sauce_platforms/commit/c7ccd6037c1ee40be21762cbc56e2562492a7ec5) Use long_name for Android devices instead of device name
+- [c7f3e88](https://github.com/bootstraponline/sauce_platforms/commit/c7f3e88f06185242334d2c6645aa2f5120e1fa49) Fix tests
+- [d4e98c1](https://github.com/bootstraponline/sauce_platforms/commit/d4e98c1a2ddda6b501177cc8b8013919db6cf139) Remove old android class
+- [8238979](https://github.com/bootstraponline/sauce_platforms/commit/8238979a7506c4d17d84b1fe9825d7453e4671c8) Update platforms
+- [80733a0](https://github.com/bootstraponline/sauce_platforms/commit/80733a0576f612edd432260fc23ddb43edaf097c) Fix Android platform support
+
+
 #### v1.0.2 2015-07-17
 
 - [e22d25e](https://github.com/bootstraponline/sauce_platforms/commit/e22d25e77bed65601d020a71f90b71de0c201c82) Release 1.0.2
