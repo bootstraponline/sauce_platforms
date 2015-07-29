@@ -9,14 +9,6 @@ module Platform
         ios_ipad version_string
       end
 
-      def v4_3
-        ios_ipad '4.3'
-      end
-
-      def v5_0
-        ios_ipad '5.0'
-      end
-
       def v7_0
         ios_ipad '7.0'
       end
@@ -47,6 +39,14 @@ module Platform
 
       def v8_2
         ios_ipad '8.2'
+      end
+
+      def v8_3
+        ios_ipad '8.3'
+      end
+
+      def v8_4
+        ios_ipad '8.4'
       end
 
     end

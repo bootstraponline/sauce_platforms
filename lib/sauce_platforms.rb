@@ -2,9 +2,10 @@ require_relative 'sauce_platforms/platforms/android'
 require_relative 'sauce_platforms/platforms/ios'
 require_relative 'sauce_platforms/platforms/linux'
 require_relative 'sauce_platforms/platforms/mac_10_10'
-require_relative 'sauce_platforms/platforms/mac_10_6'
+require_relative 'sauce_platforms/platforms/mac_10_11'
 require_relative 'sauce_platforms/platforms/mac_10_8'
 require_relative 'sauce_platforms/platforms/mac_10_9'
+require_relative 'sauce_platforms/platforms/windows_10'
 require_relative 'sauce_platforms/platforms/windows_2003'
 require_relative 'sauce_platforms/platforms/windows_2008'
 require_relative 'sauce_platforms/platforms/windows_2012'
@@ -13,16 +14,16 @@ require_relative 'sauce_platforms/platforms/windows_2012_r2'
 module Platform
   class << self
 
-    def mac_10_6
-      Mac_10_6
+    def mac_10_9
+      Mac_10_9
     end
 
     def ios
       Ios
     end
 
-    def mac_10_9
-      Mac_10_9
+    def windows_10
+      Windows_10
     end
 
     def windows_xp
@@ -47,6 +48,10 @@ module Platform
 
     def windows_7
       Windows_2008
+    end
+
+    def mac_10_11
+      Mac_10_11
     end
 
     def mac_10_10
