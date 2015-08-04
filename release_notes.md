@@ -1,3 +1,9 @@
+#### v1.0.5 2015-08-04
+
+- [b97eb5a](https://github.com/bootstraponline/sauce_platforms/commit/b97eb5a48d43231555eccd141bbdbf5e919df7b7) Release 1.0.5
+- [c47ad11](https://github.com/bootstraponline/sauce_platforms/commit/c47ad1131221a6e99728cbf6b110a70ae2e5fc4b) Update platforms
+
+
 #### v1.0.4 2015-07-29
 
 - [80b3fcf](https://github.com/bootstraponline/sauce_platforms/commit/80b3fcf5f0ac3dfdc0fa7a92c6611cfa8d3b3f3b) Release 1.0.4
