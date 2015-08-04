@@ -81,6 +81,10 @@ module Platform
         windows_2012_chrome '43'
       end
 
+      def v44
+        windows_2012_chrome '44'
+      end
+
       def beta
         windows_2012_chrome 'beta'
       end

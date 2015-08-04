@@ -81,6 +81,10 @@ module Platform
         windows_2008_chrome '43'
       end
 
+      def v44
+        windows_2008_chrome '44'
+      end
+
       def beta
         windows_2008_chrome 'beta'
       end

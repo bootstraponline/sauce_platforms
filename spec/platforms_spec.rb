@@ -576,6 +576,10 @@ describe 'windows_10' do
     Platform.windows_10.chrome.v43
   end
 
+  it 'Platform.windows_10.chrome.v44' do
+    Platform.windows_10.chrome.v44
+  end
+
   it 'Platform.windows_10.chrome.beta' do
     Platform.windows_10.chrome.beta
   end
@@ -857,6 +861,10 @@ describe 'windows_2003' do
 
   it 'Platform.windows_xp.chrome.v43' do
     Platform.windows_xp.chrome.v43
+  end
+
+  it 'Platform.windows_xp.chrome.v44' do
+    Platform.windows_xp.chrome.v44
   end
 
   it 'Platform.windows_xp.chrome.beta' do
@@ -1203,6 +1211,10 @@ describe 'windows_2012' do
 
   it 'Platform.windows_8.chrome.v43' do
     Platform.windows_8.chrome.v43
+  end
+
+  it 'Platform.windows_8.chrome.v44' do
+    Platform.windows_8.chrome.v44
   end
 
   it 'Platform.windows_8.chrome.beta' do
@@ -1723,6 +1735,10 @@ describe 'windows_2012_r2' do
     Platform.windows_8_1.chrome.v43
   end
 
+  it 'Platform.windows_8_1.chrome.v44' do
+    Platform.windows_8_1.chrome.v44
+  end
+
   it 'Platform.windows_8_1.chrome.beta' do
     Platform.windows_8_1.chrome.beta
   end
@@ -2016,6 +2032,10 @@ describe 'windows_2008' do
 
   it 'Platform.windows_7.chrome.v43' do
     Platform.windows_7.chrome.v43
+  end
+
+  it 'Platform.windows_7.chrome.v44' do
+    Platform.windows_7.chrome.v44
   end
 
   it 'Platform.windows_7.chrome.beta' do

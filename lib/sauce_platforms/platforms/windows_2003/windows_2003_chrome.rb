@@ -81,6 +81,10 @@ module Platform
         windows_2003_chrome '43'
       end
 
+      def v44
+        windows_2003_chrome '44'
+      end
+
       def beta
         windows_2003_chrome 'beta'
       end

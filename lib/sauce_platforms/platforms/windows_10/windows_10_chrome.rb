@@ -81,6 +81,10 @@ module Platform
         windows_10_chrome '43'
       end
 
+      def v44
+        windows_10_chrome '44'
+      end
+
       def beta
         windows_10_chrome 'beta'
       end
