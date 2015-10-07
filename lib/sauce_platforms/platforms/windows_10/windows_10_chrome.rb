@@ -2,7 +2,9 @@ module Platform
   module Windows_10_chrome
     class << self
       def windows_10_chrome version_string
-        ['Windows 10', 'chrome', version_string.to_s]
+        { browserName: %q(chrome),
+          platform: %q(Windows 10),
+          version: version_string.to_s }
       end
 
       def v version_string
@@ -83,6 +85,10 @@ module Platform
 
       def v44
         windows_10_chrome '44'
+      end
+
+      def v45
+        windows_10_chrome '45'
       end
 
       def beta

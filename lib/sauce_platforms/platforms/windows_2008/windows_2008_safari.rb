@@ -2,7 +2,9 @@ module Platform
   module Windows_2008_safari
     class << self
       def windows_2008_safari version_string
-        ['Windows 2008', 'safari', version_string.to_s]
+        { browserName: %q(safari),
+          platform: %q(Windows 2008),
+          version: version_string.to_s }
       end
 
       def v version_string

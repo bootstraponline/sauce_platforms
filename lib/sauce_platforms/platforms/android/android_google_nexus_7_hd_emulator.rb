@@ -2,7 +2,10 @@ module Platform
   module Android_google_nexus_7_hd_emulator
     class << self
       def android_google_nexus_7_hd_emulator version_string
-        ['Linux', 'Android', version_string.to_s, deviceName: 'Google Nexus 7 HD Emulator']
+        { browserName: %q(Android),
+          deviceName: %q(Google Nexus 7 HD Emulator),
+          platformVersion: version_string.to_s,
+          platformName: %q(Linux) }
       end
 
       def v version_string

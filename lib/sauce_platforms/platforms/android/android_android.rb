@@ -2,7 +2,10 @@ module Platform
   module Android_android
     class << self
       def android_android version_string
-        ['Linux', 'Android', version_string.to_s, deviceName: 'Android']
+        { browserName: %q(Android),
+          deviceName: %q(Android),
+          platformVersion: version_string.to_s,
+          platformName: %q(Linux) }
       end
 
       def v version_string

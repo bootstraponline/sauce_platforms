@@ -2,7 +2,10 @@ module Platform
   module Android_htc_one_x_emulator
     class << self
       def android_htc_one_x_emulator version_string
-        ['Linux', 'Android', version_string.to_s, deviceName: 'HTC One X Emulator']
+        { browserName: %q(Android),
+          deviceName: %q(HTC One X Emulator),
+          platformVersion: version_string.to_s,
+          platformName: %q(Linux) }
       end
 
       def v version_string

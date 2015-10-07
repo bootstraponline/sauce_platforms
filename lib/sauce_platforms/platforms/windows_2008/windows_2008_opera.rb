@@ -2,7 +2,9 @@ module Platform
   module Windows_2008_opera
     class << self
       def windows_2008_opera version_string
-        ['Windows 2008', 'opera', version_string.to_s]
+        { browserName: %q(opera),
+          platform: %q(Windows 2008),
+          version: version_string.to_s }
       end
 
       def v version_string

@@ -2,7 +2,9 @@ module Platform
   module Linux_chrome
     class << self
       def linux_chrome version_string
-        ['Linux', 'chrome', version_string.to_s]
+        { browserName: %q(chrome),
+          platform: %q(Linux),
+          version: version_string.to_s }
       end
 
       def v version_string
@@ -79,6 +81,14 @@ module Platform
 
       def v43
         linux_chrome '43'
+      end
+
+      def v44
+        linux_chrome '44'
+      end
+
+      def v45
+        linux_chrome '45'
       end
 
       def beta

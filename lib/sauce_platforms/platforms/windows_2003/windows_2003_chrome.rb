@@ -2,7 +2,9 @@ module Platform
   module Windows_2003_chrome
     class << self
       def windows_2003_chrome version_string
-        ['Windows 2003', 'chrome', version_string.to_s]
+        { browserName: %q(chrome),
+          platform: %q(Windows 2003),
+          version: version_string.to_s }
       end
 
       def v version_string
@@ -83,6 +85,10 @@ module Platform
 
       def v44
         windows_2003_chrome '44'
+      end
+
+      def v45
+        windows_2003_chrome '45'
       end
 
       def beta

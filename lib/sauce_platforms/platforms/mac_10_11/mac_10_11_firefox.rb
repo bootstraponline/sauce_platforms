@@ -2,7 +2,9 @@ module Platform
   module Mac_10_11_firefox
     class << self
       def mac_10_11_firefox version_string
-        ['Mac 10.11', 'firefox', version_string.to_s]
+        { browserName: %q(firefox),
+          platform: %q(Mac 10.11),
+          version: version_string.to_s }
       end
 
       def v version_string
@@ -151,6 +153,14 @@ module Platform
 
       def v39
         mac_10_11_firefox '39'
+      end
+
+      def v40
+        mac_10_11_firefox '40'
+      end
+
+      def v41
+        mac_10_11_firefox '41'
       end
 
       def beta

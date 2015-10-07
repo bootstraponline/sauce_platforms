@@ -26,16 +26,16 @@ module Platform
       Windows_10
     end
 
-    def windows_xp
-      Windows_2003
+    def windows_8
+      Windows_2012
     end
 
     def mac_10_8
       Mac_10_8
     end
 
-    def windows_8
-      Windows_2012
+    def windows_xp
+      Windows_2003
     end
 
     def linux

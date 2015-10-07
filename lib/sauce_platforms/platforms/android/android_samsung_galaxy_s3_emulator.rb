@@ -2,7 +2,10 @@ module Platform
   module Android_samsung_galaxy_s3_emulator
     class << self
       def android_samsung_galaxy_s3_emulator version_string
-        ['Linux', 'Android', version_string.to_s, deviceName: 'Samsung Galaxy S3 Emulator']
+        { browserName: %q(Android),
+          deviceName: %q(Samsung Galaxy S3 Emulator),
+          platformVersion: version_string.to_s,
+          platformName: %q(Linux) }
       end
 
       def v version_string

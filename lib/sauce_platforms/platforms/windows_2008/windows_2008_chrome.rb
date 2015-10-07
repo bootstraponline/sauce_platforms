@@ -2,7 +2,9 @@ module Platform
   module Windows_2008_chrome
     class << self
       def windows_2008_chrome version_string
-        ['Windows 2008', 'chrome', version_string.to_s]
+        { browserName: %q(chrome),
+          platform: %q(Windows 2008),
+          version: version_string.to_s }
       end
 
       def v version_string
@@ -83,6 +85,10 @@ module Platform
 
       def v44
         windows_2008_chrome '44'
+      end
+
+      def v45
+        windows_2008_chrome '45'
       end
 
       def beta

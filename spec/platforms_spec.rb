@@ -150,6 +150,14 @@ describe 'mac_10_9' do
     Platform.mac_10_9.firefox.v39
   end
 
+  it 'Platform.mac_10_9.firefox.v40' do
+    Platform.mac_10_9.firefox.v40
+  end
+
+  it 'Platform.mac_10_9.firefox.v41' do
+    Platform.mac_10_9.firefox.v41
+  end
+
   it 'Platform.mac_10_9.firefox.beta' do
     Platform.mac_10_9.firefox.beta
   end
@@ -222,6 +230,14 @@ describe 'mac_10_9' do
     Platform.mac_10_9.chrome.v43
   end
 
+  it 'Platform.mac_10_9.chrome.v44' do
+    Platform.mac_10_9.chrome.v44
+  end
+
+  it 'Platform.mac_10_9.chrome.v45' do
+    Platform.mac_10_9.chrome.v45
+  end
+
   it 'Platform.mac_10_9.chrome.beta' do
     Platform.mac_10_9.chrome.beta
   end
@@ -277,6 +293,10 @@ describe 'ios' do
     Platform.ios.ipad.v8_4
   end
 
+  it 'Platform.ios.ipad.v9_0' do
+    Platform.ios.ipad.v9_0
+  end
+
   it 'Platform.ios.iphone.v"123"' do
     Platform.ios.iphone.v'123'
   end
@@ -319,6 +339,10 @@ describe 'ios' do
 
   it 'Platform.ios.iphone.v8_4' do
     Platform.ios.iphone.v8_4
+  end
+
+  it 'Platform.ios.iphone.v9_0' do
+    Platform.ios.iphone.v9_0
   end
 
 end
@@ -492,12 +516,28 @@ describe 'windows_10' do
     Platform.windows_10.firefox.v39
   end
 
+  it 'Platform.windows_10.firefox.v40' do
+    Platform.windows_10.firefox.v40
+  end
+
+  it 'Platform.windows_10.firefox.v41' do
+    Platform.windows_10.firefox.v41
+  end
+
   it 'Platform.windows_10.firefox.beta' do
     Platform.windows_10.firefox.beta
   end
 
   it 'Platform.windows_10.firefox.dev' do
     Platform.windows_10.firefox.dev
+  end
+
+  it 'Platform.windows_10.microsoftedge.v"123"' do
+    Platform.windows_10.microsoftedge.v'123'
+  end
+
+  it 'Platform.windows_10.microsoftedge.v20' do
+    Platform.windows_10.microsoftedge.v20
   end
 
   it 'Platform.windows_10.chrome.v"123"' do
@@ -580,382 +620,16 @@ describe 'windows_10' do
     Platform.windows_10.chrome.v44
   end
 
+  it 'Platform.windows_10.chrome.v45' do
+    Platform.windows_10.chrome.v45
+  end
+
   it 'Platform.windows_10.chrome.beta' do
     Platform.windows_10.chrome.beta
   end
 
   it 'Platform.windows_10.chrome.dev' do
     Platform.windows_10.chrome.dev
-  end
-
-end
-
-describe 'windows_2003' do
-  it 'Platform.windows_xp.opera.v"123"' do
-    Platform.windows_xp.opera.v'123'
-  end
-
-  it 'Platform.windows_xp.opera.v11' do
-    Platform.windows_xp.opera.v11
-  end
-
-  it 'Platform.windows_xp.opera.v12' do
-    Platform.windows_xp.opera.v12
-  end
-
-  it 'Platform.windows_xp.internet_explorer.v"123"' do
-    Platform.windows_xp.internet_explorer.v'123'
-  end
-
-  it 'Platform.windows_xp.internet_explorer.v8' do
-    Platform.windows_xp.internet_explorer.v8
-  end
-
-  it 'Platform.windows_xp.internet_explorer.v6' do
-    Platform.windows_xp.internet_explorer.v6
-  end
-
-  it 'Platform.windows_xp.internet_explorer.v7' do
-    Platform.windows_xp.internet_explorer.v7
-  end
-
-  it 'Platform.windows_xp.firefox.v"123"' do
-    Platform.windows_xp.firefox.v'123'
-  end
-
-  it 'Platform.windows_xp.firefox.v3_0' do
-    Platform.windows_xp.firefox.v3_0
-  end
-
-  it 'Platform.windows_xp.firefox.v3_5' do
-    Platform.windows_xp.firefox.v3_5
-  end
-
-  it 'Platform.windows_xp.firefox.v3_6' do
-    Platform.windows_xp.firefox.v3_6
-  end
-
-  it 'Platform.windows_xp.firefox.v4' do
-    Platform.windows_xp.firefox.v4
-  end
-
-  it 'Platform.windows_xp.firefox.v5' do
-    Platform.windows_xp.firefox.v5
-  end
-
-  it 'Platform.windows_xp.firefox.v6' do
-    Platform.windows_xp.firefox.v6
-  end
-
-  it 'Platform.windows_xp.firefox.v7' do
-    Platform.windows_xp.firefox.v7
-  end
-
-  it 'Platform.windows_xp.firefox.v8' do
-    Platform.windows_xp.firefox.v8
-  end
-
-  it 'Platform.windows_xp.firefox.v9' do
-    Platform.windows_xp.firefox.v9
-  end
-
-  it 'Platform.windows_xp.firefox.v10' do
-    Platform.windows_xp.firefox.v10
-  end
-
-  it 'Platform.windows_xp.firefox.v11' do
-    Platform.windows_xp.firefox.v11
-  end
-
-  it 'Platform.windows_xp.firefox.v12' do
-    Platform.windows_xp.firefox.v12
-  end
-
-  it 'Platform.windows_xp.firefox.v13' do
-    Platform.windows_xp.firefox.v13
-  end
-
-  it 'Platform.windows_xp.firefox.v14' do
-    Platform.windows_xp.firefox.v14
-  end
-
-  it 'Platform.windows_xp.firefox.v15' do
-    Platform.windows_xp.firefox.v15
-  end
-
-  it 'Platform.windows_xp.firefox.v16' do
-    Platform.windows_xp.firefox.v16
-  end
-
-  it 'Platform.windows_xp.firefox.v17' do
-    Platform.windows_xp.firefox.v17
-  end
-
-  it 'Platform.windows_xp.firefox.v18' do
-    Platform.windows_xp.firefox.v18
-  end
-
-  it 'Platform.windows_xp.firefox.v19' do
-    Platform.windows_xp.firefox.v19
-  end
-
-  it 'Platform.windows_xp.firefox.v20' do
-    Platform.windows_xp.firefox.v20
-  end
-
-  it 'Platform.windows_xp.firefox.v21' do
-    Platform.windows_xp.firefox.v21
-  end
-
-  it 'Platform.windows_xp.firefox.v22' do
-    Platform.windows_xp.firefox.v22
-  end
-
-  it 'Platform.windows_xp.firefox.v23' do
-    Platform.windows_xp.firefox.v23
-  end
-
-  it 'Platform.windows_xp.firefox.v24' do
-    Platform.windows_xp.firefox.v24
-  end
-
-  it 'Platform.windows_xp.firefox.v25' do
-    Platform.windows_xp.firefox.v25
-  end
-
-  it 'Platform.windows_xp.firefox.v26' do
-    Platform.windows_xp.firefox.v26
-  end
-
-  it 'Platform.windows_xp.firefox.v27' do
-    Platform.windows_xp.firefox.v27
-  end
-
-  it 'Platform.windows_xp.firefox.v28' do
-    Platform.windows_xp.firefox.v28
-  end
-
-  it 'Platform.windows_xp.firefox.v29' do
-    Platform.windows_xp.firefox.v29
-  end
-
-  it 'Platform.windows_xp.firefox.v30' do
-    Platform.windows_xp.firefox.v30
-  end
-
-  it 'Platform.windows_xp.firefox.v31' do
-    Platform.windows_xp.firefox.v31
-  end
-
-  it 'Platform.windows_xp.firefox.v32' do
-    Platform.windows_xp.firefox.v32
-  end
-
-  it 'Platform.windows_xp.firefox.v33' do
-    Platform.windows_xp.firefox.v33
-  end
-
-  it 'Platform.windows_xp.firefox.v34' do
-    Platform.windows_xp.firefox.v34
-  end
-
-  it 'Platform.windows_xp.firefox.v35' do
-    Platform.windows_xp.firefox.v35
-  end
-
-  it 'Platform.windows_xp.firefox.v36' do
-    Platform.windows_xp.firefox.v36
-  end
-
-  it 'Platform.windows_xp.firefox.v37' do
-    Platform.windows_xp.firefox.v37
-  end
-
-  it 'Platform.windows_xp.firefox.v38' do
-    Platform.windows_xp.firefox.v38
-  end
-
-  it 'Platform.windows_xp.firefox.v39' do
-    Platform.windows_xp.firefox.v39
-  end
-
-  it 'Platform.windows_xp.firefox.beta' do
-    Platform.windows_xp.firefox.beta
-  end
-
-  it 'Platform.windows_xp.firefox.dev' do
-    Platform.windows_xp.firefox.dev
-  end
-
-  it 'Platform.windows_xp.chrome.v"123"' do
-    Platform.windows_xp.chrome.v'123'
-  end
-
-  it 'Platform.windows_xp.chrome.v26' do
-    Platform.windows_xp.chrome.v26
-  end
-
-  it 'Platform.windows_xp.chrome.v27' do
-    Platform.windows_xp.chrome.v27
-  end
-
-  it 'Platform.windows_xp.chrome.v28' do
-    Platform.windows_xp.chrome.v28
-  end
-
-  it 'Platform.windows_xp.chrome.v29' do
-    Platform.windows_xp.chrome.v29
-  end
-
-  it 'Platform.windows_xp.chrome.v30' do
-    Platform.windows_xp.chrome.v30
-  end
-
-  it 'Platform.windows_xp.chrome.v31' do
-    Platform.windows_xp.chrome.v31
-  end
-
-  it 'Platform.windows_xp.chrome.v32' do
-    Platform.windows_xp.chrome.v32
-  end
-
-  it 'Platform.windows_xp.chrome.v33' do
-    Platform.windows_xp.chrome.v33
-  end
-
-  it 'Platform.windows_xp.chrome.v34' do
-    Platform.windows_xp.chrome.v34
-  end
-
-  it 'Platform.windows_xp.chrome.v35' do
-    Platform.windows_xp.chrome.v35
-  end
-
-  it 'Platform.windows_xp.chrome.v36' do
-    Platform.windows_xp.chrome.v36
-  end
-
-  it 'Platform.windows_xp.chrome.v37' do
-    Platform.windows_xp.chrome.v37
-  end
-
-  it 'Platform.windows_xp.chrome.v38' do
-    Platform.windows_xp.chrome.v38
-  end
-
-  it 'Platform.windows_xp.chrome.v39' do
-    Platform.windows_xp.chrome.v39
-  end
-
-  it 'Platform.windows_xp.chrome.v40' do
-    Platform.windows_xp.chrome.v40
-  end
-
-  it 'Platform.windows_xp.chrome.v41' do
-    Platform.windows_xp.chrome.v41
-  end
-
-  it 'Platform.windows_xp.chrome.v42' do
-    Platform.windows_xp.chrome.v42
-  end
-
-  it 'Platform.windows_xp.chrome.v43' do
-    Platform.windows_xp.chrome.v43
-  end
-
-  it 'Platform.windows_xp.chrome.v44' do
-    Platform.windows_xp.chrome.v44
-  end
-
-  it 'Platform.windows_xp.chrome.beta' do
-    Platform.windows_xp.chrome.beta
-  end
-
-  it 'Platform.windows_xp.chrome.dev' do
-    Platform.windows_xp.chrome.dev
-  end
-
-end
-
-describe 'mac_10_8' do
-  it 'Platform.mac_10_8.safari.v"123"' do
-    Platform.mac_10_8.safari.v'123'
-  end
-
-  it 'Platform.mac_10_8.safari.v6' do
-    Platform.mac_10_8.safari.v6
-  end
-
-  it 'Platform.mac_10_8.chrome.v"123"' do
-    Platform.mac_10_8.chrome.v'123'
-  end
-
-  it 'Platform.mac_10_8.chrome.v27' do
-    Platform.mac_10_8.chrome.v27
-  end
-
-  it 'Platform.mac_10_8.chrome.v28' do
-    Platform.mac_10_8.chrome.v28
-  end
-
-  it 'Platform.mac_10_8.chrome.v31' do
-    Platform.mac_10_8.chrome.v31
-  end
-
-  it 'Platform.mac_10_8.chrome.v32' do
-    Platform.mac_10_8.chrome.v32
-  end
-
-  it 'Platform.mac_10_8.chrome.v33' do
-    Platform.mac_10_8.chrome.v33
-  end
-
-  it 'Platform.mac_10_8.chrome.v34' do
-    Platform.mac_10_8.chrome.v34
-  end
-
-  it 'Platform.mac_10_8.chrome.v35' do
-    Platform.mac_10_8.chrome.v35
-  end
-
-  it 'Platform.mac_10_8.chrome.v36' do
-    Platform.mac_10_8.chrome.v36
-  end
-
-  it 'Platform.mac_10_8.chrome.v37' do
-    Platform.mac_10_8.chrome.v37
-  end
-
-  it 'Platform.mac_10_8.chrome.v38' do
-    Platform.mac_10_8.chrome.v38
-  end
-
-  it 'Platform.mac_10_8.chrome.v39' do
-    Platform.mac_10_8.chrome.v39
-  end
-
-  it 'Platform.mac_10_8.chrome.v40' do
-    Platform.mac_10_8.chrome.v40
-  end
-
-  it 'Platform.mac_10_8.chrome.v41' do
-    Platform.mac_10_8.chrome.v41
-  end
-
-  it 'Platform.mac_10_8.chrome.v42' do
-    Platform.mac_10_8.chrome.v42
-  end
-
-  it 'Platform.mac_10_8.chrome.v43' do
-    Platform.mac_10_8.chrome.v43
-  end
-
-  it 'Platform.mac_10_8.chrome.beta' do
-    Platform.mac_10_8.chrome.beta
-  end
-
-  it 'Platform.mac_10_8.chrome.dev' do
-    Platform.mac_10_8.chrome.dev
   end
 
 end
@@ -1129,6 +803,14 @@ describe 'windows_2012' do
     Platform.windows_8.firefox.v39
   end
 
+  it 'Platform.windows_8.firefox.v40' do
+    Platform.windows_8.firefox.v40
+  end
+
+  it 'Platform.windows_8.firefox.v41' do
+    Platform.windows_8.firefox.v41
+  end
+
   it 'Platform.windows_8.firefox.beta' do
     Platform.windows_8.firefox.beta
   end
@@ -1217,12 +899,570 @@ describe 'windows_2012' do
     Platform.windows_8.chrome.v44
   end
 
+  it 'Platform.windows_8.chrome.v45' do
+    Platform.windows_8.chrome.v45
+  end
+
   it 'Platform.windows_8.chrome.beta' do
     Platform.windows_8.chrome.beta
   end
 
   it 'Platform.windows_8.chrome.dev' do
     Platform.windows_8.chrome.dev
+  end
+
+end
+
+describe 'mac_10_8' do
+  it 'Platform.mac_10_8.firefox.v"123"' do
+    Platform.mac_10_8.firefox.v'123'
+  end
+
+  it 'Platform.mac_10_8.firefox.v4' do
+    Platform.mac_10_8.firefox.v4
+  end
+
+  it 'Platform.mac_10_8.firefox.v5' do
+    Platform.mac_10_8.firefox.v5
+  end
+
+  it 'Platform.mac_10_8.firefox.v6' do
+    Platform.mac_10_8.firefox.v6
+  end
+
+  it 'Platform.mac_10_8.firefox.v7' do
+    Platform.mac_10_8.firefox.v7
+  end
+
+  it 'Platform.mac_10_8.firefox.v8' do
+    Platform.mac_10_8.firefox.v8
+  end
+
+  it 'Platform.mac_10_8.firefox.v9' do
+    Platform.mac_10_8.firefox.v9
+  end
+
+  it 'Platform.mac_10_8.firefox.v10' do
+    Platform.mac_10_8.firefox.v10
+  end
+
+  it 'Platform.mac_10_8.firefox.v11' do
+    Platform.mac_10_8.firefox.v11
+  end
+
+  it 'Platform.mac_10_8.firefox.v12' do
+    Platform.mac_10_8.firefox.v12
+  end
+
+  it 'Platform.mac_10_8.firefox.v13' do
+    Platform.mac_10_8.firefox.v13
+  end
+
+  it 'Platform.mac_10_8.firefox.v14' do
+    Platform.mac_10_8.firefox.v14
+  end
+
+  it 'Platform.mac_10_8.firefox.v15' do
+    Platform.mac_10_8.firefox.v15
+  end
+
+  it 'Platform.mac_10_8.firefox.v16' do
+    Platform.mac_10_8.firefox.v16
+  end
+
+  it 'Platform.mac_10_8.firefox.v17' do
+    Platform.mac_10_8.firefox.v17
+  end
+
+  it 'Platform.mac_10_8.firefox.v18' do
+    Platform.mac_10_8.firefox.v18
+  end
+
+  it 'Platform.mac_10_8.firefox.v19' do
+    Platform.mac_10_8.firefox.v19
+  end
+
+  it 'Platform.mac_10_8.firefox.v20' do
+    Platform.mac_10_8.firefox.v20
+  end
+
+  it 'Platform.mac_10_8.firefox.v21' do
+    Platform.mac_10_8.firefox.v21
+  end
+
+  it 'Platform.mac_10_8.firefox.v22' do
+    Platform.mac_10_8.firefox.v22
+  end
+
+  it 'Platform.mac_10_8.firefox.v23' do
+    Platform.mac_10_8.firefox.v23
+  end
+
+  it 'Platform.mac_10_8.firefox.v24' do
+    Platform.mac_10_8.firefox.v24
+  end
+
+  it 'Platform.mac_10_8.firefox.v25' do
+    Platform.mac_10_8.firefox.v25
+  end
+
+  it 'Platform.mac_10_8.firefox.v26' do
+    Platform.mac_10_8.firefox.v26
+  end
+
+  it 'Platform.mac_10_8.firefox.v27' do
+    Platform.mac_10_8.firefox.v27
+  end
+
+  it 'Platform.mac_10_8.firefox.v28' do
+    Platform.mac_10_8.firefox.v28
+  end
+
+  it 'Platform.mac_10_8.firefox.v29' do
+    Platform.mac_10_8.firefox.v29
+  end
+
+  it 'Platform.mac_10_8.firefox.v30' do
+    Platform.mac_10_8.firefox.v30
+  end
+
+  it 'Platform.mac_10_8.firefox.v31' do
+    Platform.mac_10_8.firefox.v31
+  end
+
+  it 'Platform.mac_10_8.firefox.v32' do
+    Platform.mac_10_8.firefox.v32
+  end
+
+  it 'Platform.mac_10_8.firefox.v33' do
+    Platform.mac_10_8.firefox.v33
+  end
+
+  it 'Platform.mac_10_8.firefox.v34' do
+    Platform.mac_10_8.firefox.v34
+  end
+
+  it 'Platform.mac_10_8.firefox.v35' do
+    Platform.mac_10_8.firefox.v35
+  end
+
+  it 'Platform.mac_10_8.firefox.v36' do
+    Platform.mac_10_8.firefox.v36
+  end
+
+  it 'Platform.mac_10_8.firefox.v37' do
+    Platform.mac_10_8.firefox.v37
+  end
+
+  it 'Platform.mac_10_8.firefox.v38' do
+    Platform.mac_10_8.firefox.v38
+  end
+
+  it 'Platform.mac_10_8.firefox.v39' do
+    Platform.mac_10_8.firefox.v39
+  end
+
+  it 'Platform.mac_10_8.firefox.v40' do
+    Platform.mac_10_8.firefox.v40
+  end
+
+  it 'Platform.mac_10_8.firefox.v41' do
+    Platform.mac_10_8.firefox.v41
+  end
+
+  it 'Platform.mac_10_8.firefox.beta' do
+    Platform.mac_10_8.firefox.beta
+  end
+
+  it 'Platform.mac_10_8.firefox.dev' do
+    Platform.mac_10_8.firefox.dev
+  end
+
+  it 'Platform.mac_10_8.safari.v"123"' do
+    Platform.mac_10_8.safari.v'123'
+  end
+
+  it 'Platform.mac_10_8.safari.v6' do
+    Platform.mac_10_8.safari.v6
+  end
+
+  it 'Platform.mac_10_8.chrome.v"123"' do
+    Platform.mac_10_8.chrome.v'123'
+  end
+
+  it 'Platform.mac_10_8.chrome.v27' do
+    Platform.mac_10_8.chrome.v27
+  end
+
+  it 'Platform.mac_10_8.chrome.v28' do
+    Platform.mac_10_8.chrome.v28
+  end
+
+  it 'Platform.mac_10_8.chrome.v31' do
+    Platform.mac_10_8.chrome.v31
+  end
+
+  it 'Platform.mac_10_8.chrome.v32' do
+    Platform.mac_10_8.chrome.v32
+  end
+
+  it 'Platform.mac_10_8.chrome.v33' do
+    Platform.mac_10_8.chrome.v33
+  end
+
+  it 'Platform.mac_10_8.chrome.v34' do
+    Platform.mac_10_8.chrome.v34
+  end
+
+  it 'Platform.mac_10_8.chrome.v35' do
+    Platform.mac_10_8.chrome.v35
+  end
+
+  it 'Platform.mac_10_8.chrome.v36' do
+    Platform.mac_10_8.chrome.v36
+  end
+
+  it 'Platform.mac_10_8.chrome.v37' do
+    Platform.mac_10_8.chrome.v37
+  end
+
+  it 'Platform.mac_10_8.chrome.v38' do
+    Platform.mac_10_8.chrome.v38
+  end
+
+  it 'Platform.mac_10_8.chrome.v39' do
+    Platform.mac_10_8.chrome.v39
+  end
+
+  it 'Platform.mac_10_8.chrome.v40' do
+    Platform.mac_10_8.chrome.v40
+  end
+
+  it 'Platform.mac_10_8.chrome.v41' do
+    Platform.mac_10_8.chrome.v41
+  end
+
+  it 'Platform.mac_10_8.chrome.v42' do
+    Platform.mac_10_8.chrome.v42
+  end
+
+  it 'Platform.mac_10_8.chrome.v43' do
+    Platform.mac_10_8.chrome.v43
+  end
+
+  it 'Platform.mac_10_8.chrome.v44' do
+    Platform.mac_10_8.chrome.v44
+  end
+
+  it 'Platform.mac_10_8.chrome.v45' do
+    Platform.mac_10_8.chrome.v45
+  end
+
+  it 'Platform.mac_10_8.chrome.beta' do
+    Platform.mac_10_8.chrome.beta
+  end
+
+  it 'Platform.mac_10_8.chrome.dev' do
+    Platform.mac_10_8.chrome.dev
+  end
+
+end
+
+describe 'windows_2003' do
+  it 'Platform.windows_xp.opera.v"123"' do
+    Platform.windows_xp.opera.v'123'
+  end
+
+  it 'Platform.windows_xp.opera.v11' do
+    Platform.windows_xp.opera.v11
+  end
+
+  it 'Platform.windows_xp.opera.v12' do
+    Platform.windows_xp.opera.v12
+  end
+
+  it 'Platform.windows_xp.internet_explorer.v"123"' do
+    Platform.windows_xp.internet_explorer.v'123'
+  end
+
+  it 'Platform.windows_xp.internet_explorer.v8' do
+    Platform.windows_xp.internet_explorer.v8
+  end
+
+  it 'Platform.windows_xp.internet_explorer.v7' do
+    Platform.windows_xp.internet_explorer.v7
+  end
+
+  it 'Platform.windows_xp.internet_explorer.v6' do
+    Platform.windows_xp.internet_explorer.v6
+  end
+
+  it 'Platform.windows_xp.firefox.v"123"' do
+    Platform.windows_xp.firefox.v'123'
+  end
+
+  it 'Platform.windows_xp.firefox.v3_0' do
+    Platform.windows_xp.firefox.v3_0
+  end
+
+  it 'Platform.windows_xp.firefox.v3_5' do
+    Platform.windows_xp.firefox.v3_5
+  end
+
+  it 'Platform.windows_xp.firefox.v3_6' do
+    Platform.windows_xp.firefox.v3_6
+  end
+
+  it 'Platform.windows_xp.firefox.v4' do
+    Platform.windows_xp.firefox.v4
+  end
+
+  it 'Platform.windows_xp.firefox.v5' do
+    Platform.windows_xp.firefox.v5
+  end
+
+  it 'Platform.windows_xp.firefox.v6' do
+    Platform.windows_xp.firefox.v6
+  end
+
+  it 'Platform.windows_xp.firefox.v7' do
+    Platform.windows_xp.firefox.v7
+  end
+
+  it 'Platform.windows_xp.firefox.v8' do
+    Platform.windows_xp.firefox.v8
+  end
+
+  it 'Platform.windows_xp.firefox.v9' do
+    Platform.windows_xp.firefox.v9
+  end
+
+  it 'Platform.windows_xp.firefox.v10' do
+    Platform.windows_xp.firefox.v10
+  end
+
+  it 'Platform.windows_xp.firefox.v11' do
+    Platform.windows_xp.firefox.v11
+  end
+
+  it 'Platform.windows_xp.firefox.v12' do
+    Platform.windows_xp.firefox.v12
+  end
+
+  it 'Platform.windows_xp.firefox.v13' do
+    Platform.windows_xp.firefox.v13
+  end
+
+  it 'Platform.windows_xp.firefox.v14' do
+    Platform.windows_xp.firefox.v14
+  end
+
+  it 'Platform.windows_xp.firefox.v15' do
+    Platform.windows_xp.firefox.v15
+  end
+
+  it 'Platform.windows_xp.firefox.v16' do
+    Platform.windows_xp.firefox.v16
+  end
+
+  it 'Platform.windows_xp.firefox.v17' do
+    Platform.windows_xp.firefox.v17
+  end
+
+  it 'Platform.windows_xp.firefox.v18' do
+    Platform.windows_xp.firefox.v18
+  end
+
+  it 'Platform.windows_xp.firefox.v19' do
+    Platform.windows_xp.firefox.v19
+  end
+
+  it 'Platform.windows_xp.firefox.v20' do
+    Platform.windows_xp.firefox.v20
+  end
+
+  it 'Platform.windows_xp.firefox.v21' do
+    Platform.windows_xp.firefox.v21
+  end
+
+  it 'Platform.windows_xp.firefox.v22' do
+    Platform.windows_xp.firefox.v22
+  end
+
+  it 'Platform.windows_xp.firefox.v23' do
+    Platform.windows_xp.firefox.v23
+  end
+
+  it 'Platform.windows_xp.firefox.v24' do
+    Platform.windows_xp.firefox.v24
+  end
+
+  it 'Platform.windows_xp.firefox.v25' do
+    Platform.windows_xp.firefox.v25
+  end
+
+  it 'Platform.windows_xp.firefox.v26' do
+    Platform.windows_xp.firefox.v26
+  end
+
+  it 'Platform.windows_xp.firefox.v27' do
+    Platform.windows_xp.firefox.v27
+  end
+
+  it 'Platform.windows_xp.firefox.v28' do
+    Platform.windows_xp.firefox.v28
+  end
+
+  it 'Platform.windows_xp.firefox.v29' do
+    Platform.windows_xp.firefox.v29
+  end
+
+  it 'Platform.windows_xp.firefox.v30' do
+    Platform.windows_xp.firefox.v30
+  end
+
+  it 'Platform.windows_xp.firefox.v31' do
+    Platform.windows_xp.firefox.v31
+  end
+
+  it 'Platform.windows_xp.firefox.v32' do
+    Platform.windows_xp.firefox.v32
+  end
+
+  it 'Platform.windows_xp.firefox.v33' do
+    Platform.windows_xp.firefox.v33
+  end
+
+  it 'Platform.windows_xp.firefox.v34' do
+    Platform.windows_xp.firefox.v34
+  end
+
+  it 'Platform.windows_xp.firefox.v35' do
+    Platform.windows_xp.firefox.v35
+  end
+
+  it 'Platform.windows_xp.firefox.v36' do
+    Platform.windows_xp.firefox.v36
+  end
+
+  it 'Platform.windows_xp.firefox.v37' do
+    Platform.windows_xp.firefox.v37
+  end
+
+  it 'Platform.windows_xp.firefox.v38' do
+    Platform.windows_xp.firefox.v38
+  end
+
+  it 'Platform.windows_xp.firefox.v39' do
+    Platform.windows_xp.firefox.v39
+  end
+
+  it 'Platform.windows_xp.firefox.v40' do
+    Platform.windows_xp.firefox.v40
+  end
+
+  it 'Platform.windows_xp.firefox.v41' do
+    Platform.windows_xp.firefox.v41
+  end
+
+  it 'Platform.windows_xp.firefox.beta' do
+    Platform.windows_xp.firefox.beta
+  end
+
+  it 'Platform.windows_xp.firefox.dev' do
+    Platform.windows_xp.firefox.dev
+  end
+
+  it 'Platform.windows_xp.chrome.v"123"' do
+    Platform.windows_xp.chrome.v'123'
+  end
+
+  it 'Platform.windows_xp.chrome.v26' do
+    Platform.windows_xp.chrome.v26
+  end
+
+  it 'Platform.windows_xp.chrome.v27' do
+    Platform.windows_xp.chrome.v27
+  end
+
+  it 'Platform.windows_xp.chrome.v28' do
+    Platform.windows_xp.chrome.v28
+  end
+
+  it 'Platform.windows_xp.chrome.v29' do
+    Platform.windows_xp.chrome.v29
+  end
+
+  it 'Platform.windows_xp.chrome.v30' do
+    Platform.windows_xp.chrome.v30
+  end
+
+  it 'Platform.windows_xp.chrome.v31' do
+    Platform.windows_xp.chrome.v31
+  end
+
+  it 'Platform.windows_xp.chrome.v32' do
+    Platform.windows_xp.chrome.v32
+  end
+
+  it 'Platform.windows_xp.chrome.v33' do
+    Platform.windows_xp.chrome.v33
+  end
+
+  it 'Platform.windows_xp.chrome.v34' do
+    Platform.windows_xp.chrome.v34
+  end
+
+  it 'Platform.windows_xp.chrome.v35' do
+    Platform.windows_xp.chrome.v35
+  end
+
+  it 'Platform.windows_xp.chrome.v36' do
+    Platform.windows_xp.chrome.v36
+  end
+
+  it 'Platform.windows_xp.chrome.v37' do
+    Platform.windows_xp.chrome.v37
+  end
+
+  it 'Platform.windows_xp.chrome.v38' do
+    Platform.windows_xp.chrome.v38
+  end
+
+  it 'Platform.windows_xp.chrome.v39' do
+    Platform.windows_xp.chrome.v39
+  end
+
+  it 'Platform.windows_xp.chrome.v40' do
+    Platform.windows_xp.chrome.v40
+  end
+
+  it 'Platform.windows_xp.chrome.v41' do
+    Platform.windows_xp.chrome.v41
+  end
+
+  it 'Platform.windows_xp.chrome.v42' do
+    Platform.windows_xp.chrome.v42
+  end
+
+  it 'Platform.windows_xp.chrome.v43' do
+    Platform.windows_xp.chrome.v43
+  end
+
+  it 'Platform.windows_xp.chrome.v44' do
+    Platform.windows_xp.chrome.v44
+  end
+
+  it 'Platform.windows_xp.chrome.v45' do
+    Platform.windows_xp.chrome.v45
+  end
+
+  it 'Platform.windows_xp.chrome.beta' do
+    Platform.windows_xp.chrome.beta
+  end
+
+  it 'Platform.windows_xp.chrome.dev' do
+    Platform.windows_xp.chrome.dev
   end
 
 end
@@ -1388,6 +1628,14 @@ describe 'linux' do
     Platform.linux.firefox.v39
   end
 
+  it 'Platform.linux.firefox.v40' do
+    Platform.linux.firefox.v40
+  end
+
+  it 'Platform.linux.firefox.v41' do
+    Platform.linux.firefox.v41
+  end
+
   it 'Platform.linux.firefox.beta' do
     Platform.linux.firefox.beta
   end
@@ -1470,6 +1718,14 @@ describe 'linux' do
 
   it 'Platform.linux.chrome.v43' do
     Platform.linux.chrome.v43
+  end
+
+  it 'Platform.linux.chrome.v44' do
+    Platform.linux.chrome.v44
+  end
+
+  it 'Platform.linux.chrome.v45' do
+    Platform.linux.chrome.v45
   end
 
   it 'Platform.linux.chrome.beta' do
@@ -1651,6 +1907,14 @@ describe 'windows_2012_r2' do
     Platform.windows_8_1.firefox.v39
   end
 
+  it 'Platform.windows_8_1.firefox.v40' do
+    Platform.windows_8_1.firefox.v40
+  end
+
+  it 'Platform.windows_8_1.firefox.v41' do
+    Platform.windows_8_1.firefox.v41
+  end
+
   it 'Platform.windows_8_1.firefox.beta' do
     Platform.windows_8_1.firefox.beta
   end
@@ -1739,6 +2003,10 @@ describe 'windows_2012_r2' do
     Platform.windows_8_1.chrome.v44
   end
 
+  it 'Platform.windows_8_1.chrome.v45' do
+    Platform.windows_8_1.chrome.v45
+  end
+
   it 'Platform.windows_8_1.chrome.beta' do
     Platform.windows_8_1.chrome.beta
   end
@@ -1758,16 +2026,16 @@ describe 'windows_2008' do
     Platform.windows_7.internet_explorer.v8
   end
 
-  it 'Platform.windows_7.internet_explorer.v9' do
-    Platform.windows_7.internet_explorer.v9
+  it 'Platform.windows_7.internet_explorer.v11' do
+    Platform.windows_7.internet_explorer.v11
   end
 
   it 'Platform.windows_7.internet_explorer.v10' do
     Platform.windows_7.internet_explorer.v10
   end
 
-  it 'Platform.windows_7.internet_explorer.v11' do
-    Platform.windows_7.internet_explorer.v11
+  it 'Platform.windows_7.internet_explorer.v9' do
+    Platform.windows_7.internet_explorer.v9
   end
 
   it 'Platform.windows_7.opera.v"123"' do
@@ -1942,6 +2210,14 @@ describe 'windows_2008' do
     Platform.windows_7.firefox.v39
   end
 
+  it 'Platform.windows_7.firefox.v40' do
+    Platform.windows_7.firefox.v40
+  end
+
+  it 'Platform.windows_7.firefox.v41' do
+    Platform.windows_7.firefox.v41
+  end
+
   it 'Platform.windows_7.firefox.beta' do
     Platform.windows_7.firefox.beta
   end
@@ -2036,6 +2312,10 @@ describe 'windows_2008' do
 
   it 'Platform.windows_7.chrome.v44' do
     Platform.windows_7.chrome.v44
+  end
+
+  it 'Platform.windows_7.chrome.v45' do
+    Platform.windows_7.chrome.v45
   end
 
   it 'Platform.windows_7.chrome.beta' do
@@ -2197,6 +2477,14 @@ describe 'mac_10_11' do
     Platform.mac_10_11.firefox.v39
   end
 
+  it 'Platform.mac_10_11.firefox.v40' do
+    Platform.mac_10_11.firefox.v40
+  end
+
+  it 'Platform.mac_10_11.firefox.v41' do
+    Platform.mac_10_11.firefox.v41
+  end
+
   it 'Platform.mac_10_11.firefox.beta' do
     Platform.mac_10_11.firefox.beta
   end
@@ -2277,6 +2565,14 @@ describe 'mac_10_11' do
     Platform.mac_10_11.chrome.v43
   end
 
+  it 'Platform.mac_10_11.chrome.v44' do
+    Platform.mac_10_11.chrome.v44
+  end
+
+  it 'Platform.mac_10_11.chrome.v45' do
+    Platform.mac_10_11.chrome.v45
+  end
+
   it 'Platform.mac_10_11.chrome.beta' do
     Platform.mac_10_11.chrome.beta
   end
@@ -2322,6 +2618,14 @@ describe 'mac_10_10' do
 
   it 'Platform.mac_10_10.firefox.v39' do
     Platform.mac_10_10.firefox.v39
+  end
+
+  it 'Platform.mac_10_10.firefox.v40' do
+    Platform.mac_10_10.firefox.v40
+  end
+
+  it 'Platform.mac_10_10.firefox.v41' do
+    Platform.mac_10_10.firefox.v41
   end
 
   it 'Platform.mac_10_10.firefox.beta' do
@@ -2372,6 +2676,14 @@ describe 'mac_10_10' do
     Platform.mac_10_10.chrome.v43
   end
 
+  it 'Platform.mac_10_10.chrome.v44' do
+    Platform.mac_10_10.chrome.v44
+  end
+
+  it 'Platform.mac_10_10.chrome.v45' do
+    Platform.mac_10_10.chrome.v45
+  end
+
   it 'Platform.mac_10_10.chrome.beta' do
     Platform.mac_10_10.chrome.beta
   end
@@ -2383,38 +2695,6 @@ describe 'mac_10_10' do
 end
 
 describe 'android' do
-  it 'Platform.android.android.v"123"' do
-    Platform.android.android.v'123'
-  end
-
-  it 'Platform.android.android.v4_0' do
-    Platform.android.android.v4_0
-  end
-
-  it 'Platform.android.android.v4_1' do
-    Platform.android.android.v4_1
-  end
-
-  it 'Platform.android.android.v4_2' do
-    Platform.android.android.v4_2
-  end
-
-  it 'Platform.android.android.v4_3' do
-    Platform.android.android.v4_3
-  end
-
-  it 'Platform.android.android.v4_4' do
-    Platform.android.android.v4_4
-  end
-
-  it 'Platform.android.android.v5_0' do
-    Platform.android.android.v5_0
-  end
-
-  it 'Platform.android.android.v5_1' do
-    Platform.android.android.v5_1
-  end
-
   it 'Platform.android.motorola_droid_4_emulator.v"123"' do
     Platform.android.motorola_droid_4_emulator.v'123'
   end
@@ -2501,6 +2781,38 @@ describe 'android' do
 
   it 'Platform.android.lg_nexus_4_emulator.v4_4' do
     Platform.android.lg_nexus_4_emulator.v4_4
+  end
+
+  it 'Platform.android.android.v"123"' do
+    Platform.android.android.v'123'
+  end
+
+  it 'Platform.android.android.v4_0' do
+    Platform.android.android.v4_0
+  end
+
+  it 'Platform.android.android.v4_1' do
+    Platform.android.android.v4_1
+  end
+
+  it 'Platform.android.android.v4_2' do
+    Platform.android.android.v4_2
+  end
+
+  it 'Platform.android.android.v4_3' do
+    Platform.android.android.v4_3
+  end
+
+  it 'Platform.android.android.v4_4' do
+    Platform.android.android.v4_4
+  end
+
+  it 'Platform.android.android.v5_0' do
+    Platform.android.android.v5_0
+  end
+
+  it 'Platform.android.android.v5_1' do
+    Platform.android.android.v5_1
   end
 
   it 'Platform.android.samsung_galaxy_nexus_emulator.v"123"' do
@@ -2613,6 +2925,18 @@ describe 'android' do
 
   it 'Platform.android.lg_optimus_3d_emulator.v4_0' do
     Platform.android.lg_optimus_3d_emulator.v4_0
+  end
+
+  it 'Platform.android.amazon_kindle_fire_hd_8_9_emulator.v"123"' do
+    Platform.android.amazon_kindle_fire_hd_8_9_emulator.v'123'
+  end
+
+  it 'Platform.android.amazon_kindle_fire_hd_8_9_emulator.v4_0' do
+    Platform.android.amazon_kindle_fire_hd_8_9_emulator.v4_0
+  end
+
+  it 'Platform.android.amazon_kindle_fire_hd_8_9_emulator.v4_4' do
+    Platform.android.amazon_kindle_fire_hd_8_9_emulator.v4_4
   end
 
   it 'Platform.android.motorola_atrix_hd_emulator.v"123"' do

@@ -2,7 +2,10 @@ module Platform
   module Android_motorola_photon_q_4g_emulator
     class << self
       def android_motorola_photon_q_4g_emulator version_string
-        ['Linux', 'Android', version_string.to_s, deviceName: 'Motorola Photon Q 4G Emulator']
+        { browserName: %q(Android),
+          deviceName: %q(Motorola Photon Q 4G Emulator),
+          platformVersion: version_string.to_s,
+          platformName: %q(Linux) }
       end
 
       def v version_string

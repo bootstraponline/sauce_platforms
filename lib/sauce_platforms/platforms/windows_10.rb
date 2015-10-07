@@ -1,5 +1,6 @@
 require_relative 'windows_10/windows_10_internet_explorer'
 require_relative 'windows_10/windows_10_firefox'
+require_relative 'windows_10/windows_10_microsoftedge'
 require_relative 'windows_10/windows_10_chrome'
 
 module Platform
@@ -12,6 +13,10 @@ module Platform
 
       def firefox
         Windows_10_firefox
+      end
+
+      def microsoftedge
+        Windows_10_microsoftedge
       end
 
       def chrome

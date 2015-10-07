@@ -2,7 +2,9 @@ module Platform
   module Windows_2008_firefox
     class << self
       def windows_2008_firefox version_string
-        ['Windows 2008', 'firefox', version_string.to_s]
+        { browserName: %q(firefox),
+          platform: %q(Windows 2008),
+          version: version_string.to_s }
       end
 
       def v version_string
@@ -163,6 +165,14 @@ module Platform
 
       def v39
         windows_2008_firefox '39'
+      end
+
+      def v40
+        windows_2008_firefox '40'
+      end
+
+      def v41
+        windows_2008_firefox '41'
       end
 
       def beta

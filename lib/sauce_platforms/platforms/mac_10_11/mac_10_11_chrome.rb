@@ -2,7 +2,9 @@ module Platform
   module Mac_10_11_chrome
     class << self
       def mac_10_11_chrome version_string
-        ['Mac 10.11', 'chrome', version_string.to_s]
+        { browserName: %q(chrome),
+          platform: %q(Mac 10.11),
+          version: version_string.to_s }
       end
 
       def v version_string
@@ -67,6 +69,14 @@ module Platform
 
       def v43
         mac_10_11_chrome '43'
+      end
+
+      def v44
+        mac_10_11_chrome '44'
+      end
+
+      def v45
+        mac_10_11_chrome '45'
       end
 
       def beta

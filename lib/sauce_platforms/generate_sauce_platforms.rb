@@ -80,10 +80,10 @@ platforms.each do |platform|
   operating_systems[os] ||= {}
 
   is_android = os == 'Linux' && browser == 'android'
+  is_ios     = os.include?('Mac') && ios_browsers.include?(browser)
+  is_mobile  = is_android || is_ios
 
-  is_ios = os.include?('Mac') && ios_browsers.include?(browser)
-
-  if is_android || is_ios
+  if is_mobile
     os     = is_android ? 'android' : 'ios'
     # android/ios have a 'long_name' value which is sent in deviceName desired cap.
     device = platform['long_name']
@@ -96,7 +96,6 @@ platforms.each do |platform|
     operating_systems[os][browser] ||= []
     operating_systems[os][browser] << version
   end
-
 end
 
 # platforms.length
@@ -168,7 +167,8 @@ operating_systems.each do |os, browser_hash|
 
     is_android            = browser == 'android'
     is_ios                = ios_browsers.include?(browser)
-    browser_version_pairs = version_array if is_android || is_ios
+    is_mobile             = is_android || is_ios
+    browser_version_pairs = version_array if is_mobile
 
     browser_version_pairs.each do |browser, version_array|
       filecase_browser    = filecase(browser)
@@ -179,7 +179,8 @@ operating_systems.each do |os, browser_hash|
         file.puts "  module #{os_browser_class_name}"
         file.puts '    class << self'
         file.puts "      def #{os_browser_filename} version_string"
-        if is_android || is_ios
+        caps_join = ",\n" + ' ' * 10
+        if is_mobile
           # android/ios must specify a device name
           device_name = browser
           if is_ios
@@ -199,10 +200,18 @@ operating_systems.each do |os, browser_hash|
           os      = is_android ? 'Linux' : 'iOS'
           # ruby gem reads this as: os, browser, version, {desired caps hash}
           # operating_system, browser_name, device_os_version, device_name
-          file.puts "        ['#{os}', '#{browser}', version_string.to_s, deviceName: '#{device_name}']"
+          # Sauce uses modern (selenium 3) desired capabilities for mobile browsers
+          caps    = ["browserName: %q(#{browser})",
+                     "deviceName: %q(#{device_name})",
+                     'platformVersion: version_string.to_s',
+                     "platformName: %q(#{os})"].join(caps_join)
+          file.puts "        { #{caps} }"
         else
-
-          file.puts "        ['#{os}', '#{browser}', version_string.to_s]"
+          # Sauce uses legacy desired capabilities for desktop browsers
+          caps = ["browserName: %q(#{browser})",
+                  "platform: %q(#{os})",
+                  'version: version_string.to_s'].join(caps_join)
+          file.puts "        { #{caps} }"
         end
         file.puts '      end'
         file.puts

@@ -2,7 +2,9 @@ module Platform
   module Windows_10_firefox
     class << self
       def windows_10_firefox version_string
-        ['Windows 10', 'firefox', version_string.to_s]
+        { browserName: %q(firefox),
+          platform: %q(Windows 10),
+          version: version_string.to_s }
       end
 
       def v version_string
@@ -163,6 +165,14 @@ module Platform
 
       def v39
         windows_10_firefox '39'
+      end
+
+      def v40
+        windows_10_firefox '40'
+      end
+
+      def v41
+        windows_10_firefox '41'
       end
 
       def beta

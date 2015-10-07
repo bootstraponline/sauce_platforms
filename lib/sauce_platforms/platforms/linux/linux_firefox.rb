@@ -2,7 +2,9 @@ module Platform
   module Linux_firefox
     class << self
       def linux_firefox version_string
-        ['Linux', 'firefox', version_string.to_s]
+        { browserName: %q(firefox),
+          platform: %q(Linux),
+          version: version_string.to_s }
       end
 
       def v version_string
@@ -155,6 +157,14 @@ module Platform
 
       def v39
         linux_firefox '39'
+      end
+
+      def v40
+        linux_firefox '40'
+      end
+
+      def v41
+        linux_firefox '41'
       end
 
       def beta
