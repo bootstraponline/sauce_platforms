@@ -1,3 +1,9 @@
+#### v2.0.0 2015-10-07
+
+- [1a4fe84](https://github.com/bootstraponline/sauce_platforms/commit/1a4fe847c9aeab1eb240257eb69430ca2af01460) Release 2.0.0
+- [8c2fe03](https://github.com/bootstraponline/sauce_platforms/commit/8c2fe037cd7400533896f111cf64359230e04d10) Generate desired capabilities hash
+
+
 #### v1.0.5 2015-08-04
 
 - [b97eb5a](https://github.com/bootstraponline/sauce_platforms/commit/b97eb5a48d43231555eccd141bbdbf5e919df7b7) Release 1.0.5
