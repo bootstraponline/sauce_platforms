@@ -1,3 +1,12 @@
+#### v3.0.0 2015-10-12
+
+- [d453d9e](https://github.com/bootstraponline/sauce_platforms/commit/d453d9e8edf4bc647cf4567e4e84e92fa161d00e) Release 3.0.0
+- [fc0c681](https://github.com/bootstraponline/sauce_platforms/commit/fc0c6811e44765fdc527c1f16b7564771f10fd59) Update platforms
+- [5a73712](https://github.com/bootstraponline/sauce_platforms/commit/5a7371291fbbda0f676f70a0865a6e9b02b22d52) Alias Window names to be human readable
+- [2447831](https://github.com/bootstraponline/sauce_platforms/commit/24478312d620ffb262d2853474752293ddfcc485) Update platforms.txt
+- [9708dc7](https://github.com/bootstraponline/sauce_platforms/commit/9708dc70e8602b1487c04e6a2e70ed6ed01bd4fc) Add dump_platforms
+
+
 #### v2.0.0 2015-10-07
 
 - [1a4fe84](https://github.com/bootstraponline/sauce_platforms/commit/1a4fe847c9aeab1eb240257eb69430ca2af01460) Release 2.0.0
