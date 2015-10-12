@@ -56,6 +56,10 @@ module Platform
         ios_ipad '9.0'
       end
 
+      def v9_1
+        ios_ipad '9.1'
+      end
+
     end
   end
 end

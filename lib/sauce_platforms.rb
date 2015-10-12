@@ -6,10 +6,10 @@ require_relative 'sauce_platforms/platforms/mac_10_11'
 require_relative 'sauce_platforms/platforms/mac_10_8'
 require_relative 'sauce_platforms/platforms/mac_10_9'
 require_relative 'sauce_platforms/platforms/windows_10'
-require_relative 'sauce_platforms/platforms/windows_2003'
-require_relative 'sauce_platforms/platforms/windows_2008'
-require_relative 'sauce_platforms/platforms/windows_2012'
-require_relative 'sauce_platforms/platforms/windows_2012_r2'
+require_relative 'sauce_platforms/platforms/windows_7'
+require_relative 'sauce_platforms/platforms/windows_8'
+require_relative 'sauce_platforms/platforms/windows_8_1'
+require_relative 'sauce_platforms/platforms/windows_xp'
 
 module Platform
   class << self
@@ -27,7 +27,7 @@ module Platform
     end
 
     def windows_8
-      Windows_2012
+      Windows_8
     end
 
     def mac_10_8
@@ -35,7 +35,7 @@ module Platform
     end
 
     def windows_xp
-      Windows_2003
+      Windows_xp
     end
 
     def linux
@@ -43,11 +43,11 @@ module Platform
     end
 
     def windows_8_1
-      Windows_2012_r2
+      Windows_8_1
     end
 
     def windows_7
-      Windows_2008
+      Windows_7
     end
 
     def mac_10_11

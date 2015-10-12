@@ -297,6 +297,10 @@ describe 'ios' do
     Platform.ios.ipad.v9_0
   end
 
+  it 'Platform.ios.ipad.v9_1' do
+    Platform.ios.ipad.v9_1
+  end
+
   it 'Platform.ios.iphone.v"123"' do
     Platform.ios.iphone.v'123'
   end
@@ -343,6 +347,10 @@ describe 'ios' do
 
   it 'Platform.ios.iphone.v9_0' do
     Platform.ios.iphone.v9_0
+  end
+
+  it 'Platform.ios.iphone.v9_1' do
+    Platform.ios.iphone.v9_1
   end
 
 end
@@ -634,7 +642,7 @@ describe 'windows_10' do
 
 end
 
-describe 'windows_2012' do
+describe 'windows_8' do
   it 'Platform.windows_8.internet_explorer.v"123"' do
     Platform.windows_8.internet_explorer.v'123'
   end
@@ -1168,7 +1176,7 @@ describe 'mac_10_8' do
 
 end
 
-describe 'windows_2003' do
+describe 'windows_xp' do
   it 'Platform.windows_xp.opera.v"123"' do
     Platform.windows_xp.opera.v'123'
   end
@@ -1738,7 +1746,7 @@ describe 'linux' do
 
 end
 
-describe 'windows_2012_r2' do
+describe 'windows_8_1' do
   it 'Platform.windows_8_1.internet_explorer.v"123"' do
     Platform.windows_8_1.internet_explorer.v'123'
   end
@@ -2017,7 +2025,7 @@ describe 'windows_2012_r2' do
 
 end
 
-describe 'windows_2008' do
+describe 'windows_7' do
   it 'Platform.windows_7.internet_explorer.v"123"' do
     Platform.windows_7.internet_explorer.v'123'
   end
