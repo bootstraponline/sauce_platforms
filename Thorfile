@@ -21,4 +21,13 @@ class ::Default < Thor
   def gen
     exec 'ruby ./lib/sauce_platforms/generate_sauce_platforms.rb'
   end
+
+  desc 'dump_platforms', 'Dump platforms to platforms.txt'
+  def dump_platforms
+    require 'json'
+    require 'sauce_whisk'
+    File.open('platforms.txt', 'w') do |f|
+      f.write JSON.pretty_generate SauceWhisk::Sauce.platforms(true)
+    end
+  end
 end
