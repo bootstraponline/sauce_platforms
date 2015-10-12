@@ -8,6 +8,7 @@
 #
 # @return [String] alias or original name if an alias isn't found.
 def windows_alias windows_server_name
+  # Windows 10 is already called Windows 10 in the API
   pairs = {
     windows_2012_r2: :windows_8_1,
     windows_2012:    :windows_8,
@@ -15,6 +16,21 @@ def windows_alias windows_server_name
     windows_2003:    :windows_xp
   }
   pairs[windows_server_name.intern] || windows_server_name
+end
+
+def windows_platform_alias platform
+  case platform # Windows 10 doesn't need an alias
+    when 'Windows 2012 R2'
+      'Windows 8.1'
+    when 'Windows 2012'
+      'Windows 8'
+    when 'Windows 2008'
+      'Windows 7'
+    when 'Windows 2003'
+      'Windows XP'
+    else
+      platform
+  end
 end
 
 def filecase string
@@ -120,6 +136,7 @@ Dir.mkdir platform_dir
 
 # generate platform skeleton files
 operating_systems.each do |os, browser_hash|
+  os = windows_platform_alias os
   os_file_name  = filecase os
   os_class_name = os_file_name.capitalize
 
