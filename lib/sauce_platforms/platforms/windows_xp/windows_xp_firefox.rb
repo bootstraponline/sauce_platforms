@@ -11,18 +11,6 @@ module Platform
         windows_xp_firefox version_string
       end
 
-      def v3_0
-        windows_xp_firefox '3.0'
-      end
-
-      def v3_5
-        windows_xp_firefox '3.5'
-      end
-
-      def v3_6
-        windows_xp_firefox '3.6'
-      end
-
       def v4
         windows_xp_firefox '4'
       end
@@ -189,14 +177,6 @@ module Platform
 
       def v45
         windows_xp_firefox '45'
-      end
-
-      def beta
-        windows_xp_firefox 'beta'
-      end
-
-      def dev
-        windows_xp_firefox 'dev'
       end
 
     end

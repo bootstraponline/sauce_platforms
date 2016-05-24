@@ -91,6 +91,14 @@ module Platform
         mac_10_11_chrome '48'
       end
 
+      def v49
+        mac_10_11_chrome '49'
+      end
+
+      def v50
+        mac_10_11_chrome '50'
+      end
+
       def beta
         mac_10_11_chrome 'beta'
       end

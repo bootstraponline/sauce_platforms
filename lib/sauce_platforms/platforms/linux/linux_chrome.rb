@@ -103,14 +103,6 @@ module Platform
         linux_chrome '48'
       end
 
-      def beta
-        linux_chrome 'beta'
-      end
-
-      def dev
-        linux_chrome 'dev'
-      end
-
     end
   end
 end

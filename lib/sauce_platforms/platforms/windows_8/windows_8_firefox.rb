@@ -11,18 +11,6 @@ module Platform
         windows_8_firefox version_string
       end
 
-      def v3_0
-        windows_8_firefox '3.0'
-      end
-
-      def v3_5
-        windows_8_firefox '3.5'
-      end
-
-      def v3_6
-        windows_8_firefox '3.6'
-      end
-
       def v4
         windows_8_firefox '4'
       end
@@ -191,12 +179,12 @@ module Platform
         windows_8_firefox '45'
       end
 
-      def beta
-        windows_8_firefox 'beta'
+      def v46
+        windows_8_firefox '46'
       end
 
-      def dev
-        windows_8_firefox 'dev'
+      def beta
+        windows_8_firefox 'beta'
       end
 
     end

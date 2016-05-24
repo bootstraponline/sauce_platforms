@@ -11,10 +11,6 @@ module Platform
         linux_firefox version_string
       end
 
-      def v3_6
-        linux_firefox '3.6'
-      end
-
       def v4
         linux_firefox '4'
       end
@@ -181,14 +177,6 @@ module Platform
 
       def v45
         linux_firefox '45'
-      end
-
-      def beta
-        linux_firefox 'beta'
-      end
-
-      def dev
-        linux_firefox 'dev'
       end
 
     end

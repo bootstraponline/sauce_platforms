@@ -11,12 +11,8 @@ module Platform
         windows_10_microsoftedge version_string
       end
 
-      def v20
-        windows_10_microsoftedge '20'
-      end
-
-      def v13_10586
-        windows_10_microsoftedge '13_10586'
+      def v13
+        windows_10_microsoftedge '13'
       end
 
     end

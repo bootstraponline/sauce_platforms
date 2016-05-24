@@ -107,14 +107,6 @@ module Platform
         windows_xp_chrome '49'
       end
 
-      def beta
-        windows_xp_chrome 'beta'
-      end
-
-      def dev
-        windows_xp_chrome 'dev'
-      end
-
     end
   end
 end

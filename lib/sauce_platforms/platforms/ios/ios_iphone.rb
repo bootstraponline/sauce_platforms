@@ -60,6 +60,10 @@ module Platform
         ios_iphone '9.1'
       end
 
+      def v9_2
+        ios_iphone '9.2'
+      end
+
     end
   end
 end

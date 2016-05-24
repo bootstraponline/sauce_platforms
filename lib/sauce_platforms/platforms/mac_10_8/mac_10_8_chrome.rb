@@ -91,12 +91,8 @@ module Platform
         mac_10_8_chrome '48'
       end
 
-      def beta
-        mac_10_8_chrome 'beta'
-      end
-
-      def dev
-        mac_10_8_chrome 'dev'
+      def v49
+        mac_10_8_chrome '49'
       end
 
     end

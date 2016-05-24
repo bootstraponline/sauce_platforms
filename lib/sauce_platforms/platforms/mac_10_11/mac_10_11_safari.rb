@@ -11,13 +11,10 @@ module Platform
         mac_10_11_safari version_string
       end
 
-      def v8_1
-        mac_10_11_safari '8.1'
+      def v9
+        mac_10_11_safari '9'
       end
 
-      def v9
-        mac_10_11_safari '9.0'
-      end
     end
   end
 end

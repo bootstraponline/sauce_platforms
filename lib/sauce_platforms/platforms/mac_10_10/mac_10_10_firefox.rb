@@ -63,14 +63,6 @@ module Platform
         mac_10_10_firefox '44'
       end
 
-      def beta
-        mac_10_10_firefox 'beta'
-      end
-
-      def dev
-        mac_10_10_firefox 'dev'
-      end
-
     end
   end
 end
