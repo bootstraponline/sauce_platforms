@@ -15,6 +15,9 @@ module Platform
         mac_10_11_safari '8.1'
       end
 
+      def v9
+        mac_10_11_safari '9.0'
+      end
     end
   end
 end

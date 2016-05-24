@@ -15,16 +15,16 @@ module Platform
         windows_7_internet_explorer '8'
       end
 
-      def v11
-        windows_7_internet_explorer '11'
+      def v9
+        windows_7_internet_explorer '9'
       end
 
       def v10
         windows_7_internet_explorer '10'
       end
 
-      def v9
-        windows_7_internet_explorer '9'
+      def v11
+        windows_7_internet_explorer '11'
       end
 
     end

@@ -11,16 +11,16 @@ module Platform
         windows_xp_internet_explorer version_string
       end
 
-      def v8
-        windows_xp_internet_explorer '8'
+      def v6
+        windows_xp_internet_explorer '6'
       end
 
       def v7
         windows_xp_internet_explorer '7'
       end
 
-      def v6
-        windows_xp_internet_explorer '6'
+      def v8
+        windows_xp_internet_explorer '8'
       end
 
     end

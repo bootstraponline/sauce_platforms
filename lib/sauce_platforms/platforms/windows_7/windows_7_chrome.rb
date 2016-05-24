@@ -91,6 +91,26 @@ module Platform
         windows_7_chrome '45'
       end
 
+      def v46
+        windows_7_chrome '46'
+      end
+
+      def v47
+        windows_7_chrome '47'
+      end
+
+      def v48
+        windows_7_chrome '48'
+      end
+
+      def v49
+        windows_7_chrome '49'
+      end
+
+      def v50
+        windows_7_chrome '50'
+      end
+
       def beta
         windows_7_chrome 'beta'
       end

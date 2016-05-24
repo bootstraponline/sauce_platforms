@@ -15,6 +15,10 @@ module Platform
         windows_10_microsoftedge '20'
       end
 
+      def v13_10586
+        windows_10_microsoftedge '13_10586'
+      end
+
     end
   end
 end
