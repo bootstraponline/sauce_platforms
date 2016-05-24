@@ -175,6 +175,22 @@ module Platform
         windows_10_firefox '41'
       end
 
+      def v42
+        windows_10_firefox '42'
+      end
+
+      def v43
+        windows_10_firefox '43'
+      end
+
+      def v44
+        windows_10_firefox '44'
+      end
+
+      def v45
+        windows_10_firefox '45'
+      end
+
       def beta
         windows_10_firefox 'beta'
       end

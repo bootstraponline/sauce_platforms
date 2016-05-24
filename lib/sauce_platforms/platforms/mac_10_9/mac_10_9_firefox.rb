@@ -163,6 +163,22 @@ module Platform
         mac_10_9_firefox '41'
       end
 
+      def v42
+        mac_10_9_firefox '42'
+      end
+
+      def v43
+        mac_10_9_firefox '43'
+      end
+
+      def v44
+        mac_10_9_firefox '44'
+      end
+
+      def v45
+        mac_10_9_firefox '45'
+      end
+
       def beta
         mac_10_9_firefox 'beta'
       end

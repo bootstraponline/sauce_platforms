@@ -91,6 +91,18 @@ module Platform
         linux_chrome '45'
       end
 
+      def v46
+        linux_chrome '46'
+      end
+
+      def v47
+        linux_chrome '47'
+      end
+
+      def v48
+        linux_chrome '48'
+      end
+
       def beta
         linux_chrome 'beta'
       end

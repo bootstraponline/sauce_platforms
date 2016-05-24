@@ -175,6 +175,22 @@ module Platform
         windows_8_1_firefox '41'
       end
 
+      def v42
+        windows_8_1_firefox '42'
+      end
+
+      def v43
+        windows_8_1_firefox '43'
+      end
+
+      def v44
+        windows_8_1_firefox '44'
+      end
+
+      def v45
+        windows_8_1_firefox '45'
+      end
+
       def beta
         windows_8_1_firefox 'beta'
       end

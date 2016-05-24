@@ -91,6 +91,26 @@ module Platform
         windows_8_chrome '45'
       end
 
+      def v46
+        windows_8_chrome '46'
+      end
+
+      def v47
+        windows_8_chrome '47'
+      end
+
+      def v48
+        windows_8_chrome '48'
+      end
+
+      def v49
+        windows_8_chrome '49'
+      end
+
+      def v50
+        windows_8_chrome '50'
+      end
+
       def beta
         windows_8_chrome 'beta'
       end

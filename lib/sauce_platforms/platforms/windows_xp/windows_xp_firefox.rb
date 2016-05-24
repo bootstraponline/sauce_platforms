@@ -175,6 +175,22 @@ module Platform
         windows_xp_firefox '41'
       end
 
+      def v42
+        windows_xp_firefox '42'
+      end
+
+      def v43
+        windows_xp_firefox '43'
+      end
+
+      def v44
+        windows_xp_firefox '44'
+      end
+
+      def v45
+        windows_xp_firefox '45'
+      end
+
       def beta
         windows_xp_firefox 'beta'
       end

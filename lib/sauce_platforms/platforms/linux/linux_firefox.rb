@@ -167,6 +167,22 @@ module Platform
         linux_firefox '41'
       end
 
+      def v42
+        linux_firefox '42'
+      end
+
+      def v43
+        linux_firefox '43'
+      end
+
+      def v44
+        linux_firefox '44'
+      end
+
+      def v45
+        linux_firefox '45'
+      end
+
       def beta
         linux_firefox 'beta'
       end
