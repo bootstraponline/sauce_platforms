@@ -1,3 +1,11 @@
+#### v3.0.1 2016-05-24
+
+- [a1bacec](https://github.com/bootstraponline/sauce_platforms/commit/a1baceceb6a2ffbcfee6192d34293ea007cf7f3f) Release 3.0.1
+- [3adb60d](https://github.com/bootstraponline/sauce_platforms/commit/3adb60da3568f4047dd571783c8d8bda025fa494) Run thor gen
+- [0f595ed](https://github.com/bootstraponline/sauce_platforms/commit/0f595ed66076342adb94626d487429a653e5d1a2) Merge pull request #5 from mycargus/master
+- [ff881cd](https://github.com/bootstraponline/sauce_platforms/commit/ff881cd3aab3be8fdf86ae643e85fa225838a906) add current browser versions for desktops, add specs
+
+
 #### v3.0.0 2015-10-12
 
 - [d453d9e](https://github.com/bootstraponline/sauce_platforms/commit/d453d9e8edf4bc647cf4567e4e84e92fa161d00e) Release 3.0.0
