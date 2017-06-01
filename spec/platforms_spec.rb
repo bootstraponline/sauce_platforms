@@ -2237,20 +2237,20 @@ describe 'ios' do
     Platform.ios.ipad_simulator.v10_2
   end
 
-  it 'Platform.ios.ipad_pro_(12_9_inch)_simulator.v"123"' do
-    Platform.ios.ipad_pro_(12_9_inch)_simulator.v'123'
+  it 'Platform.ios.ipad_pro_12_9_inch_simulator.v"123"' do
+    Platform.ios.ipad_pro_12_9_inch_simulator.v'123'
   end
 
-  it 'Platform.ios.ipad_pro_(12_9_inch)_simulator.v10_3' do
-    Platform.ios.ipad_pro_(12_9_inch)_simulator.v10_3
+  it 'Platform.ios.ipad_pro_12_9_inch_simulator.v10_3' do
+    Platform.ios.ipad_pro_12_9_inch_simulator.v10_3
   end
 
-  it 'Platform.ios.ipad_pro_(12_9_inch)_simulator.v10_0' do
-    Platform.ios.ipad_pro_(12_9_inch)_simulator.v10_0
+  it 'Platform.ios.ipad_pro_12_9_inch_simulator.v10_0' do
+    Platform.ios.ipad_pro_12_9_inch_simulator.v10_0
   end
 
-  it 'Platform.ios.ipad_pro_(12_9_inch)_simulator.v10_2' do
-    Platform.ios.ipad_pro_(12_9_inch)_simulator.v10_2
+  it 'Platform.ios.ipad_pro_12_9_inch_simulator.v10_2' do
+    Platform.ios.ipad_pro_12_9_inch_simulator.v10_2
   end
 
   it 'Platform.ios.ipad_air_2_simulator.v"123"' do
@@ -2285,20 +2285,20 @@ describe 'ios' do
     Platform.ios.ipad_air_2_simulator.v10_2
   end
 
-  it 'Platform.ios.ipad_pro_(9_7_inch)_simulator.v"123"' do
-    Platform.ios.ipad_pro_(9_7_inch)_simulator.v'123'
+  it 'Platform.ios.ipad_pro_9_7_inch_simulator.v"123"' do
+    Platform.ios.ipad_pro_9_7_inch_simulator.v'123'
   end
 
-  it 'Platform.ios.ipad_pro_(9_7_inch)_simulator.v10_3' do
-    Platform.ios.ipad_pro_(9_7_inch)_simulator.v10_3
+  it 'Platform.ios.ipad_pro_9_7_inch_simulator.v10_3' do
+    Platform.ios.ipad_pro_9_7_inch_simulator.v10_3
   end
 
-  it 'Platform.ios.ipad_pro_(9_7_inch)_simulator.v10_0' do
-    Platform.ios.ipad_pro_(9_7_inch)_simulator.v10_0
+  it 'Platform.ios.ipad_pro_9_7_inch_simulator.v10_0' do
+    Platform.ios.ipad_pro_9_7_inch_simulator.v10_0
   end
 
-  it 'Platform.ios.ipad_pro_(9_7_inch)_simulator.v10_2' do
-    Platform.ios.ipad_pro_(9_7_inch)_simulator.v10_2
+  it 'Platform.ios.ipad_pro_9_7_inch_simulator.v10_2' do
+    Platform.ios.ipad_pro_9_7_inch_simulator.v10_2
   end
 
   it 'Platform.ios.ipad_pro_simulator.v"123"' do

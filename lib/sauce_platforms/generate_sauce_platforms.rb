@@ -34,7 +34,7 @@ def windows_platform_alias platform
 end
 
 def filecase string
-  string.downcase.gsub(/[\s|\.]/, '_')
+  string.downcase.gsub(/[\s|\.]/, '_').gsub(/[^a-zA-Z0-9_]/, '').gsub(/_+/, '_')
 end
 
 require 'rubygems'
