@@ -1,7 +1,7 @@
 # Sauce Platforms
 [![Gem Version](https://badge.fury.io/rb/sauce_platforms.svg)](https://rubygems.org/gems/sauce_platforms)
 [![Build Status](https://travis-ci.org/bootstraponline/sauce_platforms.svg?branch=master)](https://travis-ci.org/bootstraponline/sauce_platforms/builds)
-[![Coverage Status](https://coveralls.io/repos/bootstraponline/sauce_platforms/badge.svg?nocache)](https://coveralls.io/r/bootstraponline/sauce_platforms)
+[![Coverage Status](https://coveralls.io/repos/bootstraponline/sauce_platforms/badge.svg?nocach)](https://coveralls.io/r/bootstraponline/sauce_platforms)
 [![Dependency Status](https://gemnasium.com/bootstraponline/sauce_platforms.svg?nocache)](https://gemnasium.com/bootstraponline/sauce_platforms)
 
 Dependency free DSL for specifying [Sauce Labs platforms](https://saucelabs.com/platforms/).  The gem is automatically generated before publishing to rubygems via `sauce_whisk.platforms(true)`.
