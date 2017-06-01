@@ -1,4 +1,4 @@
 module Platforms
-  VERSION = '3.0.1' unless defined? ::Platforms::VERSION
-  DATE    = '2016-05-24' unless defined? ::Platforms::DATE
+  VERSION = '3.0.2' unless defined? ::Platforms::VERSION
+  DATE    = '2017-06-01' unless defined? ::Platforms::DATE
 end
