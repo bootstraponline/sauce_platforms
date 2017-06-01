@@ -1,3 +1,11 @@
+#### v3.0.2 2017-06-01
+
+- [2ea7c4b](https://github.com/bootstraponline/sauce_platforms/commit/2ea7c4be3087e81f4dbfff0e263c8104151712e1) Release 3.0.2
+- [d295317](https://github.com/bootstraponline/sauce_platforms/commit/d2953172a5af0075927f000d77fa58acaa69e69d) Fix iPhone/iPad generation
+- [312d776](https://github.com/bootstraponline/sauce_platforms/commit/312d776659a8b75379494fa5162979d38dcefc02) Fix iPad name
+- [b659ca9](https://github.com/bootstraponline/sauce_platforms/commit/b659ca95c7bbcb1cd14290f66b39272f383c41ad) Update platforms
+
+
 #### v3.0.1 2016-05-24
 
 - [a1bacec](https://github.com/bootstraponline/sauce_platforms/commit/a1baceceb6a2ffbcfee6192d34293ea007cf7f3f) Release 3.0.1
