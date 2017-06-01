@@ -10,26 +10,26 @@
 def windows_alias windows_server_name
   # Windows 10 is already called Windows 10 in the API
   pairs = {
-    windows_2012_r2: :windows_8_1,
-    windows_2012:    :windows_8,
-    windows_2008:    :windows_7,
-    windows_2003:    :windows_xp
+      windows_2012_r2: :windows_8_1,
+      windows_2012:    :windows_8,
+      windows_2008:    :windows_7,
+      windows_2003:    :windows_xp
   }
   pairs[windows_server_name.intern] || windows_server_name
 end
 
 def windows_platform_alias platform
   case platform # Windows 10 doesn't need an alias
-    when 'Windows 2012 R2'
-      'Windows 8.1'
-    when 'Windows 2012'
-      'Windows 8'
-    when 'Windows 2008'
-      'Windows 7'
-    when 'Windows 2003'
-      'Windows XP'
-    else
-      platform
+  when 'Windows 2012 R2'
+    'Windows 8.1'
+  when 'Windows 2012'
+    'Windows 8'
+  when 'Windows 2008'
+    'Windows 7'
+  when 'Windows 2003'
+    'Windows XP'
+  else
+    platform
   end
 end
 
@@ -136,15 +136,17 @@ Dir.mkdir platform_dir
 
 # generate platform skeleton files
 operating_systems.each do |os, browser_hash|
-  os = windows_platform_alias os
+  os            = windows_platform_alias os
   os_file_name  = filecase os
   os_class_name = os_file_name.capitalize
 
   browser_hash_keys = case os
-                        when 'android'
-                          browser_hash['android'].keys
-                        else
-                          browser_hash.keys
+                      when 'android'
+                        browser_hash['android'].keys
+                      when 'ios'
+                        browser_hash['iphone'].keys + browser_hash['ipad'].keys
+                      else
+                        browser_hash.keys
                       end
 
   browsers = browser_hash_keys.map { |e| filecase(e) }
@@ -203,10 +205,10 @@ operating_systems.each do |os, browser_hash|
           if is_ios
             # set deviceName cap properly for iOS
             device_name = case browser.downcase.strip
-                            when 'ipad'
-                              'iPad Simulator'
-                            when 'iphone'
-                              'iPhone Simulator'
+                          when 'ipad'
+                            'iPad Simulator'
+                          when 'iphone'
+                            'iPhone Simulator'
                           end
           end
 
