@@ -12,18 +12,6 @@ module Platform
         android_samsung_galaxy_s3_emulator version_string
       end
 
-      def v4_1
-        android_samsung_galaxy_s3_emulator '4.1'
-      end
-
-      def v4_2
-        android_samsung_galaxy_s3_emulator '4.2'
-      end
-
-      def v4_3
-        android_samsung_galaxy_s3_emulator '4.3'
-      end
-
       def v4_4
         android_samsung_galaxy_s3_emulator '4.4'
       end

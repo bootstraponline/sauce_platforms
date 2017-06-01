@@ -183,8 +183,40 @@ module Platform
         windows_10_firefox '46'
       end
 
+      def v47
+        windows_10_firefox '47'
+      end
+
+      def v48
+        windows_10_firefox '48'
+      end
+
+      def v49
+        windows_10_firefox '49'
+      end
+
+      def v50
+        windows_10_firefox '50'
+      end
+
+      def v51
+        windows_10_firefox '51'
+      end
+
+      def v52
+        windows_10_firefox '52'
+      end
+
+      def v53
+        windows_10_firefox '53'
+      end
+
       def beta
         windows_10_firefox 'beta'
+      end
+
+      def dev
+        windows_10_firefox 'dev'
       end
 
     end

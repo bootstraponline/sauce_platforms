@@ -1,5 +1,5 @@
-require_relative 'windows_xp/windows_xp_opera'
 require_relative 'windows_xp/windows_xp_internet_explorer'
+require_relative 'windows_xp/windows_xp_opera'
 require_relative 'windows_xp/windows_xp_firefox'
 require_relative 'windows_xp/windows_xp_chrome'
 
@@ -7,12 +7,12 @@ module Platform
   module Windows_xp
     class << self
 
-      def opera
-        Windows_xp_opera
-      end
-
       def internet_explorer
         Windows_xp_internet_explorer
+      end
+
+      def opera
+        Windows_xp_opera
       end
 
       def firefox

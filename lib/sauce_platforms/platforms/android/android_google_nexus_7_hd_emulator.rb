@@ -12,10 +12,6 @@ module Platform
         android_google_nexus_7_hd_emulator version_string
       end
 
-      def v4_3
-        android_google_nexus_7_hd_emulator '4.3'
-      end
-
       def v4_4
         android_google_nexus_7_hd_emulator '4.4'
       end

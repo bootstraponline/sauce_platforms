@@ -183,8 +183,40 @@ module Platform
         windows_8_firefox '46'
       end
 
+      def v47
+        windows_8_firefox '47'
+      end
+
+      def v48
+        windows_8_firefox '48'
+      end
+
+      def v49
+        windows_8_firefox '49'
+      end
+
+      def v50
+        windows_8_firefox '50'
+      end
+
+      def v51
+        windows_8_firefox '51'
+      end
+
+      def v52
+        windows_8_firefox '52'
+      end
+
+      def v53
+        windows_8_firefox '53'
+      end
+
       def beta
         windows_8_firefox 'beta'
+      end
+
+      def dev
+        windows_8_firefox 'dev'
       end
 
     end

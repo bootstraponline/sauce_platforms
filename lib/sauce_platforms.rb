@@ -3,6 +3,7 @@ require_relative 'sauce_platforms/platforms/ios'
 require_relative 'sauce_platforms/platforms/linux'
 require_relative 'sauce_platforms/platforms/mac_10_10'
 require_relative 'sauce_platforms/platforms/mac_10_11'
+require_relative 'sauce_platforms/platforms/mac_10_12'
 require_relative 'sauce_platforms/platforms/mac_10_8'
 require_relative 'sauce_platforms/platforms/mac_10_9'
 require_relative 'sauce_platforms/platforms/windows_10'
@@ -18,14 +19,6 @@ module Platform
       Mac_10_9
     end
 
-    def ios
-      Ios
-    end
-
-    def windows_10
-      Windows_10
-    end
-
     def windows_8
       Windows_8
     end
@@ -34,28 +27,40 @@ module Platform
       Mac_10_8
     end
 
-    def windows_xp
-      Windows_xp
-    end
-
-    def linux
-      Linux
-    end
-
-    def windows_8_1
-      Windows_8_1
+    def mac_10_12
+      Mac_10_12
     end
 
     def windows_7
       Windows_7
     end
 
+    def ios
+      Ios
+    end
+
     def mac_10_11
       Mac_10_11
     end
 
+    def windows_xp
+      Windows_xp
+    end
+
+    def windows_10
+      Windows_10
+    end
+
+    def windows_8_1
+      Windows_8_1
+    end
+
     def mac_10_10
       Mac_10_10
+    end
+
+    def linux
+      Linux
     end
 
     def android

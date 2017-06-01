@@ -183,8 +183,40 @@ module Platform
         windows_7_firefox '46'
       end
 
+      def v47
+        windows_7_firefox '47'
+      end
+
+      def v48
+        windows_7_firefox '48'
+      end
+
+      def v49
+        windows_7_firefox '49'
+      end
+
+      def v50
+        windows_7_firefox '50'
+      end
+
+      def v51
+        windows_7_firefox '51'
+      end
+
+      def v52
+        windows_7_firefox '52'
+      end
+
+      def v53
+        windows_7_firefox '53'
+      end
+
       def beta
         windows_7_firefox 'beta'
+      end
+
+      def dev
+        windows_7_firefox 'dev'
       end
 
     end

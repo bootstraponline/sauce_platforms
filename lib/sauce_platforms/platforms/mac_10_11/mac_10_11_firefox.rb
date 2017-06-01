@@ -183,6 +183,42 @@ module Platform
         mac_10_11_firefox '46'
       end
 
+      def v47
+        mac_10_11_firefox '47'
+      end
+
+      def v48
+        mac_10_11_firefox '48'
+      end
+
+      def v49
+        mac_10_11_firefox '49'
+      end
+
+      def v50
+        mac_10_11_firefox '50'
+      end
+
+      def v51
+        mac_10_11_firefox '51'
+      end
+
+      def v52
+        mac_10_11_firefox '52'
+      end
+
+      def v53
+        mac_10_11_firefox '53'
+      end
+
+      def beta
+        mac_10_11_firefox 'beta'
+      end
+
+      def dev
+        mac_10_11_firefox 'dev'
+      end
+
     end
   end
 end

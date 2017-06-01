@@ -15,6 +15,10 @@ module Platform
         windows_10_microsoftedge '13'
       end
 
+      def v14
+        windows_10_microsoftedge '14'
+      end
+
     end
   end
 end

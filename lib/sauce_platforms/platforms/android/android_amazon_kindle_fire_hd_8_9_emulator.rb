@@ -12,10 +12,6 @@ module Platform
         android_amazon_kindle_fire_hd_8_9_emulator version_string
       end
 
-      def v4_0
-        android_amazon_kindle_fire_hd_8_9_emulator '4.0'
-      end
-
       def v4_4
         android_amazon_kindle_fire_hd_8_9_emulator '4.4'
       end
